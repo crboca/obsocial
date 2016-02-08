@@ -1,0 +1,35 @@
+<!--Header y Menú-->
+	<header class="fondo-verde clearfix">
+		<div href="#home" class="logo">Obsocial</div>
+		<nav>
+			<a href="#eventos">Eventos</a>
+			<a href="#about">¿Qué es Obsocial?</a>
+			<a href="#contacto">Contacto</a>
+		</nav>
+	</header>
+
+	<!--About- Módulo introductorio-->
+	<section class="contacto-intro">
+		<h2>Encuentranos y ponte en contacto con nosotros</h2>
+	</section>
+
+	<section class="contacto-body">
+		<h3>Encuéntranos</h3>
+		<p><b>Dirección:</b> c/ Pujades 118, 08005 Barcelona</p>
+		<p><b>Teléfono:</b> +34 93 414 34 74</p>
+		<p><b>email:</b> info@obsocil.com</p>
+		<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d11973.003744062336!2d2.1941694!3d41.390356499999996!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0000000000000000%3A0xe67be0eeaca3663f!2sBau%2C+Centro+Universitario+de+Dise%C3%B1o+de+Barcelona!5e0!3m2!1ses!2ses!4v1454925883041" width="400" height="300" frameborder="0" style="border:0" allowfullscreen></iframe>
+
+		<h3>Ponte en contacto con nosotros</h3>
+		<!-- No se hacer un formulario -->
+		<p>Nombre</p>
+		<p>Asunto</p>
+		<p>email</p>
+		<p>Mensaje</p>
+		<a href="#" class="btn">Enviar</a>
+	</section>
+
+	<!-- Footer -->
+	<footer>
+		<p>Todos los derechos reservados a Obsocial © 2016</p>
+	</footer>

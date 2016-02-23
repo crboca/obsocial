@@ -29,7 +29,7 @@
 			<a href="index.html" class="logo">
 				<img src="img/logo-obsocial.png"  class="logo-obsocial" alt="Logotipo Obsocial">
 			</a>	
-			<nav>
+			<nav class="menu-desktop">
 				<a class="menu-item" href="eventos.html">Eventos</a>
 				<a class="menu-item" href="index.html#infografia">¿Qué es la Obsolescencia?</a>
 				<a class="menu-item" href="contacto.html">Contacto</a>
@@ -54,7 +54,7 @@
 	</footer>
 </body>
 </html>
-			<nav>
+			<nav class="menu-desktop">
 				<a class="menu-item" href="eventos.html">Eventos</a>
 				<a class="menu-item" href="index.html#infografia">¿Qué es la Obsolescencia?</a>
 				<a class="menu-item" href="contacto.html">Contacto</a>

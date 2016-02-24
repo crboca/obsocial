@@ -120,7 +120,7 @@ header {
 .menu-desktop{
 	display: none;
 }
-@media (min-width: 1024px) {
+@media screen and (min-width: 1024px) {
 	.menu-desktop{
 		display: block;
 		float: right;
@@ -240,7 +240,7 @@ header {
 .visible-xs {
 	display: none;
 }
-@media (max-width: 1023px) {
+@media screen and (max-width: 1023px) {
   .visible-xs {
     display: block;
   }
@@ -286,6 +286,8 @@ header {
 }
 .portada-nosotros {
 	background: url(../img/nosotros-img.jpg);
+	background-size: cover;
+	background-position-y: 35%;
 }
 .divider-line {
 	width: 80px;
@@ -353,7 +355,7 @@ header {
 .col-uno {
 	order:-1;
 }
-@media (max-width: 768px) {
+@media screen and (max-width: 768px) {
 	
 	.infografia-txt{
 	padding: auto 5%;
@@ -468,12 +470,9 @@ textarea:placeholder-shown {
 /* TALLERES */
 .foto-taller {
 	width: 100%;
-	height: 308px;
+	height: auto;
 	margin: 1.75rem 0 0;
 	padding: 0;
-}
-.taller-uno {
-	background: url(../img/taller-uno.jpg);
 }
 /* NOSOTROS */
 .equipo {
@@ -482,27 +481,40 @@ textarea:placeholder-shown {
 }
 .eq-row {
 	display: flex;
-	flex-direction: row;
-	justify-content: space-around;
+	flex-direction: column;
+	align-items: center;
 	margin-bottom: 1.75rem;
 }
 .avatar {
 	background-color: #F0F0F0;
-	height: 112px;
-	width: 112px;
+	height: 10rem;
+	width: 10rem;
 	border-radius: 50%;
-	margin-top: auto;
-	margin-bottom: auto;
+	margin: 1.75rem auto -1.75rem;
 }
 .descripcion {
 	display: flex;
 	flex-direction: column;
-	width: 70%;
+	width: 100%;
+	
 }
 .under-line {
 	width: 53px;
 	height: 4px;
 	background-color: #00BD9C;
+}
+@media screen and (min-width: 768px) {
+	.eq-row {
+		flex-direction: row;
+		justify-content: space-around;
+		align-items: center;
+	}
+	.descripcion {
+		width: 70%;
+	}
+	.avatar {
+		margin: 0 auto;
+	}
 }
 /* FOOTER */
 footer {

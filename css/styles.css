@@ -314,6 +314,7 @@ header {
 }
 .color-three {
 	background-color: #E1E1E1;
+	overflow: auto;
 }
 /* INFOGRAFIA */
 .infografia {
@@ -415,9 +416,11 @@ textarea:placeholder-shown {
 	margin: 10px;
 	width: 372px;
 	box-shadow: 1px 1px 0px rgba(0, 0, 0, 0.1);
+	position: relative;
 }
 .ficha-info{
 	padding: 0 1.5rem;
+	margin-bottom: 5rem;
 }
 .ficha h3 {
 	font-size: 1.4rem;
@@ -449,22 +452,15 @@ textarea:placeholder-shown {
 .ficha a {
 	line-height: 28px;
 	margin: 0;
-	margin-top: auto;
-	align-self: flex-end;
     padding: 10px 20px;
     font-weight: 500;
     font-size: .9em;
     letter-spacing: 1px;
+    position: absolute;
+    right: 0;
+    bottom: 0;
 }
-.ev-uno {
-	background: url(../img/ev-uno.jpg);
-}
-.ev-dos {
-	background: url(../img/ev-dos.jpg);
-}
-.ev-tres {
-	background: url(../img/ev-tres.jpg);
-}
+
 /* TALLERES */
 .foto-taller {
 	width: 100%;

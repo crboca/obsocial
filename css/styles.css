@@ -341,6 +341,10 @@ header {
 	text-align: center;
 	width: 30%;
 }
+.info-img {
+	width: 100%;
+	max-width: 14rem;
+}
 .container-flex {
 	display: flex;
 	flex-direction: row;

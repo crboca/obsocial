@@ -341,6 +341,29 @@ header {
 	text-align: center;
 	width: 30%;
 }
+.container-flex {
+	display: flex;
+	flex-direction: row;
+}
+.col-uno {
+	order:-1;
+}
+@media (max-width: 768px) {
+	
+	.infografia-txt{
+	padding: auto 5%;
+	width: 90%;
+	margin-left: auto;
+	margin-right: auto;
+	}
+	.infografia-img {
+		margin-left: auto;
+		margin-right: auto;
+	}
+	.container-flex {
+		display: block;
+	}
+}
 /* CONTACTO FORMULARIO */
 form {
 	display: flex;
@@ -384,8 +407,6 @@ textarea:placeholder-shown {
 	justify-content: center;
 }
 .ficha {
-	display: flex;
-	flex-direction: column;
 	background-color: #F5F6F7;
 	margin: 10px;
 	width: 372px;

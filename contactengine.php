@@ -1,7 +1,7 @@
 <?php
 
-$EmailFrom = "info@gmail.com";
-$EmailTo = "info@gmail.com";
+$EmailFrom = "info@jorgevalencia.co";
+$EmailTo = "info@jorgevalencia.com";
 $Subject = "ObSocial - Contacto";
 $Name = Trim(stripslashes($_POST['Name'])); 
 $Email = Trim(stripslashes($_POST['Email'])); 

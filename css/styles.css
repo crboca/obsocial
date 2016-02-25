@@ -432,6 +432,11 @@ textarea:placeholder-shown {
 	box-shadow: 1px 1px 0px rgba(0, 0, 0, 0.1);
 	position: relative;
 }
+@media all and (max-width: 372px) {
+	.ficha{
+		width: 100%;
+	}
+}
 .ficha-info{
 	padding: 0 1.5rem;
 	margin-bottom: 5rem;

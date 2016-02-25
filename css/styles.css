@@ -153,6 +153,7 @@ header {
   box-sizing: border-box;
   transition: .3s ease-in-out;
   color: #000;
+  z-index: 1;
 }
 .nav-mobile.closed{
   right: -200px;
@@ -288,6 +289,11 @@ header {
 	background-size: cover;
 	background-position-y: 35%;
 }
+.portada-index, .portada-contacto, .portada-eventos {
+	background-size: cover;
+	background-position-x: 50%;
+}
+
 .divider-line {
 	width: 80px;
 	height: 4px;
@@ -436,7 +442,7 @@ textarea:placeholder-shown {
 	background: url(../img/reloj.svg);
 	background-size: 16px;
 	background-repeat: no-repeat;
-	background-position: center;
+	background-position: left;
 	height: 16px;
 }
 .lugar:before {
@@ -445,7 +451,7 @@ textarea:placeholder-shown {
 	background: url(../img/lugar.svg);
 	background-size: 14px;
 	background-repeat: no-repeat;
-	background-position: center;
+	background-position: left;
 	height: 14px;
 }
 .port-evento{
@@ -454,7 +460,7 @@ textarea:placeholder-shown {
 	padding: 0;
 	height: 196px;
 }
-.ficha a {
+.ficha a:not(.no-style) {
 	line-height: 1.75rem;
 	margin: 0;
     padding: 10px 20px;
@@ -464,6 +470,9 @@ textarea:placeholder-shown {
     position: absolute;
     right: 0;
     bottom: 0;
+}
+.ficha a h3 {
+	color: #2B3E50;
 }
 
 /* TALLERES */

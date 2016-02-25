@@ -277,12 +277,15 @@ header {
 }
 .portada-index {
 	background: url(../img/index-img.jpg);
+	background-position-y: 65%;
 }
 .portada-contacto {
 	background: url(../img/contacto-img.jpg);
+	background-position-y: 100%;
 }
 .portada-eventos {
 	background: url(../img/eventos-img.jpg);
+	background-position-y: 40%;
 }
 .portada-nosotros {
 	background: url(../img/nosotros-img.jpg);

@@ -303,7 +303,8 @@ header {
 	margin: 42px auto;
 }
 /* BOTONES */
-.btn {
+.btn,
+input.btn {
 	color: #fff;
 	text-transform: uppercase;
 	background-color: #F85C45;

@@ -20,12 +20,12 @@ h1 {
 	letter-spacing: 1px;
 	line-height: 1.2;
 }
-@media screen and (min-width: 768px) {
+@media all and (min-width: 768px) {
 	h1{
 		font-size: 2rem;	
 	}
 }
-@media screen and (min-width: 1024px) {
+@media all and (min-width: 1024px) {
 	h1{
 		font-size: 2.4rem;	
 	}
@@ -36,12 +36,12 @@ h2 {
     letter-spacing: 1px;
     line-height: 1.3;
 }
-@media screen and (min-width: 768px) {
+@media all and (min-width: 768px) {
 	h2{
 		font-size: 1.6em;
 	}
 }
-@media screen and (min-width: 1024px) {
+@media all and (min-width: 1024px) {
 	h2{
 		font-size: 1.8em;
 	}
@@ -52,12 +52,12 @@ h3 {
     letter-spacing: 1px;
     line-height: 1.4;
 }
-@media screen and (min-width: 768px) {
+@media all and (min-width: 768px) {
 	h3{
 		font-size: 1.5em;
 	}
 }
-@media screen and (min-width: 1024px) {
+@media all and (min-width: 1024px) {
 	h3{
 		font-size: 1.8em;
 	}
@@ -66,12 +66,12 @@ h3 {
 h4, h5, h6 {
 	font-size: 1rem;
 }
-@media screen and (min-width: 768px) {
+@media all and (min-width: 768px) {
 	h4, h5, h6{
 		font-size: 1.2em;
 	}
 }
-@media screen and (min-width: 1024px) {
+@media all and (min-width: 1024px) {
 	h4, h5, h6{
 		font-size: 1.4em;
 	}
@@ -81,12 +81,12 @@ p {
 	font-size: 1rem;
 	line-height: 1.75rem;
 }
-@media screen and (min-width: 768px) {
+@media all and (min-width: 768px) {
 	p
 		font-size: 1.5em;
 	}
 }
-@media screen and (min-width: 1024px) {
+@media all and (min-width: 1024px) {
 	p{
 		font-size: 1rem;
 	}
@@ -108,7 +108,7 @@ header {
 	width: 10rem;
 	float: left;
 }
-@media screen and (min-width: 1024px) {
+@media all and (min-width: 1024px) {
 	.logo{
 		width: 14rem;
 	}
@@ -120,7 +120,7 @@ header {
 .menu-desktop{
 	display: none;
 }
-@media screen and (min-width: 1024px) {
+@media all and (min-width: 1024px) {
 	.menu-desktop{
 		display: block;
 		float: right;
@@ -240,7 +240,7 @@ header {
 .visible-xs {
 	display: none;
 }
-@media screen and (max-width: 1023px) {
+@media all and (max-width: 1023px) {
   .visible-xs {
     display: block;
   }
@@ -256,12 +256,12 @@ header {
 	font-size: 1.1rem;
 	text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3);
 }
-@media screen and (min-width: 768px) {
+@media all and (min-width: 768px) {
 	.portada p{
 		font-size: 1.2rem;
 	}
 }
-@media screen and (min-width: 1024px) {
+@media all and (min-width: 1024px) {
 	.portada p{
 		font-size: 1.3rem;
 	}
@@ -363,7 +363,7 @@ header {
 .col-uno {
 	order:-1;
 }
-@media screen and (max-width: 768px) {
+@media all and (max-width: 768px) {
 	
 	.infografia-txt{
 	padding: auto 5%;
@@ -516,7 +516,7 @@ textarea:placeholder-shown {
 	height: 4px;
 	background-color: #00BD9C;
 }
-@media screen and (min-width: 768px) {
+@media all and (min-width: 768px) {
 	.eq-row {
 		flex-direction: row;
 		justify-content: space-around;
@@ -579,13 +579,13 @@ footer {
 .container-narrow{
 	max-width: 600px;
 }
-@media screen and (min-width: 1180px) {
+@media all and (min-width: 1180px) {
 	.container{
 		max-width: 1180px;
 		width: 100%;
 	}
 }
-@media screen and (min-width: 1180px) {
+@media all and (min-width: 1180px) {
 	.container-narrow{
 		width: 100%;
 	}
@@ -600,7 +600,7 @@ footer {
 	display: flex;
 	flex-direction: row;
 }
-@media screen and (min-width: 1024px) {
+@media all and (min-width: 1024px) {
 	.info-row {
 		padding: 5rem;
 	}

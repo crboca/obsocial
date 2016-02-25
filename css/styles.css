@@ -477,7 +477,9 @@ textarea:placeholder-shown {
 .ficha a h3 {
 	color: #2B3E50;
 }
-
+.ficha a:hover h3 {
+	text-decoration: underline;
+}
 /* TALLERES */
 .foto-taller {
 	width: 100%;

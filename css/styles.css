@@ -286,6 +286,10 @@ header {
 	background: url(../img/eventos-img.jpg);
 	background-position-y: 40%;
 }
+.portada-blog {
+	background: url(../img/eventos-img.jpg);
+	background-position-y: 40%;
+}
 .portada-nosotros {
 	background: url(../img/nosotros-img.jpg);
 	background-size: cover;
@@ -463,7 +467,7 @@ textarea:placeholder-shown {
 	padding: 0;
 	height: 196px;
 }
-.ficha a:not(.no-style) {
+.ficha a:not(.no-style), .post a.btn {
 	line-height: 1.75rem;
 	margin: 0;
     padding: 10px 20px;
@@ -474,10 +478,10 @@ textarea:placeholder-shown {
     right: 0;
     bottom: 0;
 }
-.ficha a h3 {
+.ficha a h3, .post a h3 {
 	color: #2B3E50;
 }
-.ficha a:hover h3 {
+.ficha a:hover h3, .post a:hover h3 {
 	text-decoration: underline;
 }
 /* TALLERES */
@@ -487,10 +491,67 @@ textarea:placeholder-shown {
 	margin: 1.75rem 0 0;
 	padding: 0;
 }
+/* BLOG */
+.post {
+	background: #fff;
+	position: relative;
+	padding: 1.75rem 1.75rem 3rem;
+	margin-bottom: 1.75rem;
+}
+.port-post {
+	width: 100%;
+}
+.post:before {
+	content: "";
+	position: absolute;
+	top: 2rem;
+	left: -2rem;
+	width: 4rem;
+	height: 4rem;
+	border-radius: 100%;
+	background: url(../img/ico-post.svg) no-repeat center center #2EB197;
+	background-size: 2rem auto;
+}
+/* POST */
+.input-coment, .comentarios {
+	margin: 3.5rem 0;
+}
+.input-coment form {
+	padding-left: 5rem;
+	position: relative;
+}
+.input-coment form:before {
+	content: "";
+	position: absolute;
+	background: url(../img/ico-coment.svg) no-repeat center center;
+	width: 4rem;
+	height: 4rem;
+	background-size: 4rem auto;
+	top: 1rem;
+	left: 0;
+}
+.coment-row {
+	margin: 1rem 0;
+}
+.avatar-usuario {
+	display: inline-block;
+	width: 4rem;
+	height: 4rem;
+	border-radius: 100%;
+	background: #f3f3f3;
+	float: left;
+}
+.coment {
+	display: inline-block;
+	background: #fff;
+	padding: 0.5rem 1.25rem;
+	float: right;
+	margin-left: 1rem;
+	width: 85%;
+}
 /* NOSOTROS */
 .equipo {
-	padding-top: 56px;
-	padding-bottom: 1.75rem;
+	padding: 1rem 0 1.75rem;
 }
 .eq-row {
 	display: flex;

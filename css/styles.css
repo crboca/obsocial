@@ -386,6 +386,9 @@ input.btn {
 /* CONTACTO FORMULARIO */
 form {
 }
+form li {
+	list-style: none;
+}
 label, input, textarea {
 	display: block;
 }
@@ -422,6 +425,9 @@ input:placeholder-shown, textarea:placeholder-shown {
 }
 textarea:placeholder-shown {
 	line-height: 56px;
+}
+.hide {
+	display: none;
 }
 /* EVENTOS */
 .galeria-eventos {
@@ -513,42 +519,7 @@ textarea:placeholder-shown {
 	background-size: 2rem auto;
 }
 /* POST */
-.input-coment, .comentarios {
-	margin: 3.5rem 0;
-}
-.input-coment form {
-	padding-left: 5rem;
-	position: relative;
-}
-.input-coment form:before {
-	content: "";
-	position: absolute;
-	background: url(../img/ico-coment.svg) no-repeat center center;
-	width: 4rem;
-	height: 4rem;
-	background-size: 4rem auto;
-	top: 1rem;
-	left: 0;
-}
-.coment-row {
-	margin: 1rem 0;
-}
-.avatar-usuario {
-	display: inline-block;
-	width: 4rem;
-	height: 4rem;
-	border-radius: 100%;
-	background: #f3f3f3;
-	float: left;
-}
-.coment {
-	display: inline-block;
-	background: #fff;
-	padding: 0.5rem 1.25rem;
-	float: right;
-	margin-left: 1rem;
-	width: 85%;
-}
+
 /* NOSOTROS */
 .equipo {
 	padding: 1rem 0 1.75rem;

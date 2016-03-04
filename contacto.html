@@ -68,15 +68,41 @@
 		</div>
 		</section>
 		<section class="color-three clearfix">
-			<div class="container-narrow">
-				<form method="post" action="contactengine.php">
-					<label for="nombre" id="Name">Nombre</label>
-					<input type="text" placeholder="Tu nombre">
-					<label for="email" name="Email">Dirección de correo</label>
-					<input type="text" placeholder="Tu email">
-					<label for="message" name="Message">Mensaje</label>
-					<textarea placeholder="Tu mensaje"></textarea>
-					<input type="submit" name="submit" value="Enviar mensaje" class="btn" />
+			<div id="container" class="container-narrow ltr">
+				<form id="form2" name="form2" class="wufoo topLabel page" accept-charset="UTF-8" autocomplete="off" enctype="multipart/form-data" method="post" novalidate action="https://obsocialbau.wufoo.com.mx/forms/m1xeebr1paai01/#public">
+					<ul>
+						<li id="foli23" class="notranslate">
+							<label class="desc" id="title23" for="Field23">Nombre <span id="req_23" class="req">*</span>
+							</label>
+							<div>
+								<input id="Field23" name="Field23" type="text" class="field text medium"  placeholder="Tu nombre" maxlength="255" tabindex="1" onkeyup="" required />
+							</div>
+						</li>
+						<li id="foli24" class="notranslate">
+							<label class="desc" id="title24" for="Field24">Correo electrónico <span id="req_24" class="req">*</span>
+							</label>
+							<div>
+								<input id="Field24" name="Field24" type="text" class="field text medium"  placeholder="Tu email" maxlength="255" tabindex="2" onkeyup="" required />
+							</div>
+						</li>
+						<li id="foli16" class="notranslate">
+							<label class="desc" id="title16" for="Field16">Mensaje <span id="req_16" class="req">*</span>
+							</label>
+							<div>
+								<textarea id="Field16" name="Field16" class="field textarea small" spellcheck="true" rows="10" cols="50" tabindex="3" onkeyup=""  placeholder="Tu mensaje" required></textarea>
+							</div>
+						</li>
+						<li class="">
+							<div>
+								<input id="saveForm" name="saveForm" class="btTxt submit btn" type="submit" value="Enviar mensaje"/>
+							</div>
+						</li>
+						<li class="hide">
+							<label for="comment">Do Not Fill This Out</label>
+							<textarea name="comment" id="comment" rows="1" cols="1"></textarea>
+							<input type="hidden" id="idstamp" name="idstamp" value="VLvT141Y80kvAOnqE+G6eCHnbuJOhFm6AkPda4I8hQU=" />
+						</li>
+					</ul>
 				</form>
 			</div>
 		</section>
@@ -97,5 +123,6 @@
 	</footer>
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
     <script src="js/app.js"></script>
+    <script src="js/wufoo.js"></script>
 </body>
 </html>

@@ -80,32 +80,8 @@
 					</p>
 					<p>En definitiva, es una especie de artimaña mediante la cual hacen que un objeto tenga que sustituirse en cierto periodo determinado. Puede que suene un poco a paranoia, o a conspiración, pero no os miento si os digo que todos los sufrimos día a día.</p>
 				</div>
-				<div class="input-coment">
-					<h4>Déjanos un comentario sobre el artículo</h4>
-					<form method="post" action="">
-						<label for="nombre" id="Name">Nombre</label>
-						<input type="text" placeholder="Tu nombre">
-						<label for="message" name="Message">¡Comenta!</label>
-						<textarea placeholder="Tu comentario"></textarea>
-						<input type="submit" name="submit" value="Publicar comentario" class="btn" />
-					</form>
-				</div>
-				<div class="comentarios">
-					<h4>Comentarios de otros usuarios</h4>
-					<div class="coment-row clearfix">
-						<div class="avatar-usuario"></div>
-						<div class="coment">
-							<p><strong>Usuario 1</strong></p>
-							<p>No me ha gustado nada el artículo. Demasiado largo para contar bastante poco…</p>
-						</div>
-					</div>
-					<div class="coment-row clearfix">
-						<div class="avatar-usuario"></div>
-						<div class="coment">
-							<p><strong>Usuario 2</strong></p>
-							<p>Es un artículo muy extenso sí, pero me ha parecido muy interesante. Creo que deja muy claro cómo nos afecta la Obsolescencia y las pautas que aconseja seguir para hacerfrente a dicho fenómeno me han parecido muy interesantes. A partir de hoy mismo intentaré ponerlas en práctica.</p>
-						</div>
-					</div>
+				<div>
+					<div id="disqus_thread"></div>
 				</div>
 			</div>
 		</section>
@@ -126,5 +102,6 @@
 	</footer>
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
     <script src="js/app.js"></script>
+    <script src="js/disqus.js"></script>
 </body>
 </html>

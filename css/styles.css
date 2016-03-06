@@ -386,6 +386,9 @@ input.btn {
 /* CONTACTO FORMULARIO */
 form {
 }
+form ul {
+	padding: 0;
+}
 form li {
 	list-style: none;
 }
@@ -508,15 +511,24 @@ textarea:placeholder-shown {
 	width: 100%;
 }
 .post:before {
-	content: "";
-	position: absolute;
-	top: 2rem;
-	left: -2rem;
-	width: 4rem;
-	height: 4rem;
-	border-radius: 100%;
-	background: url(../img/ico-post.svg) no-repeat center center #2EB197;
-	background-size: 2rem auto;
+		content: "";
+		position: absolute;
+		top: 0rem;
+		left: 45%;
+		width: 3rem;
+		height: 3rem;
+		border-radius: 100%;
+		background: url(../img/ico-post.svg) no-repeat center center #2EB197;
+		background-size: 1.5rem auto;
+}
+@media all and (min-width: 768px) {
+	.post:before {
+		top: 2rem;
+		left: -2rem;
+		width: 4rem;
+		height: 4rem;
+		background-size: 2rem auto;
+	}
 }
 /* POST */
 
@@ -564,9 +576,8 @@ textarea:placeholder-shown {
 /* FOOTER */
 footer {
 	background-color: #2B3E50;
-	height: 84px;
-	display: flex;
-	justify-content: space-between;
+	height: 8rem;
+	padding-top: .25rem;
 }
 .footer {
 	text-transform: uppercase;
@@ -596,6 +607,11 @@ footer {
 }
 .img-footer {
 	height: 1.75rem;
+}
+@media all and (min-width: 768px) {
+	footer {
+		height: 5.5rem;
+	}
 }
 /* MICRO CLEARFIX */
 .cf:after {

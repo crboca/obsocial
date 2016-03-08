@@ -461,6 +461,15 @@ textarea:placeholder-shown {
 	background-position: left;
 	height: 16px;
 }
+.lugar-link {
+	color: #2B3E50;
+	text-decoration: none;
+	font-weight: 400;
+}
+.lugar-link:hover {
+	text-decoration: underline;
+	color: #2B3E50;
+}
 .lugar:before {
 	content: "lugar";
 	color: transparent;
@@ -504,11 +513,14 @@ textarea:placeholder-shown {
 .post {
 	background: #fff;
 	position: relative;
-	padding: 1.75rem 1.75rem 3rem;
+	padding-bottom: 3rem;
 	margin-bottom: 1.75rem;
 }
 .port-post {
 	width: 100%;
+}
+.info-post {
+	padding:  0 1.75rem;
 }
 .post:before {
 		content: "";

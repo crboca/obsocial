@@ -533,6 +533,10 @@ textarea:placeholder-shown {
 		background: url(../img/ico-post.svg) no-repeat center center #2EB197;
 		background-size: 1.5rem auto;
 }
+.fecha {
+	font-size: .8rem;
+	font-weight: 700;
+}
 @media all and (min-width: 768px) {
 	.post:before {
 		top: 2rem;
@@ -620,7 +624,7 @@ footer {
 .img-footer {
 	height: 1.75rem;
 }
-@media all and (min-width: 768px) {
+@media all and (min-width: 979px) {
 	footer {
 		height: 5.5rem;
 	}

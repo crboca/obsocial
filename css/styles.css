@@ -286,6 +286,10 @@ header {
 	background: url(../img/eventos-img.jpg);
 	background-position-y: 40%;
 }
+.portada-blog {
+	background: url(../img/eventos-img.jpg);
+	background-position-y: 40%;
+}
 .portada-nosotros {
 	background: url(../img/nosotros-img.jpg);
 	background-size: cover;
@@ -382,6 +386,12 @@ input.btn {
 /* CONTACTO FORMULARIO */
 form {
 }
+form ul {
+	padding: 0;
+}
+form li {
+	list-style: none;
+}
 label, input, textarea {
 	display: block;
 }
@@ -419,6 +429,9 @@ input:placeholder-shown, textarea:placeholder-shown {
 textarea:placeholder-shown {
 	line-height: 56px;
 }
+.hide {
+	display: none;
+}
 /* EVENTOS */
 .galeria-eventos {
 	display: flex;
@@ -431,11 +444,6 @@ textarea:placeholder-shown {
 	width: 372px;
 	box-shadow: 1px 1px 0px rgba(0, 0, 0, 0.1);
 	position: relative;
-}
-@media all and (max-width: 372px) {
-	.ficha{
-		width: 100%;
-	}
 }
 .ficha-info{
 	padding: 0 1.5rem;
@@ -453,6 +461,15 @@ textarea:placeholder-shown {
 	background-position: left;
 	height: 16px;
 }
+.lugar-link {
+	color: #2B3E50;
+	text-decoration: none;
+	font-weight: 400;
+}
+.lugar-link:hover {
+	text-decoration: underline;
+	color: #2B3E50;
+}
 .lugar:before {
 	content: "lugar";
 	color: transparent;
@@ -468,7 +485,7 @@ textarea:placeholder-shown {
 	padding: 0;
 	height: 196px;
 }
-.ficha a:not(.no-style) {
+.ficha a:not(.no-style), .post a.btn {
 	line-height: 1.75rem;
 	margin: 0;
     padding: 10px 20px;
@@ -479,10 +496,10 @@ textarea:placeholder-shown {
     right: 0;
     bottom: 0;
 }
-.ficha a h3 {
+.ficha a h3, .post a h3 {
 	color: #2B3E50;
 }
-.ficha a:hover h3 {
+.ficha a:hover h3, .post a:hover h3 {
 	text-decoration: underline;
 }
 /* TALLERES */
@@ -492,10 +509,59 @@ textarea:placeholder-shown {
 	margin: 1.75rem 0 0;
 	padding: 0;
 }
+/* BLOG */
+.post {
+	background: #fff;
+	position: relative;
+	padding-bottom: 3rem;
+	margin-bottom: 1.75rem;
+}
+.port-post {
+	width: 100%;
+}
+.info-post {
+	padding:  0 1.75rem;
+	position: relative;
+}
+.info-post:before {
+		content: "";
+		position: absolute;
+		top: -3rem;
+		left: 45%;
+		width: 3rem;
+		height: 3rem;
+		border-radius: 100%;
+		background: url(../img/ico-post.svg) no-repeat center center #2EB197;
+		background-size: 1.5rem auto;
+}
+.post:before {
+	content: none;
+}
+.fecha {
+	font-size: .8rem;
+	font-weight: 700;
+}
+@media all and (min-width: 768px) {
+	.post:before {
+		content: "";
+		position: absolute;
+		top: 2rem;
+		left: -2rem;
+		width: 4rem;
+		height: 4rem;
+		border-radius: 100%;
+		background: url(../img/ico-post.svg) no-repeat center center #2EB197;
+		background-size: 2rem auto;
+	}
+	.info-post:before {
+		content: none;
+	}
+}
+/* POST */
+
 /* NOSOTROS */
 .equipo {
-	padding-top: 56px;
-	padding-bottom: 1.75rem;
+	padding: 1rem 0 1.75rem;
 }
 .eq-row {
 	display: flex;
@@ -537,9 +603,8 @@ textarea:placeholder-shown {
 /* FOOTER */
 footer {
 	background-color: #2B3E50;
-	height: 84px;
-	display: flex;
-	justify-content: space-between;
+	height: 8rem;
+	padding-top: .25rem;
 }
 .footer {
 	text-transform: uppercase;
@@ -569,6 +634,11 @@ footer {
 }
 .img-footer {
 	height: 1.75rem;
+}
+@media all and (min-width: 979px) {
+	footer {
+		height: 5.5rem;
+	}
 }
 /* MICRO CLEARFIX */
 .cf:after {

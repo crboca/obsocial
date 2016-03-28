@@ -1,0 +1,48 @@
+// BLOG
+.post {
+	background: #fff;
+	position: relative;
+	padding-bottom: 3rem;
+	margin-bottom: 1.75rem;
+}
+.port-post {
+	width: 100%;
+}
+.info-post {
+	padding:  0 1.75rem;
+	position: relative;
+}
+.info-post:before {
+		content: "";
+		position: absolute;
+		top: -3rem;
+		left: 45%;
+		width: 3rem;
+		height: 3rem;
+		border-radius: 100%;
+		background: url(../img/ico-post.svg) no-repeat center center #2EB197;
+		background-size: 1.5rem auto;
+}
+.post:before {
+	content: none;
+}
+.fecha {
+	font-size: .8rem;
+	font-weight: 700;
+}
+@media all and (min-width: 768px) {
+	.post:before {
+		content: "";
+		position: absolute;
+		top: 2rem;
+		left: -2rem;
+		width: 4rem;
+		height: 4rem;
+		border-radius: 100%;
+		background: url(../img/ico-post.svg) no-repeat center center #2EB197;
+		background-size: 2rem auto;
+	}
+	.info-post:before {
+		content: none;
+	}
+}

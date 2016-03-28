@@ -1,0 +1,49 @@
+// CONTACTO FORMULARIO
+form {
+}
+form ul {
+	padding: 0;
+}
+form li {
+	list-style: none;
+}
+label, input, textarea {
+	display: block;
+}
+label, input:not(.btn), textarea {
+	width: 100%;
+}
+label {
+	text-transform: uppercase;
+	line-height: 1.75rem;
+	color: #A3A3A3;
+	margin-top: 1.75rem;
+}
+input:not(.btn) {
+	height: 3.5rem;
+}
+textarea {
+	height: 12.25rem;
+}
+input, textarea {
+	background-color: #fff;
+	border: none;
+	font-size: 1rem;
+	font-family: 'Open Sans', sans-serif;
+	color: #3E3E3E;
+	line-height: 1.75rem;
+	padding: 0 1rem;
+}
+input:placeholder-shown, textarea:placeholder-shown {
+	font-size: 16px;
+	font-family: 'Open Sans', sans-serif;
+	color: #3E3E3E;
+	line-height: 1.75rem;
+	padding: 0 1rem;
+}
+textarea:placeholder-shown {
+	line-height: 56px;
+}
+.hide {
+	display: none;
+}

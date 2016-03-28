@@ -1,0 +1,77 @@
+// EVENTOS
+.galeria-eventos {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+}
+.ficha {
+	background-color: #F5F6F7;
+	margin: 10px;
+	width: 372px;
+	box-shadow: 1px 1px 0px rgba(0, 0, 0, 0.1);
+	position: relative;
+}
+.ficha-info{
+	padding: 0 1.5rem;
+	margin-bottom: 5rem;
+}
+.ficha h3 {
+	font-size: 1.4rem;
+}
+.hora:before {
+	content: "hora";
+	color: transparent;
+	background: url(../img/reloj.svg);
+	background-size: 16px;
+	background-repeat: no-repeat;
+	background-position: left;
+	height: 16px;
+}
+.lugar-link {
+	color: #2B3E50;
+	text-decoration: none;
+	font-weight: 400;
+}
+.lugar-link:hover {
+	text-decoration: underline;
+	color: #2B3E50;
+}
+.lugar:before {
+	content: "lugar";
+	color: transparent;
+	background: url(../img/lugar.svg);
+	background-size: 14px;
+	background-repeat: no-repeat;
+	background-position: left;
+	height: 14px;
+}
+.port-evento{
+	width: 100%;
+	margin: 0;
+	padding: 0;
+	height: 196px;
+}
+.ficha a:not(.no-style), .post a.btn {
+	line-height: 1.75rem;
+	margin: 0;
+    padding: 10px 20px;
+    font-weight: 500;
+    font-size: .9em;
+    letter-spacing: 1px;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+}
+.ficha a h3, .post a h3 {
+	color: #2B3E50;
+}
+.ficha a:hover h3, .post a:hover h3 {
+	text-decoration: underline;
+}
+// TALLERES
+.foto-taller {
+	width: 100%;
+	height: auto;
+	margin: 1.75rem 0 0;
+	padding: 0;
+}

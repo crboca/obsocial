@@ -1,0 +1,23 @@
+// TEXT ELEMENTS
+p {
+	font-size: 1rem;
+	line-height: 1.75rem;
+}
+@media all and (min-width: 768px) {
+	p {
+		font-size: 1.5em;
+	}
+}
+@media all and (min-width: 1024px) {
+	p {
+		font-size: 1rem;
+	}
+}
+a {
+	font-weight: 700;
+	color: #F85C45;
+	text-decoration: none;
+}
+a:hover {
+	color: #F28D7E;
+}

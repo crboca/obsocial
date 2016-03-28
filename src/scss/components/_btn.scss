@@ -1,0 +1,16 @@
+// BOTONES
+.btn,
+input.btn {
+	color: #fff;
+	text-transform: uppercase;
+	background-color: #F85C45;
+	padding: 20px;
+	line-height: 1.4;
+	display: inline-block;
+	margin: 1em auto;
+	cursor: pointer;
+}
+.btn:hover {
+	background-color: #F28D7E;
+	color: #fff;
+}

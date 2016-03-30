@@ -26,8 +26,8 @@ header {
 	}
 }
 .menu-item {
-	color: #fff;
-	font-weight: 400;
+	color: $color-w;
+	font-weight: 700;
 	font-size: 0.9rem;
 	margin-left: 1.5rem;
 	letter-spacing: 1px;
@@ -37,6 +37,8 @@ header {
 }
 
 .menu-item:hover {
-	color: #fff;
 	text-decoration: underline;
+}
+.menu-item.active {
+	color: $color-two;
 }

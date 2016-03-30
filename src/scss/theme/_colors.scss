@@ -4,10 +4,26 @@ $color-one: #2EB197; //verde obsocial
 $color-two: #2B3E50; //Azul oscuro
 $color-three: #F85C45; //naranja
 $color-four: #E1E1E1; //color gris backgrounds
+$color-five: #F5F6F7;
 .color-one {
 	background-color: #2EB197;
 }
-.color-three {
-	background-color: #E1E1E1;
-	overflow: auto;
+
+.bg-color_w {
+	background-color: $color-w;
+}
+.bg-color_one {
+	background-color: $color-one;
+}
+.bg-color_two {
+	background-color: $color-two;
+}
+.bg-color_three {
+	background-color: $color-three;
+}
+.bg-color_four {
+	background-color: $color-four;
+}
+.bg-color_five {
+	background-color: $color-five;
 }

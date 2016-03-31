@@ -20,30 +20,32 @@ label {
 	color: $color-w;
 	margin-top: 1.75rem;
 }
-input:not(.btn) {
-	height: 3.5rem;
-}
-textarea {
-	height: 12.25rem;
-}
 input, textarea {
 	background-color: #fff;
 	border: none;
 	font-size: 1rem;
 	font-family: 'Open Sans', sans-serif;
 	color: $color-w;
-	line-height: 1.75rem;
 	padding: 0 1rem;
 }
-input:placeholder-shown, textarea:placeholder-shown {
+input {
+	line-height: 1.75rem;
+
+	&:not(.btn) {
+		height: 3.5rem;
+		}
+}
+textarea {
+	line-height: 1.4rem;
+	padding: 0.5rem 1rem;
+	height: 12.25rem;
+}
+input::placeholder, textarea::placeholder {
 	font-size: 16px;
 	font-family: 'Open Sans', sans-serif;
 	color: $color-w;
 	line-height: 1.75rem;
-	padding: 0 1rem;
-}
-textarea:placeholder-shown {
-	line-height: 56px;
+	padding: 0rem;
 }
 .hide {
 	display: none;

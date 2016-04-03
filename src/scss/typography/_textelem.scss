@@ -7,11 +7,10 @@ p {
 }
 a {
 	font-weight: 700;
-	color: $color-three;
 	text-decoration: none;
 }
 a:hover {
-	color: $color-three;
+	text-decoration: underline;
 }
 .text-center {
 	text-align: center;

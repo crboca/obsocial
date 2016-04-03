@@ -191,9 +191,6 @@ html {
   overflow: auto;
   zoom: 1; }
 
-.color-one {
-  background-color: #2EB197; }
-
 .bg-color_w {
   background-color: #fff; }
 
@@ -306,7 +303,7 @@ section {
 .info-img {
   margin: auto; }
 
-.h2, .h5, .h6 {
+.h2, .h6 {
   text-transform: uppercase; }
 
 .h1 {
@@ -319,10 +316,17 @@ section {
   text-transform: uppercase;
   letter-spacing: 0.134375rem;
   font-size: 0.875rem;
-  font-weight: 600; }
+  font-weight: 600;
+  line-height: 1.1875rem; }
 
-h3 {
-  font-weight: 700; }
+.h5 {
+  text-transform: uppercase;
+  letter-spacing: 0.02125rem;
+  font-size: 1.0625rem;
+  font-weight: 700;
+  line-height: 1.1875rem;
+  padding-top: 1.75rem;
+  padding-bottom: 1.75rem; }
 
 h6 {
   font-weight: 300;
@@ -354,19 +358,6 @@ h2 {
   h2 {
     font-size: 1.8em; } }
 
-h3 {
-  font-size: 1.3rem;
-  letter-spacing: 1px;
-  line-height: 1.4; }
-
-@media all and (min-width: 768px) {
-  h3 {
-    font-size: 1.5em; } }
-
-@media all and (min-width: 1024px) {
-  h3 {
-    font-size: 1.8em; } }
-
 h4, h5, h6 {
   font-size: 1rem; }
 
@@ -386,11 +377,10 @@ p {
 
 a {
   font-weight: 700;
-  color: #F85C45;
   text-decoration: none; }
 
 a:hover {
-  color: #F85C45; }
+  text-decoration: underline; }
 
 .text-center {
   text-align: center; }
@@ -445,11 +435,13 @@ header {
   cursor: pointer; }
   .btn:hover {
     background-color: #F28D7E;
-    color: #fff; }
+    color: #fff;
+    text-decoration: none; }
   .btn-alt {
     background-color: #2EB197; }
     .btn-alt:hover {
-      background-color: #74D5C4; }
+      background-color: #74D5C4;
+      text-decoration: none; }
   .btn-shadow {
     box-shadow: 1px 1px 0px rgba(0, 0, 0, 0.1); }
 
@@ -696,31 +688,21 @@ input::placeholder, textarea::placeholder {
   width: 372px;
   box-shadow: 1px 1px 0px rgba(0, 0, 0, 0.1);
   position: relative; }
-  .evento_ficha h3 {
-    font-size: 1.4rem; }
-  .evento_ficha a h3 {
-    color: #2B3E50; }
-  .evento_ficha a:hover h3 {
-    text-decoration: underline; }
   .evento_ficha a:not(.no-style) {
-    line-height: 1.75rem;
     margin: 0;
-    padding: 10px 20px;
-    font-weight: 500;
-    font-size: .9em;
-    letter-spacing: 1px;
+    padding: 1rem 1rem 0;
     position: absolute;
     right: 0;
     bottom: 0; }
   .evento_ficha-info {
-    padding: 0 1.5rem;
+    padding: 0 1.625rem;
     margin-bottom: 5rem; }
 
 .evento_portada {
   width: 100%;
   margin: 0;
   padding: 0;
-  height: 196px; }
+  height: 12.25rem; }
 
 .taller_hora:before {
   content: "hora";
@@ -929,17 +911,13 @@ footer {
   padding-top: 56px;
   padding-bottom: 56px; }
   .portada p {
-    font-size: 1.1rem;
-    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3); }
-    @media all and (min-width: 768px) {
-      .portada p {
-        font-size: 1.2rem; } }
-    @media all and (min-width: 1024px) {
-      .portada p {
-        font-size: 1.3rem; } }
-  .portada h1,
-  .portada h2,
-  .portada h3 {
+    font-size: 1.25rem;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3);
+    line-height: 1.875rem;
+    margin: 0 auto;
+    padding: 0 auto; }
+  .portada .h1,
+  .portada .h2 {
     margin: 0;
     text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3); }
   .portada .btn {

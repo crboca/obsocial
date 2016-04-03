@@ -11,6 +11,7 @@
 	&:hover {
 		background-color: $color-three-l;
 		color: $color-w;
+		text-decoration: none;
 	}
 
 	&-alt {
@@ -18,6 +19,7 @@
 		
 		&:hover {
 			background-color: $color-one-l;
+			text-decoration: none;
 			}
 	}
 

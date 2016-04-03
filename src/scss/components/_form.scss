@@ -6,6 +6,9 @@ form {
 	li {
 		list-style: none;
 		}
+	@media all and (min-width: 1024px) {
+		padding-top: 1.75rem;
+		}
 }
 
 label, input, textarea {
@@ -43,7 +46,7 @@ textarea {
 input::placeholder, textarea::placeholder {
 	font-size: 16px;
 	font-family: 'Open Sans', sans-serif;
-	color: $color-w;
+	color: $color-w-op;
 	line-height: 1.75rem;
 	padding: 0rem;
 }

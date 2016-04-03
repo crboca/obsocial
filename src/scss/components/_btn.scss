@@ -1,16 +1,27 @@
 // BOTONES
-.btn,
-input.btn {
-	color: #fff;
-	text-transform: uppercase;
-	background-color: #F85C45;
-	padding: 20px;
-	line-height: 1.4;
+.btn {
+	color: $color-w;
+	background-color: $color-three;
+	height: 3.5rem;
+	padding: 0 4.375rem;
 	display: inline-block;
-	margin: 1em auto;
+	margin: 3.5rem auto;
 	cursor: pointer;
-}
-.btn:hover {
-	background-color: #F28D7E;
-	color: #fff;
+	
+	&:hover {
+		background-color: $color-three-l;
+		color: $color-w;
+	}
+
+	&-alt {
+		background-color: $color-one;
+		
+		&:hover {
+			background-color: $color-one-l;
+			}
+	}
+
+	&-shadow {
+		box-shadow: 1px 1px 0px rgba(0, 0, 0, 0.1);
+	}
 }

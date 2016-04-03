@@ -239,6 +239,14 @@ body {
   margin: 0;
   padding: 0; }
 
+section {
+  padding-top: 2rem;
+  padding-bottom: 2rem; }
+  @media all and (min-width: 1024px) {
+    section {
+      padding-top: 7rem;
+      padding-bottom: 7rem; } }
+
 .container,
 .container-narrow {
   margin: 1rem auto;
@@ -298,12 +306,23 @@ body {
 .info-img {
   margin: auto; }
 
-h1, h2 {
+.h2, .h5, .h6 {
   text-transform: uppercase; }
 
+.h1 {
+  text-transform: uppercase;
+  letter-spacing: 0.046875rem;
+  font-size: 2.625rem;
+  font-weight: 600; }
+
+.titulo-blm {
+  text-transform: uppercase;
+  letter-spacing: 0.134375rem;
+  font-size: 0.875rem;
+  font-weight: 600; }
+
 h3 {
-  font-weight: 700;
-  text-transform: uppercase; }
+  font-weight: 700; }
 
 h6 {
   font-weight: 300;
@@ -361,15 +380,9 @@ h4, h5, h6 {
 
 p {
   font-size: 1rem;
-  line-height: 1.75rem; }
-
-@media all and (min-width: 768px) {
-  p {
-    font-size: 1.5em; } }
-
-@media all and (min-width: 1024px) {
-  p {
-    font-size: 1rem; } }
+  line-height: 1.75rem;
+  margin: 0;
+  padding: 0; }
 
 a {
   font-weight: 700;
@@ -377,7 +390,7 @@ a {
   text-decoration: none; }
 
 a:hover {
-  color: #F28D7E; }
+  color: #F85C45; }
 
 .text-center {
   text-align: center; }
@@ -422,26 +435,33 @@ header {
 .menu-item.active {
   color: #2B3E50; }
 
-.btn,
-input.btn {
+.btn {
   color: #fff;
-  text-transform: uppercase;
   background-color: #F85C45;
-  padding: 20px;
-  line-height: 1.4;
+  height: 3.5rem;
+  padding: 0 4.375rem;
   display: inline-block;
-  margin: 1em auto;
+  margin: 3.5rem auto;
   cursor: pointer; }
-
-.btn:hover {
-  background-color: #F28D7E;
-  color: #fff; }
+  .btn:hover {
+    background-color: #F28D7E;
+    color: #fff; }
+  .btn-alt {
+    background-color: #2EB197; }
+    .btn-alt:hover {
+      background-color: #74D5C4; }
+  .btn-shadow {
+    box-shadow: 1px 1px 0px rgba(0, 0, 0, 0.1); }
 
 form ul {
   padding: 0; }
 
 form li {
   list-style: none; }
+
+@media all and (min-width: 1024px) {
+  form {
+    padding-top: 1.75rem; } }
 
 label, input, textarea {
   display: block; }
@@ -476,28 +496,28 @@ textarea {
 input::-webkit-input-placeholder, textarea::-webkit-input-placeholder {
   font-size: 16px;
   font-family: 'Open Sans', sans-serif;
-  color: #fff;
+  color: rgba(255, 255, 255, 0.65);
   line-height: 1.75rem;
   padding: 0rem; }
 
 input::-moz-placeholder, textarea::-moz-placeholder {
   font-size: 16px;
   font-family: 'Open Sans', sans-serif;
-  color: #fff;
+  color: rgba(255, 255, 255, 0.65);
   line-height: 1.75rem;
   padding: 0rem; }
 
 input:-ms-input-placeholder, textarea:-ms-input-placeholder {
   font-size: 16px;
   font-family: 'Open Sans', sans-serif;
-  color: #fff;
+  color: rgba(255, 255, 255, 0.65);
   line-height: 1.75rem;
   padding: 0rem; }
 
 input::placeholder, textarea::placeholder {
   font-size: 16px;
   font-family: 'Open Sans', sans-serif;
-  color: #fff;
+  color: rgba(255, 255, 255, 0.65);
   line-height: 1.75rem;
   padding: 0rem; }
 

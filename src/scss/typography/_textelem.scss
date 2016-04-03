@@ -2,24 +2,16 @@
 p {
 	font-size: 1rem;
 	line-height: 1.75rem;
-}
-@media all and (min-width: 768px) {
-	p {
-		font-size: 1.5em;
-	}
-}
-@media all and (min-width: 1024px) {
-	p {
-		font-size: 1rem;
-	}
+	margin: 0;
+	padding: 0;
 }
 a {
 	font-weight: 700;
-	color: #F85C45;
+	color: $color-three;
 	text-decoration: none;
 }
 a:hover {
-	color: #F28D7E;
+	color: $color-three;
 }
 .text-center {
 	text-align: center;

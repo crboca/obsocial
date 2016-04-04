@@ -1,10 +1,1 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<svg width="206px" height="206px" viewBox="0 0 206 206" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:sketch="http://www.bohemiancoding.com/sketch/ns">
-    <!-- Generator: Sketch 3.5.2 (25235) - http://www.bohemiancoding.com/sketch -->
-    <title>Slice 1</title>
-    <desc>Created with Sketch.</desc>
-    <defs></defs>
-    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" sketch:type="MSPage">
-        <path d="M103.187886,25.75 C74.7698795,25.75 51.7292954,48.809125 51.7292954,77.25 C51.7292954,105.690875 74.7698795,128.75 103.187886,128.75 C131.605893,128.75 154.646477,105.690875 154.646477,77.25 C154.646477,48.809125 131.605893,25.75 103.187886,25.75 M103.187886,206 C103.187886,206 26,119.911312 26,77.25 C26,34.5919062 60.5608761,0 103.187886,0 C145.814897,0 180.375773,34.5919062 180.375773,77.25 C180.375773,119.911312 103.187886,206 103.187886,206" id="Fill-548-Copy-2" fill="#00BD9C" sketch:type="MSShapeGroup"></path>
-    </g>
-</svg>
+<svg width="206" height="206" viewBox="0 0 206 206" xmlns="http://www.w3.org/2000/svg"><title>Slice 1</title><path d="M103.188 25.75c-28.418 0-51.459 23.06-51.459 51.5s23.04 51.5 51.459 51.5c28.418 0 51.458-23.06 51.458-51.5s-23.04-51.5-51.458-51.5m0 180.25S26 119.911 26 77.25C26 34.592 60.56 0 103.188 0c42.627 0 77.188 34.592 77.188 77.25 0 42.661-77.188 128.75-77.188 128.75" fill="#00BD9C" fill-rule="evenodd"/></svg>

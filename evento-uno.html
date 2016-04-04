@@ -4,28 +4,26 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Obsocial</title>
-	<link rel="stylesheet" href="normalize.css">
-	<link href='https://fonts.googleapis.com/css?family=Open+Sans:300,400,700' rel='stylesheet' type='text/css'>
-	<link rel="stylesheet" href="css/styles.css">
-	<link rel="stylesheet" href="css/fixes.css">
+	<link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700' rel='stylesheet' type='text/css'>
+	<link rel="stylesheet" href="css/main.css">
 </head>
 <body>
 <!--HEADER-->	
-	<header class="color-one header">
+	<header class="header">
 		<div class="container">			
 			<a href="index.html" class="logo">
 				<img src="img/logo-obsocial.svg"  class="logo-obsocial" alt="Logotipo Obsocial">
 			</a>	
 			<nav class="menu-desktop">
-				<a class="menu-item" href="index.html">¿Qué es la Obsolescencia?</a>
-				<a class="menu-item" href="eventos.html">Eventos</a>
-				<a class="menu-item" href="nosotros.html">Quienes Somos</a>
+				<a class="menu-item" href="donacion.html">Donar</a>
+				<a class="menu-item active" href="eventos.html">Reparar</a>
+				<a class="menu-item" href="proyecto.html">Nuestro proyecto</a>
+				<a class="menu-item" href="blog.html">Blog</a>
 				<a class="menu-item" href="contacto.html">Contacto</a>
-				<a class="menu-item" href="blog.html">Obsoblog</a>
 			</nav>
 		</div>
 
-		<div class="nav-mobile visible-xs closed">
+		<div class="menu-mobile visible-xs closed">
 	        <a class="btn-anim-three">
 	            <span class="one"></span>
 	            <span class="two"></span>
@@ -34,17 +32,27 @@
 	        <ul class="nav" role="sidebar">
 	        	<li>
 	                <a href="index.html">
-	                    Obsolescencia
+	                    Inicio
+	                </a>
+	            </li>
+	        	<li>
+	                <a href="donacion.html">
+	                    Donar
 	                </a>
 	            </li>
 	            <li>
 	                <a href="eventos.html">
-	                    Eventos
+	                    Reparar
 	                </a>
 	            </li>
 	            <li>
-	                <a href="nosotros.html">
-	                    Quienes Somos
+	                <a href="proyecto.html">
+	                    Nuestro proyecto
+	                </a>
+	            </li>
+	            <li>
+	                <a href="blog.html">
+	                    Blog
 	                </a>
 	            </li>
 	            <li>
@@ -52,34 +60,23 @@
 	                    Contacto
 	                </a>
 	            </li>
-	            <li>
-	                <a href="blog.html">
-	                    Obsoblog
-	                </a>
-	            </li>
 	        </ul>
     	</div>
 	</header>
 	<article>
-		<section class="color-three clearfix">
+		<section class="bg-color_four clearfix">
 			<div class="container-narrow">
-				<img class="foto-taller" src="img/taller-uno.jpg" alt="Imagen taller uno">
+				<img class="taller_foto" src="img/taller-uno.jpg" alt="Imagen taller uno">
 				<h6>Taller</h6>
 				<div class="under-line"></div>
 				<h1>Reparación de Smartphones</h1>
 				<p>En este evento de reparación de smartphones, y con la ayuda de expertos tecnólogos, aprenderemos a extraer y sustituir la pantalla de nuestro smartphone. Ádemas de eso, aprenderemos, paso por paso, a sustituir la pantalla interior del smartphone en los casos necesarios.</p>
-				<p class="hora">Viernes 15/03/2016 | 18.00h.</p>
-				<p class="lugar"><a class="lugar-link" href="https://goo.gl/maps/38LjCo1cFrt">Ateneu de Fabricación Fabrica del Sol</a></p>
+				<p class="taller_hora">Viernes 15/03/2016 | 18.00h.</p>
+				<p class="taller_lugar"><a class="taller_lugar-link" href="https://goo.gl/maps/38LjCo1cFrt">Ateneu de Fabricación Fabrica del Sol</a></p>
 
-				<h3>Consigue tu entrada</h3>
+				<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2993.6117283528365!2d2.1909900484844527!3d41.38251972945282!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x12a4a3070862c62f%3A0x995583952dc54f89!2sPasseig+de+Salvat+Papasseit%2C+1%2C+08003+Barcelona!5e0!3m2!1ses!2ses!4v1459354554442" class="taller_mapa" allowfullscreen></iframe>
 
-				<div style="width:100%; text-align:left;" >
-					<iframe  src="//eventbrite.es/tickets-external?eid=22629090218&ref=etckt" frameborder="0" height="214" width="100%" vspace="0" hspace="0" marginheight="5" marginwidth="5" scrolling="auto" allowtransparency="true"></iframe>
-					<div style="font-family:Helvetica, Arial; font-size:10px; padding:5px 0 5px; margin:2px; width:100%; text-align:left;" >
-						<a class="powered-by-eb" style="color: #dddddd; text-decoration: none;" target="_blank" href="http://www.eventbrite.es/r/etckt">Con tecnología de Eventbrite</a>
-					</div>
-				</div>
-				<a target="_blank" class="btn" href="https://www.eventbrite.es/e/entradas-reparacion-de-smartphones-22629090218">Consigue tu entrada</a>
+				<a target="_blank" class="btn btn-alt btn-shadow titulo-blm" href="https://www.eventbrite.es/e/entradas-reparacion-de-smartphones-22629090218">Consigue tu entrada</a>
 			</div>
 			
 		</section>

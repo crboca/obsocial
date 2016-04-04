@@ -303,14 +303,16 @@ section {
 .info-img {
   margin: auto; }
 
-.h2, .h6 {
-  text-transform: uppercase; }
-
 .h1 {
   text-transform: uppercase;
   letter-spacing: 0.046875rem;
   font-size: 2.625rem;
   font-weight: 600; }
+
+.h2 {
+  text-transform: uppercase;
+  font-size: 2.125rem;
+  font-weight: 300; }
 
 .titulo-blm {
   text-transform: uppercase;
@@ -429,7 +431,7 @@ header {
   color: #fff;
   background-color: #F85C45;
   height: 3.5rem;
-  padding: 0 4.375rem;
+  padding: 1rem 4.375rem;
   display: inline-block;
   margin: 3.5rem auto;
   cursor: pointer; }
@@ -949,7 +951,12 @@ footer {
   background-position-x: 50%; }
 
 .divider-line {
-  width: 80px;
+  width: 5rem;
   height: 4px;
-  background-color: #00BD9C;
-  margin: 42px auto; }
+  background-color: #2EB197;
+  margin: 2.625rem auto; }
+
+.under-line {
+  width: 53px;
+  height: 4px;
+  background-color: #00BD9C; }

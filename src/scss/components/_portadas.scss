@@ -49,8 +49,13 @@
 }
 
 .divider-line {
-	width: 80px;
+	width: 5rem;
+	height: 4px;
+	background-color: $color-one;
+	margin: 2.625rem auto;
+}
+.under-line {
+	width: 53px;
 	height: 4px;
 	background-color: #00BD9C;
-	margin: 42px auto;
 }

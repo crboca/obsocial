@@ -241,8 +241,8 @@ section {
   padding-bottom: 2rem; }
   @media all and (min-width: 1024px) {
     section {
-      padding-top: 7rem;
-      padding-bottom: 7rem; } }
+      padding-top: 5rem;
+      padding-bottom: 5rem; } }
 
 .container,
 .container-narrow {
@@ -280,7 +280,7 @@ section {
 
 @media all and (min-width: 1024px) {
   .info-row {
-    padding: 5rem; } }
+    padding: 3rem; } }
 
 .columna {
   width: 50%;
@@ -441,7 +441,7 @@ a:hover {
 
 .menu-item {
   color: #fff;
-  font-weight: 700;
+  font-weight: 400;
   font-size: 0.9rem;
   margin-left: 1.5rem;
   letter-spacing: 1px;
@@ -458,8 +458,7 @@ a:hover {
 .btn {
   color: #fff;
   background-color: #F85C45;
-  height: 3.5rem;
-  padding: 1rem 4.375rem;
+  padding: 1rem 2rem;
   display: inline-block;
   margin: 3.5rem auto;
   cursor: pointer; }
@@ -784,7 +783,7 @@ footer {
   text-transform: uppercase;
   color: #fff; }
   .footer-border {
-    border-top: 1px solid #fff; }
+    border-top: 1px solid #3d5871; }
 
 .link-footer {
   line-height: 1rem;
@@ -793,7 +792,7 @@ footer {
   position: relative;
   display: block;
   float: left;
-  margin: .8rem .5rem; }
+  margin: 0 .5rem; }
   .link-footer img {
     width: 100%;
     height: 100%; }
@@ -906,9 +905,7 @@ footer {
 
 .portada {
   color: #fff;
-  text-align: center;
-  padding-top: 56px;
-  padding-bottom: 56px; }
+  text-align: center; }
   .portada p {
     text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3);
     margin: 0 auto;
@@ -921,8 +918,18 @@ footer {
     margin: 1rem; }
 
 .portada-index {
+  background-position-y: 65%;
   background: url(../img/index-img.jpg);
-  background-position-y: 65%; }
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 100vh;
+  padding: 0; }
 
 .portada-contacto {
   background: url(../img/contacto-img.jpg);

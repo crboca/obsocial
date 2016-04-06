@@ -320,7 +320,7 @@ section {
   font-size: 1.875rem; }
 
 .h4 {
-  font-weight: 400;
+  font-weight: 600;
   line-height: 1.875rem;
   font-size: 1.25rem; }
 
@@ -330,7 +330,6 @@ section {
   font-size: 1.0625rem;
   font-weight: 700;
   line-height: 1.1875rem;
-  padding-top: 1.75rem;
   padding-bottom: 1.75rem; }
 
 .h6 {
@@ -414,6 +413,11 @@ a:hover {
 .text-center {
   text-align: center; }
 
+.info-tags {
+  font-size: 1rem;
+  line-height: 3rem;
+  font-weight: 300; }
+
 .header {
   overflow: hidden;
   padding: 1rem auto;
@@ -460,8 +464,8 @@ a:hover {
   background-color: #F85C45;
   padding: 1rem 2rem;
   display: inline-block;
-  margin: 3.5rem auto;
-  cursor: pointer; }
+  cursor: pointer;
+  margin: 3.5rem auto 0; }
   .btn:hover {
     background-color: #F28D7E;
     color: #fff;
@@ -638,66 +642,27 @@ input::placeholder, textarea::placeholder {
     display: block; } }
 
 .post {
-  background: #fff;
   position: relative;
   padding-bottom: 3rem;
   margin-bottom: 1.75rem; }
+  .post-port {
+    width: 100%; }
+  .post-info {
+    padding: 0 1.75rem;
+    position: relative; }
+  .post-comentarios {
+    margin-top: 3rem; }
 
-.port-post {
-  width: 100%; }
-
-.info-post {
-  padding: 0 1.75rem;
-  position: relative; }
-
-.post a.btn {
-  line-height: 1.75rem;
-  margin: 0;
-  padding: 10px 20px;
-  font-weight: 500;
-  font-size: .9em;
-  letter-spacing: 1px;
-  position: absolute;
-  right: 0;
-  bottom: 0; }
-
-.post a h3 {
-  color: #2B3E50; }
-
-.post a:hover h3 {
-  text-decoration: underline; }
-
-.info-post:before {
-  content: "";
-  position: absolute;
-  top: -3rem;
-  left: 45%;
-  width: 3rem;
-  height: 3rem;
-  border-radius: 100%;
-  background: url(../img/ico-post.svg) no-repeat center center #2EB197;
-  background-size: 1.5rem auto; }
-
-.post:before {
-  content: none; }
-
-.fecha {
-  font-size: .8rem;
-  font-weight: 700; }
-
-@media all and (min-width: 768px) {
-  .post:before {
-    content: "";
-    position: absolute;
-    top: 2rem;
-    left: -2rem;
-    width: 4rem;
-    height: 4rem;
-    border-radius: 100%;
-    background: url(../img/ico-post.svg) no-repeat center center #2EB197;
-    background-size: 2rem auto; }
-  .info-post:before {
-    content: none; } }
+.post-fecha,
+.post-like,
+.post-tag {
+  margin-right: 1.75rem;
+  margin-bottom: 0; }
+  .post-fecha img,
+  .post-like img,
+  .post-tag img {
+    height: 1.1rem;
+    vertical-align: middle; }
 
 .evento_galeria {
   display: -webkit-box;
@@ -718,8 +683,6 @@ input::placeholder, textarea::placeholder {
   box-shadow: 1px 1px 0px rgba(0, 0, 0, 0.1);
   position: relative; }
   .evento_ficha a:not(.no-style) {
-    margin: 0;
-    padding: 1rem 1rem 0;
     position: absolute;
     right: 0;
     bottom: 0; }
@@ -733,32 +696,34 @@ input::placeholder, textarea::placeholder {
   padding: 0;
   height: 12.25rem; }
 
-.taller_hora:before {
-  content: "hora";
-  color: transparent;
-  background: url(../img/reloj.svg);
-  background-size: 16px;
-  background-repeat: no-repeat;
-  background-position: left;
-  height: 16px; }
+.taller_hora {
+  margin-top: 1.75rem; }
+  .taller_hora:before {
+    content: "hora";
+    color: transparent;
+    background: url(../img/reloj.svg);
+    background-size: 16px;
+    background-repeat: no-repeat;
+    background-position: left;
+    height: 16px; }
 
-.taller_lugar-link {
-  color: #2B3E50;
-  text-decoration: none;
-  font-weight: 400; }
-
-.taller_lugar-link:hover {
-  text-decoration: underline;
-  color: #2B3E50; }
-
-.taller_lugar:before {
-  content: "lugar";
-  color: transparent;
-  background: url(../img/lugar.svg);
-  background-size: 14px;
-  background-repeat: no-repeat;
-  background-position: left;
-  height: 14px; }
+.taller_lugar {
+  margin-bottom: 1.75rem; }
+  .taller_lugar-link {
+    color: #2B3E50;
+    text-decoration: none;
+    font-weight: 400; }
+  .taller_lugar-link:hover {
+    text-decoration: underline;
+    color: #2B3E50; }
+  .taller_lugar:before {
+    content: "lugar";
+    color: transparent;
+    background: url(../img/lugar.svg);
+    background-size: 14px;
+    background-repeat: no-repeat;
+    background-position: left;
+    height: 14px; }
 
 .taller_foto {
   width: 100%;

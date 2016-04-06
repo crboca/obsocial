@@ -4,8 +4,9 @@
 	background-color: $color-three;
 	padding: 1rem 2rem;
 	display: inline-block;
-	margin: 3.5rem auto;
 	cursor: pointer;
+	margin: 3.5rem auto 0;
+
 	
 	&:hover {
 		background-color: $color-three-l;

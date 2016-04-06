@@ -11,8 +11,6 @@
 	position: relative;
 
 	& a:not(.no-style) {
-		margin: 0;
-	    padding: 1rem 1rem 0;
 	    position: absolute;
 	    right: 0;
 	    bottom: 0;
@@ -31,6 +29,7 @@
 }
 // TALLERES
 .taller_hora{
+	margin-top: 1.75rem;
 	&:before {
 		content: "hora";
 		color: transparent;
@@ -42,6 +41,7 @@
 		}
 }
 .taller_lugar{
+	margin-bottom: 1.75rem;
 	&-link {
 		color: $color-two;
 		text-decoration: none;

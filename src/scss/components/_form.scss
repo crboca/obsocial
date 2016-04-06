@@ -14,7 +14,7 @@ form {
 label, input, textarea {
 	display: block;
 }
-label, input:not(.btn), textarea {
+label, input:not(.btn), textarea, select {
 	width: 100%;
 }
 label {
@@ -23,20 +23,45 @@ label {
 	color: $color-w;
 	margin-top: 1.75rem;
 }
-input, textarea {
-	background-color: #fff;
+input, textarea,select {
 	border: none;
 	font-size: 1rem;
 	font-family: 'Open Sans', sans-serif;
 	color: $color-w;
 	padding: 0 1rem;
 }
-input {
+input,select {
 	line-height: 1.75rem;
+	
 
 	&:not(.btn) {
 		height: 3.5rem;
 		}
+}
+select {
+	appearance: none;
+	border-radius: 0;
+	position: relative;
+
+}
+
+.selector {
+	position:relative;
+}
+.selector:after {
+    content:'v';
+    color:$color-w;
+    right:0;
+    top:27px;
+    position:absolute;
+    background-color: $color-one-l;
+    height: 3.5rem;
+    width: 3.5rem;
+    z-index: 1;
+    vertical-align: middle;
+    text-align: center;
+    font-size: 2rem;
+    line-height: 3.5rem;
 }
 textarea {
 	line-height: 1.4rem;

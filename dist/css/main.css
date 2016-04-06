@@ -343,7 +343,8 @@ section {
   letter-spacing: 0.134375rem;
   font-size: 0.875rem;
   font-weight: 600;
-  line-height: 1.1875rem; }
+  line-height: 1.1875rem;
+  margin-bottom: .5rem; }
 
 /*
 h6 {
@@ -806,25 +807,6 @@ footer {
       width: 80%;
       margin: 0 auto; } }
 
-.equipo {
-  padding: 1rem 0 1.75rem; }
-
-.eq-row {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-  -webkit-flex-direction: column;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-align: center;
-  -webkit-align-items: center;
-      -ms-flex-align: center;
-          align-items: center;
-  margin-bottom: 1.75rem; }
-
 .avatar {
   background-color: #F0F0F0;
   height: 10rem;
@@ -834,39 +816,31 @@ footer {
   @media all and (min-width: 768px) {
     .avatar {
       height: 7rem;
-      width: 7rem; } }
+      width: 7rem;
+      margin: 0 auto; } }
 
-.descripcion {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-  -webkit-flex-direction: column;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  width: 100%; }
+.pro-img {
+  height: 6.25rem; }
 
-@media all and (min-width: 768px) {
-  .eq-row {
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-    -webkit-flex-direction: row;
-        -ms-flex-direction: row;
-            flex-direction: row;
-    -webkit-justify-content: space-around;
-        -ms-flex-pack: distribute;
-            justify-content: space-around;
-    -webkit-box-align: center;
-    -webkit-align-items: center;
-        -ms-flex-align: center;
-                -ms-grid-row-align: center;
-            align-items: center; }
-  .descripcion {
-    width: 70%; }
-  .avatar {
-    margin: 0 auto; } }
+.pro-proceso {
+  margin-bottom: 3rem; }
+  @media all and (min-width: 768px) {
+    .pro-proceso {
+      margin-bottom: 6rem; } }
+
+.pro-box {
+  text-align: center; }
+
+.pro-member {
+  display: block;
+  vertical-align: top;
+  margin: 1.75rem 0; }
+  @media all and (min-width: 768px) {
+    .pro-member {
+      display: inline-block;
+      width: 40%;
+      clear: left;
+      margin: 1.75rem 3rem; } }
 
 .portada {
   color: #fff;
@@ -958,3 +932,5 @@ footer {
     @media all and (min-width: 1024px) {
       .under-line-center {
         margin: 1.75rem auto -1.75rem; } }
+  .under-line-pro {
+    margin: 0 auto; }

@@ -764,6 +764,27 @@ input::placeholder, textarea::placeholder {
     .taller_mapa {
       height: 20rem; } }
 
+.don-img {
+  height: 95px; }
+
+.don-step {
+  width: 100%; }
+  @media all and (min-width: 768px) {
+    .don-step {
+      width: 271px; } }
+
+.arrow:after {
+  content: "";
+  bottom: 0;
+  width: 0;
+  height: 0;
+  border-top: 30px solid #2EB197;
+  border-left: 10px solid transparent;
+  border-right: 10px solid transparent; }
+  @media all and (min-width: 768px) {
+    .arrow:after {
+      content: none; } }
+
 footer {
   background-color: #2B3E50;
   height: 8rem;

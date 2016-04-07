@@ -769,7 +769,8 @@ input::placeholder, textarea::placeholder {
 
 .don-img {
   height: 95px;
-  margin-bottom: 1.75rem; }
+  margin-bottom: 1.75rem;
+  margin-top: 3rem; }
 
 .don-step {
   width: 100%;
@@ -783,6 +784,48 @@ input::placeholder, textarea::placeholder {
   @media all and (min-width: 1024px) {
     .don-step {
       width: 271px; } }
+
+.don-flecha-d {
+  display: none; }
+  @media all and (min-width: 1024px) {
+    .don-flecha-d {
+      width: 250px;
+      height: 4px;
+      background-color: #2EB197;
+      display: inline-block;
+      position: absolute;
+      top: 40%;
+      left: 100%; }
+      .don-flecha-d:after {
+        position: absolute;
+        content: "";
+        width: 0;
+        height: 0;
+        left: 230px;
+        border-top: 15px solid #2EB197;
+        border-left: 20px solid transparent;
+        border-right: 20px solid transparent; } }
+
+.don-flecha-i {
+  display: none; }
+  @media all and (min-width: 1024px) {
+    .don-flecha-i {
+      width: 250px;
+      height: 4px;
+      background-color: #2EB197;
+      display: inline-block;
+      position: absolute;
+      top: 40%;
+      right: 100%; }
+      .don-flecha-i:after {
+        position: absolute;
+        content: "";
+        width: 0;
+        height: 0;
+        right: 230px;
+        border-top: 15px solid #2EB197;
+        border-left: 20px solid transparent;
+        border-right: 20px solid transparent; } }
 
 .don-step_uno_bg,
 .don-step_dos_bg,
@@ -809,28 +852,28 @@ input::placeholder, textarea::placeholder {
 
 @media all and (min-width: 1024px) {
   .don-step_uno {
-    margin: 0 0 6rem 20%; } }
+    margin: 0 0 3rem 20%; } }
 
 .don-step_dos_bg {
   background-image: url(../img/don-step-dos.svg); }
 
 @media all and (min-width: 1024px) {
   .don-step_dos {
-    margin: 10rem 20% 6rem 0; } }
+    margin: 13rem 20% 6rem 0; } }
 
 .don-step_tres_bg {
   background-image: url(../img/don-step-tres.svg); }
 
 @media all and (min-width: 1024px) {
   .don-step_tres {
-    margin: 0 0 6rem 20%; } }
+    margin: 3rem 0 6rem 20%; } }
 
 .don-step_cuatro_bg {
   background-image: url(../img/don-step-cuatro.svg); }
 
 @media all and (min-width: 1024px) {
   .don-step_cuatro {
-    margin-right: 20%; } }
+    margin: 3rem 20% 0 0; } }
 
 .don-step_cinco_bg {
   background-image: url(../img/don-step-cinco.svg); }

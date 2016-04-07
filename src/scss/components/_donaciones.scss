@@ -5,6 +5,7 @@
 	&-img{
 		height: 95px;
 		margin-bottom: 1.75rem;
+		margin-top: 3rem;
 	}
 	&-step {
 		width: 100%;
@@ -20,6 +21,50 @@
 			width: 271px;	
 			}
 
+	}
+}
+.don-flecha-d{
+	display: none;
+	@media all and (min-width: 1024px){	
+	width: 250px;
+	height: 4px;
+	background-color: $color-one;
+	display: inline-block;
+	position: absolute;
+	top: 40%;
+	left: 100%;
+	&:after{
+		position: absolute;
+		content: "";
+		width: 0;
+		height: 0;
+		left: 230px;
+		border-top: 15px solid $color-one;
+		border-left: 20px solid transparent; 
+		border-right: 20px solid transparent;
+		}
+	}
+}
+.don-flecha-i{
+	display: none;
+	@media all and (min-width: 1024px){	
+	width: 250px;
+	height: 4px;
+	background-color: $color-one;
+	display: inline-block;
+	position: absolute;
+	top: 40%;
+	right: 100%;
+	&:after{
+		position: absolute;
+		content: "";
+		width: 0;
+		height: 0;
+		right: 230px;
+		border-top: 15px solid $color-one;
+		border-left: 20px solid transparent; 
+		border-right: 20px solid transparent;
+		}
 	}
 }
 .don-step_uno_bg,
@@ -51,7 +96,7 @@
 		background-image: url(../img/don-step-uno.svg);
 		}
 	@media all and (min-width: 1024px){
-		margin: 0 0 6rem 20%;
+		margin: 0 0 3rem 20%;
 		}
 }
 .don-step_dos {
@@ -59,7 +104,7 @@
 		background-image: url(../img/don-step-dos.svg);
 		}
 	@media all and (min-width: 1024px){
-		margin: 10rem 20% 6rem 0;	
+		margin: 13rem 20% 6rem 0;	
 		}
 }
 .don-step_tres {
@@ -67,7 +112,7 @@
 		background-image: url(../img/don-step-tres.svg);
 		}
 	@media all and (min-width: 1024px){
-		margin: 0 0 6rem 20%;			
+		margin: 3rem 0 6rem 20%;			
 		}
 }
 .don-step_cuatro {
@@ -75,7 +120,7 @@
 		background-image: url(../img/don-step-cuatro.svg);
 		}
 	@media all and (min-width: 1024px){
-		margin-right: 20%;		
+		margin: 3rem 20% 0 0;		
 		}
 }
 .don-step_cinco {

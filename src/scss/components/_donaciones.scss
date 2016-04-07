@@ -23,73 +23,70 @@
 
 	}
 }
-.don-flecha-d{
-	display: none;
-	@media all and (min-width: 1024px){	
-	width: 250px;
-	height: 4px;
-	background-color: $color-one;
-	display: inline-block;
-	position: absolute;
-	top: 40%;
-	left: 100%;
-	&:after{
+.don-flecha{
+	&-d,
+	&-i{
+		display: none;
+		@media all and (min-width: 1024px){	
+		width: 250px;
+		height: 4px;
+		background-color: $color-one;
+		display: inline-block;
 		position: absolute;
-		content: "";
-		width: 0;
-		height: 0;
-		left: 230px;
-		border-top: 15px solid $color-one;
-		border-left: 20px solid transparent; 
-		border-right: 20px solid transparent;
+		top: 40%;
+		&:after{
+			position: absolute;
+			content: "";
+			width: 0;
+			height: 0;
+			border-top: 15px solid $color-one;
+			border-left: 20px solid transparent; 
+			border-right: 20px solid transparent;
+			}
+		}
+	}
+	&-d{
+		@media all and (min-width: 1024px){	
+		left: 100%;
+		&:after{
+			left: 230px;
+			}
+		}
+	}
+	&-i{
+		@media all and (min-width: 1024px){	
+		right: 100%;
+		&:after{
+			right: 230px;
+			}
 		}
 	}
 }
-.don-flecha-i{
-	display: none;
-	@media all and (min-width: 1024px){	
-	width: 250px;
-	height: 4px;
-	background-color: $color-one;
-	display: inline-block;
-	position: absolute;
-	top: 40%;
-	right: 100%;
-	&:after{
-		position: absolute;
-		content: "";
-		width: 0;
-		height: 0;
-		right: 230px;
-		border-top: 15px solid $color-one;
-		border-left: 20px solid transparent; 
-		border-right: 20px solid transparent;
-		}
+.don-step{
+	@media all and (min-width: 1024px){
+		&_uno,
+		&_tres,
+		&_cinco{
+			float: left;
+			clear: left;
+			}	
+		&_dos,
+		&_cuatro{
+			float: right;
+			clear: right;
+			}
 	}
+	&_uno_bg,
+	&_dos_bg,
+	&_tres_bg,
+	&_cuatro_bg,
+	&_cinco_bg{
+		background-repeat: no-repeat;
+		background-position: left top;
+		height: 200px;
+	}
+	
 }
-.don-step_uno_bg,
-.don-step_dos_bg,
-.don-step_tres_bg,
-.don-step_cuatro_bg,
-.don-step_cinco_bg{
-	background-repeat: no-repeat;
-	background-position: left top;
-	height: 200px;
-}
-@media all and (min-width: 1024px){
-	.don-step_uno,
-	.don-step_tres,
-	.don-step_cinco{
-		float: left;
-		clear: left;
-		}	
-	.don-step_dos,
-	.don-step_cuatro{
-		float: right;
-		clear: right;
-		}
-}
-
 
 .don-step_uno {
 	&_bg{
@@ -133,13 +130,13 @@
 }
 
 .arrow:after {
-		content: "";
-		width: 0;
-		height: 0;
-		border-top: 25px solid $color-one;
-		border-left: 50px solid transparent; 
-		border-right: 50px solid transparent;
-		@media all and (min-width: 1024px){
-			content: none;
-			}
-	}
+	content: "";
+	width: 0;
+	height: 0;
+	border-top: 25px solid $color-one;
+	border-left: 50px solid transparent; 
+	border-right: 50px solid transparent;
+	@media all and (min-width: 1024px){
+		content: none;
+		}
+}

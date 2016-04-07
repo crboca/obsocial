@@ -764,78 +764,92 @@ input::placeholder, textarea::placeholder {
     .taller_mapa {
       height: 20rem; } }
 
+.don-info {
+  margin-bottom: 3rem; }
+
 .don-img {
-  height: 95px; }
+  height: 95px;
+  margin-bottom: 1.75rem; }
 
 .don-step {
-  width: 100%; }
+  width: 100%;
+  max-width: 400px;
+  margin-right: auto;
+  margin-left: auto;
+  position: relative; }
   @media all and (min-width: 768px) {
+    .don-step {
+      width: 400px; } }
+  @media all and (min-width: 1024px) {
     .don-step {
       width: 271px; } }
 
-.don-step_uno {
-  background-image: url(../img/don-step-uno.svg);
+.don-step_uno_bg,
+.don-step_dos_bg,
+.don-step_tres_bg,
+.don-step_cuatro_bg,
+.don-step_cinco_bg {
   background-repeat: no-repeat;
-  background-position: left bottom; }
-  @media all and (min-width: 768px) {
-    .don-step_uno {
-      float: left;
-      clear: left;
-      margin: 0 0 6rem 20%; } }
+  background-position: left top;
+  height: 200px; }
 
-.don-step_dos {
-  background-image: url(../img/don-step-dos.svg);
-  background-repeat: no-repeat;
-  background-position: left bottom; }
-  @media all and (min-width: 768px) {
-    .don-step_dos {
-      float: right;
-      clear: right;
-      margin: 10rem 20% 6rem 0; } }
+@media all and (min-width: 1024px) {
+  .don-step_uno,
+  .don-step_tres,
+  .don-step_cinco {
+    float: left;
+    clear: left; }
+  .don-step_dos,
+  .don-step_cuatro {
+    float: right;
+    clear: right; } }
 
-.don-step_tres {
-  background-image: url(../img/don-step-tres.svg);
-  background-repeat: no-repeat;
-  background-position: left bottom; }
-  @media all and (min-width: 768px) {
-    .don-step_tres {
-      float: left;
-      clear: left;
-      margin: 6rem 0 6rem 20%; } }
+.don-step_uno_bg {
+  background-image: url(../img/don-step-uno.svg); }
 
-.don-step_cuatro {
-  background-image: url(../img/don-step-cuatro.svg);
-  background-repeat: no-repeat;
-  background-position: left bottom; }
-  @media all and (min-width: 768px) {
-    .don-step_cuatro {
-      float: right;
-      clear: right;
-      margin: 6rem 20% 0 0; } }
+@media all and (min-width: 1024px) {
+  .don-step_uno {
+    margin: 0 0 6rem 20%; } }
 
-.don-step_cinco {
-  background-image: url(../img/don-step-cinco.svg);
-  background-repeat: no-repeat;
-  background-position: left bottom; }
-  @media all and (min-width: 768px) {
-    .don-step_cinco {
-      float: left;
-      clear: left;
-      margin: 6rem 0 0 20%; } }
+.don-step_dos_bg {
+  background-image: url(../img/don-step-dos.svg); }
 
-/*.arrow:after {
-		content: "";
-		bottom: 0;
-		width: 0; 
-		height: 0;
-		border-top: 30px solid $color-one;
-		border-left: 10px solid transparent; 
-		border-right: 10px solid transparent;
-		@media all and (min-width: 768px){
-			content: none;
-			}
-	}
-*/
+@media all and (min-width: 1024px) {
+  .don-step_dos {
+    margin: 10rem 20% 6rem 0; } }
+
+.don-step_tres_bg {
+  background-image: url(../img/don-step-tres.svg); }
+
+@media all and (min-width: 1024px) {
+  .don-step_tres {
+    margin: 0 0 6rem 20%; } }
+
+.don-step_cuatro_bg {
+  background-image: url(../img/don-step-cuatro.svg); }
+
+@media all and (min-width: 1024px) {
+  .don-step_cuatro {
+    margin-right: 20%; } }
+
+.don-step_cinco_bg {
+  background-image: url(../img/don-step-cinco.svg); }
+
+@media all and (min-width: 1024px) {
+  .don-step_cinco {
+    margin-left: 20%; } }
+
+.arrow:after {
+  content: "";
+  width: 0;
+  height: 0;
+  border-top: 25px solid #2EB197;
+  border-left: 50px solid transparent;
+  border-right: 50px solid transparent; }
+  @media all and (min-width: 1024px) {
+    .arrow:after {
+      content: none; } }
+
 footer {
   background-color: #2B3E50;
   height: 8rem;

@@ -9,6 +9,9 @@
 	width: 372px;
 	box-shadow: 1px 1px 0px rgba(0, 0, 0, 0.1);
 	position: relative;
+	.h5{
+		padding-bottom: 0;
+	}
 
 	& a:not(.no-style) {
 	    position: absolute;
@@ -19,6 +22,7 @@
 	&-info{
 		padding: 0 1.625rem;
 		margin-bottom: 5rem;
+		padding-top: 1.5rem;
 		}
 }
 .evento_portada {

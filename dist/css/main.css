@@ -668,13 +668,16 @@ input::placeholder, textarea::placeholder {
   width: 372px;
   box-shadow: 1px 1px 0px rgba(0, 0, 0, 0.1);
   position: relative; }
+  .evento_ficha .h5 {
+    padding-bottom: 0; }
   .evento_ficha a:not(.no-style) {
     position: absolute;
     right: 0;
     bottom: 0; }
   .evento_ficha-info {
     padding: 0 1.625rem;
-    margin-bottom: 5rem; }
+    margin-bottom: 5rem;
+    padding-top: 1.5rem; }
 
 .evento_portada {
   width: 100%;

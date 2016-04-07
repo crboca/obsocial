@@ -26,8 +26,8 @@
   height: 100vh;
   padding: 0; 
 }
-.portada-contacto {
-	background: url(../img/contacto-img.jpg);
+.portada-donar {
+	background: url(../img/donacion-img.jpg);
 	background-position-y: 100%;
 }
 .portada-eventos {
@@ -35,13 +35,19 @@
 	background-position-y: 40%;
 }
 .portada-blog {
-	background: url(../img/eventos-img.jpg);
+	background: url(../img/blog-img.jpg);
 	background-position-y: 40%;
 }
 .portada-proyecto {
-	background: url(../img/nosotros-img.jpg);
+	background: url(../img/nosotros2-img.jpg);
 	background-size: cover;
-	background-position-y: 35%;
+	background-position-x: 50%;
+
+	@media all and (min-width: 768px) {
+	background: url(../img/nosotros-img.jpg);
+	background-position-x: 50%;
+	background-position-y: 50%;
+	}
 }
 .portada-index, .portada-contacto, .portada-eventos {
 	background-size: cover;

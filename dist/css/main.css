@@ -877,7 +877,7 @@ input::placeholder, textarea::placeholder {
 
 footer {
   background-color: #2B3E50;
-  height: 8rem;
+  height: 5.5rem;
   padding-top: .25rem; }
 
 .footer {
@@ -885,6 +885,12 @@ footer {
   color: #fff; }
   .footer-border {
     border-top: 1px solid #3d5871; }
+  .footer-mensaje {
+    display: none; }
+    @media all and (min-width: 651px) {
+      .footer-mensaje {
+        display: block;
+        margin: 0 auto -50px; } }
 
 .link-footer {
   line-height: 1rem;
@@ -901,18 +907,12 @@ footer {
 .social-icons {
   float: right; }
 
-.link-alt {
-  color: #00BD9C; }
-
-.link-alt:hover {
-  color: #68BBAD; }
-
 .img-footer {
   height: 1.75rem; }
 
-@media all and (min-width: 979px) {
-  footer {
-    height: 5.5rem; } }
+@media all and (max-width: 979px) {
+  .footer-share {
+    height: 8rem; } }
 
 .inline-b {
   display: inline-block; }

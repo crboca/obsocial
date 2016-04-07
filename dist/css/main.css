@@ -773,18 +773,69 @@ input::placeholder, textarea::placeholder {
     .don-step {
       width: 271px; } }
 
-.arrow:after {
-  content: "";
-  bottom: 0;
-  width: 0;
-  height: 0;
-  border-top: 30px solid #2EB197;
-  border-left: 10px solid transparent;
-  border-right: 10px solid transparent; }
+.don-step_uno {
+  background-image: url(../img/don-step-uno.svg);
+  background-repeat: no-repeat;
+  background-position: left bottom; }
   @media all and (min-width: 768px) {
-    .arrow:after {
-      content: none; } }
+    .don-step_uno {
+      float: left;
+      clear: left;
+      margin: 0 0 6rem 20%; } }
 
+.don-step_dos {
+  background-image: url(../img/don-step-dos.svg);
+  background-repeat: no-repeat;
+  background-position: left bottom; }
+  @media all and (min-width: 768px) {
+    .don-step_dos {
+      float: right;
+      clear: right;
+      margin: 10rem 20% 6rem 0; } }
+
+.don-step_tres {
+  background-image: url(../img/don-step-tres.svg);
+  background-repeat: no-repeat;
+  background-position: left bottom; }
+  @media all and (min-width: 768px) {
+    .don-step_tres {
+      float: left;
+      clear: left;
+      margin: 6rem 0 6rem 20%; } }
+
+.don-step_cuatro {
+  background-image: url(../img/don-step-cuatro.svg);
+  background-repeat: no-repeat;
+  background-position: left bottom; }
+  @media all and (min-width: 768px) {
+    .don-step_cuatro {
+      float: right;
+      clear: right;
+      margin: 6rem 20% 0 0; } }
+
+.don-step_cinco {
+  background-image: url(../img/don-step-cinco.svg);
+  background-repeat: no-repeat;
+  background-position: left bottom; }
+  @media all and (min-width: 768px) {
+    .don-step_cinco {
+      float: left;
+      clear: left;
+      margin: 6rem 0 0 20%; } }
+
+/*.arrow:after {
+		content: "";
+		bottom: 0;
+		width: 0; 
+		height: 0;
+		border-top: 30px solid $color-one;
+		border-left: 10px solid transparent; 
+		border-right: 10px solid transparent;
+		@media all and (min-width: 768px){
+			content: none;
+			}
+	}
+*/
 footer {
   background-color: #2B3E50;
   height: 8rem;

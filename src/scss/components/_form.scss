@@ -46,22 +46,10 @@ select {
 }
 
 .selector {
-	position:relative;
-}
-.selector:after {
-    content:'v';
-    color:$color-w;
-    right:0;
-    top:27px;
-    position:absolute;
-    background-color: $color-one-l;
-    height: 3.5rem;
-    width: 3.5rem;
-    z-index: 1;
-    vertical-align: middle;
-    text-align: center;
-    font-size: 2rem;
-    line-height: 3.5rem;
+	background-image: url(../img/btn-form.jpg);
+	background-position: right;
+	background-size: 3.5rem;
+	background-repeat: no-repeat;
 }
 textarea {
 	line-height: 1.4rem;

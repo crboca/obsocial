@@ -1,16 +1,22 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<svg width="108px" height="144px" viewBox="0 0 108 144" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-    <!-- Generator: Sketch 3.6.1 (26313) - http://www.bohemiancoding.com/sketch -->
-    <title>4</title>
-    <desc>Created with Sketch.</desc>
-    <defs></defs>
-    <g id="obsocial-02-04-16" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" font-weight="500" font-family="OpenSans-Semibold, Open Sans" font-size="200" opacity="0.149999991">
-        <g id="Donar---S2" transform="translate(-840.000000, -1554.000000)" fill="#FFFFFF">
-            <g id="Group-15" transform="translate(837.000000, 1400.000000)">
-                <text id="4">
-                    <tspan x="0.419921875" y="298">4</tspan>
-                </text>
-            </g>
-        </g>
-    </g>
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 19.2.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 108 144" style="enable-background:new 0 0 108 144;" xml:space="preserve">
+<style type="text/css">
+	.st0{opacity:0.15;}
+	.st1{enable-background:new    ;}
+	.st2{fill:#FFFFFF;}
+</style>
+<title>4</title>
+<desc>Created with Sketch.</desc>
+<g id="obsocial-02-04-16" class="st0">
+	<g id="Donar---S2" transform="translate(-840.000000, -1554.000000)">
+		<g id="Group-15" transform="translate(837.000000, 1400.000000)">
+			<g class="st1">
+				<path class="st2" d="M110.8,265.2H89.6V298H74.1v-32.8H4.6V251l67.8-96.6h17.2v96h21.2V265.2z M74.1,250.4V203
+					c0-9.3,0.3-19.8,1-31.5h-0.8c-3.1,6.2-6.1,11.4-8.8,15.5l-44.6,63.5H74.1z"/>
+			</g>
+		</g>
+	</g>
+</g>
 </svg>

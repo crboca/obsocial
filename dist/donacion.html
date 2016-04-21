@@ -159,8 +159,10 @@
 
 						<li class="buttons ">
 							<div>
-								<input id="saveForm" onClick="_gaq.push(['_trackEvent','donaciones','rellenar_formulario','donaciones']);" name="saveForm" class="btn titulo-blm btn-shadow" type="submit" value="Enviar formulario"/>
+								<input id="saveForm" onClick="ga('send', 'event', 'donaciones', 'rellenar_formulario', 'donaciones');" name="saveForm" class="btn titulo-blm btn-shadow" type="submit" value="Enviar formulario"/>
 							</div>
+							<!-- ga('send', 'event', 'donaciones', 'rellenar_formulario', 'donaciones'); -->
+							<!-- _gaq.push(['_trackEvent','donaciones','rellenar_formulario','donaciones']); -->
 						</li>
 
 						<li class="hide">

@@ -1,0 +1,103 @@
+// NAV-MOBILE
+.menu-mobile {
+  position: fixed;
+  height: 100%;
+  top: 0;
+  right: 0;
+  width: 200px;
+  background: #fff;
+  box-shadow: 0px 0px 15px rgba(0,0,0,.6);
+  box-sizing: border-box;
+  transition: .3s ease-in-out;
+  color: #000;
+  z-index: 1;
+}
+.menu-mobile.closed{
+  right: -200px;
+}
+.menu-mobile .btn-anim-three{
+  position: fixed;
+  top: 8px;
+  right: 0px;
+}
+.menu-mobile .nav {
+  padding: 0;
+  margin-top: 50px;
+}
+.menu-mobile .nav>li {
+  list-style: none;
+  margin: 15px;
+}
+.menu-mobile .nav > li > a{
+  list-style: none;
+  font-size: 20px;
+  font-weight: 100;
+  color: #000;
+}
+
+// animated icons for nav-mobile
+.btn-anim-three{
+    background: rgba(0,0,0,.6);
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    position:relative;
+    margin: 10px 10px;
+}
+
+.btn-anim-three span{
+    position: absolute;
+    height: 3px;
+    border-radius: 2px;
+    background: #fff;
+    -webkit-transition: all .4s ease;
+    -moz-transition: all .4s ease;
+    transition: all .4s ease;
+}
+
+.btn-anim-three span.one{
+    width: 16px;
+    top: 8px;
+    left: 7px;
+}
+.btn-anim-three span.two{
+    width: 16px;
+    top: 14px;
+    left: 7px;
+}
+
+.btn-anim-three span.three{
+    width: 16px;
+    top: 20px;
+    left: 7px;
+}
+
+.btn-anim-three.closed span.one{
+    width: 20px;
+    top: 13px;
+    left: 5px;
+    -webkit-transform: rotate(225deg);
+    -moz-transform: rotate(225deg);
+    transform: rotate(225deg);
+}
+
+.btn-anim-three.closed span.two{
+    width: 3px;
+    left: 12px;
+}
+.btn-anim-three.closed span.three{
+    width: 20px;
+    top: 13px;
+    left: 5px;
+    -webkit-transform: rotate(-225deg);
+    -moz-transform: rotate(-225deg);
+    transform: rotate(-225deg);
+}
+.visible-xs {
+	display: none;
+}
+@media all and (max-width: 1023px) {
+  .visible-xs {
+    display: block;
+  }
+}

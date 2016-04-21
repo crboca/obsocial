@@ -1,0 +1,30 @@
+// BLOG
+.post {
+	position: relative;
+	padding-bottom: 3rem;
+	margin-bottom: 1.75rem;
+
+	&-port {
+		width: 100%;
+	}
+
+	&-info {
+		padding:  0 1.75rem;
+		position: relative;
+	}
+
+	&-comentarios {
+		margin-top: 3rem;
+	}
+}
+.post-fecha,
+.post-like,
+.post-tag {
+	margin-right: 1.75rem;
+	margin-bottom: 0;
+
+	& img{
+		height: 1.1rem;
+		vertical-align: middle;
+	}
+}

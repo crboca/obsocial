@@ -1,0 +1,53 @@
+//COLORES
+$color-w: #fff; //blanco
+$color-w-op: rgba(255, 255, 255, 0.65);
+$color-w-sl: rgba(255, 255, 255, 0.15);
+$color-one: #2EB197; //verde obsocial
+$color-one-l: #74D5C4; //verde obsocial clarito
+$color-two: #2B3E50; //Azul oscuro
+$color-three: #F85C45; //naranja
+$color-three-l: #F28D7E; //naranja clarito
+$color-four: #E1E1E1; //color gris backgrounds
+$color-five: #F5F6F7;
+
+.bg{
+	&-color_w {
+		background-color: $color-w;
+		}
+	&-color_one {
+		background-color: $color-one;
+		}
+	&-color_two {
+		background-color: $color-two;
+		}
+	&-color_three {
+		background-color: $color-three;
+		}
+	&-color_four {
+		background-color: $color-four;
+		}
+	&-color_five {
+		background-color: $color-five;
+		}
+}
+
+.font{
+	&-color_w {
+		color: $color-w;
+		}
+	&-color_one {
+		color: $color-one;
+		}
+	&-color_two {
+		color: $color-two;
+		}
+	&-color_three {
+		color: $color-three;
+		}
+	&-color_four {
+		color: $color-four;
+		}
+	&-color_five {
+		color: $color-five;
+		}
+}

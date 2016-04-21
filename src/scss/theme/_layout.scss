@@ -1,0 +1,46 @@
+// LAYOUT
+.container,
+.container-narrow{
+	margin: 1rem auto;
+	width: 90%;
+}
+.container-narrow{
+	max-width: 600px;
+}
+@media all and (min-width: 1180px) {
+	.container{
+		max-width: 1180px;
+		width: 100%;
+	}
+}
+@media all and (min-width: 1180px) {
+	.container-narrow{
+		width: 100%;
+	}
+}
+.left{
+	float: left;
+}
+.right{
+	float: right;
+}
+.info-row {
+	display: flex;
+	flex-direction: row;
+}
+@media all and (min-width: 1024px) {
+	.info-row {
+		padding: 3rem;
+	}
+}
+.columna {
+	width: 50%;
+	display: flex;
+	flex-direction: column;
+}
+.col-uno {
+	order:-1;
+}
+.info-img {
+	margin: auto;
+}

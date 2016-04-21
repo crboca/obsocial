@@ -1,0 +1,20 @@
+.divider-line {
+	width: 5rem;
+	height: 4px;
+	background-color: $color-one;
+	margin: 2.625rem auto;
+}
+.under-line {
+	width: 3.3125rem;
+	height: 4px;
+	background-color: $color-one;
+	&-center {
+		margin: 3.5rem auto -1.75rem;
+		@media all and (min-width: 1024px) {
+		margin: 1.75rem auto -1.75rem;
+		}
+	}
+	&-pro{
+		margin: 0 auto;
+	}
+}

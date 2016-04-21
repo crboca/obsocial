@@ -1,0 +1,29 @@
+// BOTONES
+.btn {
+	color: $color-w;
+	background-color: $color-three;
+	padding: 1rem 2rem;
+	display: inline-block;
+	cursor: pointer;
+	margin: 3.5rem auto 0;
+
+	
+	&:hover {
+		background-color: $color-three-l;
+		color: $color-w;
+		text-decoration: none;
+	}
+
+	&-alt {
+		background-color: $color-one;
+		
+		&:hover {
+			background-color: $color-one-l;
+			text-decoration: none;
+			}
+	}
+
+	&-shadow {
+		box-shadow: 1px 1px 0px rgba(0, 0, 0, 0.1);
+	}
+}

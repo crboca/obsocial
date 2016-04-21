@@ -1,0 +1,59 @@
+// TITLES
+.h1 {
+	text-transform: uppercase;
+	letter-spacing: 1px;
+	font-size: 1.8rem;
+	font-weight: 600;
+	@media all and (min-width: 768px) {
+	font-size: 2rem;
+	}
+	@media all and (min-width: 1024px) {
+	font-size: 2.625rem;	
+	letter-spacing: 0.046875rem;
+	}
+}
+.h2 {
+	text-transform: uppercase;
+	font-size: 1.6rem;
+	font-weight: 300;
+	@media all and (min-width: 768px) {
+	font-size: 1.8rem;
+
+	}
+	@media all and (min-width: 1024px) {
+	font-size: 2.125rem;
+	}
+}
+
+.h3 {
+	font-weight: 600;
+	line-height: 2.375rem;
+	font-size: 1.875rem;
+}
+.h4 {
+	font-weight: 600;
+	line-height: 1.875rem;
+	font-size: 1.25rem;
+}
+.h5 {
+	text-transform: uppercase;
+	letter-spacing: 0.02125rem;
+	font-size: 1.0625rem;
+	font-weight: 700;
+	line-height: 1.1875rem;
+	padding-bottom: 1.75rem;
+}
+.h6 {
+	text-transform: uppercase;
+	font-weight: 600;
+	letter-spacing: 0.134375rem;
+	font-size: 0.875rem;
+}
+.titulo-blm {
+	text-transform: uppercase;
+	letter-spacing: 0.134375rem;
+	font-size: 0.875rem;
+	font-weight: 600;
+	line-height: 1.1875rem;
+	margin-bottom: .5rem;
+}

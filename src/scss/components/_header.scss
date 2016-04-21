@@ -1,0 +1,45 @@
+// HEADER
+.header {
+	overflow: hidden;
+	padding: 1rem auto;
+	background-color: $color-one;
+}
+.logo {
+	width: 10rem;
+	float: left;
+}
+@media all and (min-width: 1024px) {
+	.logo{
+		width: 14rem;
+	}
+}
+.logo-obsocial {
+	height: 100%;
+	width: 100%;
+}
+.menu-desktop{
+	display: none;
+}
+@media all and (min-width: 1024px) {
+	.menu-desktop{
+		display: block;
+		float: right;
+	}
+}
+.menu-item {
+	color: $color-w;
+	font-weight: 400;
+	font-size: 0.9rem;
+	margin-left: 1.5rem;
+	letter-spacing: 1px;
+	text-transform: uppercase;
+	display: inline-block;
+	line-height: 3rem;
+}
+
+.menu-item:hover {
+	text-decoration: underline;
+}
+.menu-item.active {
+	color: $color-two;
+}

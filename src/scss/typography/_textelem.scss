@@ -1,0 +1,22 @@
+// TEXT ELEMENTS
+p {
+	font-size: 1rem;
+	line-height: 1.75rem;
+	margin: 0;
+	padding: 0;
+}
+a {
+	font-weight: 700;
+	text-decoration: none;
+}
+a:hover {
+	text-decoration: underline;
+}
+.text-center {
+	text-align: center;
+}
+.info-tags {
+	font-size: 1rem;
+	line-height: 3rem;
+	font-weight: 300;
+}

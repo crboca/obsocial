@@ -1,0 +1,68 @@
+// CONTACTO FORMULARIO
+form {
+	ul {
+		padding: 0;
+		}
+	li {
+		list-style: none;
+		}
+	@media all and (min-width: 1024px) {
+		padding-top: 1.75rem;
+		}
+}
+
+label, input, textarea {
+	display: block;
+}
+label, input:not(.btn), textarea, select {
+	width: 100%;
+}
+label {
+	text-transform: uppercase;
+	line-height: 1.75rem;
+	color: $color-w;
+	margin-top: 1.75rem;
+}
+input, textarea,select {
+	border: none;
+	font-size: 1rem;
+	font-family: 'Open Sans', sans-serif;
+	color: $color-w;
+	padding: 0 1rem;
+}
+input,select {
+	line-height: 1.75rem;
+	
+
+	&:not(.btn) {
+		height: 3.5rem;
+		}
+}
+select {
+	appearance: none;
+	border-radius: 0;
+	position: relative;
+
+}
+
+.selector {
+	background-image: url(../img/btn-form.jpg);
+	background-position: right;
+	background-size: 3.5rem;
+	background-repeat: no-repeat;
+}
+textarea {
+	line-height: 1.4rem;
+	padding: 0.5rem 1rem;
+	height: 12.25rem;
+}
+input::placeholder, textarea::placeholder {
+	font-size: 16px;
+	font-family: 'Open Sans', sans-serif;
+	color: $color-w-op;
+	line-height: 1.75rem;
+	padding: 0rem;
+}
+.hide {
+	display: none;
+}

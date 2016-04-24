@@ -413,7 +413,8 @@ a:hover {
   letter-spacing: 1px;
   text-transform: uppercase;
   display: inline-block;
-  line-height: 3rem; }
+  line-height: 3rem;
+  cursor: pointer; }
 
 .menu-item:hover {
   text-decoration: underline; }
@@ -565,7 +566,8 @@ input::placeholder, textarea::placeholder {
   width: 30px;
   height: 30px;
   position: relative;
-  margin: 10px 10px; }
+  margin: 10px 10px;
+  cursor: pointer; }
 
 .btn-anim-three span {
   position: absolute;

@@ -709,12 +709,19 @@ input::placeholder, textarea::placeholder {
   padding: 0; }
 
 .taller_mapa {
-  border-style: none;
-  width: 100%;
-  height: 10rem; }
+  border-style: 0;
+  height: 10rem;
+  width: 250px; }
+  @media all and (min-width: 320px) {
+    .taller_mapa {
+      width: 280px; } }
+  @media all and (min-width: 550px) {
+    .taller_mapa {
+      width: 400px;
+      height: 20rem; } }
   @media all and (min-width: 768px) {
     .taller_mapa {
-      height: 20rem; } }
+      width: 600px; } }
 
 .don-info {
   margin-bottom: 3rem; }

@@ -414,13 +414,16 @@ a:hover {
   text-transform: uppercase;
   display: inline-block;
   line-height: 3rem;
-  cursor: pointer; }
+  cursor: pointer;
+  padding-bottom: 12px; }
 
 .menu-item:hover {
-  text-decoration: underline; }
+  text-decoration: none;
+  border-bottom: 3px solid #fff; }
 
 .menu-item.active {
-  color: #2B3E50; }
+  color: #2B3E50;
+  border-bottom: 3px solid #2B3E50; }
 
 .btn {
   color: #fff;

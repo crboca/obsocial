@@ -36,11 +36,14 @@
 	display: inline-block;
 	line-height: 3rem;
 	cursor: pointer;
+	padding-bottom: 12px;
 }
 
 .menu-item:hover {
-	text-decoration: underline;
+	text-decoration: none;
+	border-bottom: 3px solid $color-w;
 }
 .menu-item.active {
 	color: $color-two;
+	border-bottom: 3px solid $color-two;
 }

@@ -72,10 +72,17 @@
 	padding: 0;
 }
 .taller_mapa {
-	border-style: none;
-	width: 100%;
+	border-style: 0;
 	height: 10rem;
-	@media all and (min-width: 768px){
+	width: 250px;
+	@media all and (min-width: 320px){
+		width: 280px;
+		}
+	@media all and (min-width: 550px){
+		width: 400px;
 		height: 20rem;
+		}
+	@media all and (min-width: 768px){
+		width: 600px;
 		}
 }

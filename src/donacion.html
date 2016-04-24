@@ -15,49 +15,43 @@
 			<a href="index.html" class="logo">
 				<img src="img/logo-obsocial.svg"  class="logo-obsocial" alt="Logotipo Obsocial">
 			</a>	
-			<nav class="menu-desktop">
-				<a class="menu-item active" href="donacion.html">Donar</a>
-				<a class="menu-item" href="eventos.html">Reparar</a>
-				<a class="menu-item" href="proyecto.html">Nuestro proyecto</a>
-				<a class="menu-item" href="blog.html">Blog</a>
-				<a class="menu-item" href="contacto.html">Contacto</a>
-			</nav>
+			<div class="menu-mobile closed">
+		        <a class="btn-anim-three">
+		            <span class="one"></span>
+		            <span class="two"></span>
+		            <span class="three"></span>
+		        </a>
+		        <ul class="nav" role="sidebar">
+		        	<li class="menu-item">
+		                <a class="menu-item-style active" href="donacion.html">
+		                    Donar
+		                </a>
+		            </li>
+		            <li class="menu-item">
+		                <a class="menu-item-style" href="eventos.html">
+		                    Reparar
+		                </a>
+		            </li>
+		            <li class="menu-item">
+		                <a class="menu-item-style" href="proyecto.html">
+		                    Nuestro proyecto
+		                </a>
+		            </li>
+		            <li class="menu-item">
+		                <a class="menu-item-style" href="blog.html">
+		                    Blog
+		                </a>
+		            </li>
+		            <li class="menu-item">
+		                <a class="menu-item-style" href="contacto.html">
+		                    Contacto
+		                </a>
+		            </li>
+		        </ul>
+	    	</div>
 		</div>
 
-		<div class="menu-mobile visible-xs closed">
-	        <a class="btn-anim-three">
-	            <span class="one"></span>
-	            <span class="two"></span>
-	            <span class="three"></span>
-	        </a>
-	        <ul class="nav" role="sidebar">
-	        	<li>
-	                <a href="donacion.html">
-	                    Donar
-	                </a>
-	            </li>
-	            <li>
-	                <a href="eventos.html">
-	                    Reparar
-	                </a>
-	            </li>
-	            <li>
-	                <a href="proyecto.html">
-	                    Nuestro proyecto
-	                </a>
-	            </li>
-	            <li>
-	                <a href="blog.html">
-	                    Blog
-	                </a>
-	            </li>
-	            <li>
-	                <a href="contacto.html">
-	                    Contacto
-	                </a>
-	            </li>
-	        </ul>
-    	</div>
+		
 	</header>
 	<article>
 		<section class="portada portada-donar">
@@ -112,51 +106,56 @@
 				<p class="container-narrow">Cuando recibamos los datos de tu donación, recibirás un email de confirmación de recogida.</p>
 				<form id="form3" name="form3" class="wufoo topLabel page" accept-charset="UTF-8" autocomplete="off" enctype="multipart/form-data" method="post" novalidate action="https://obsocialbau.wufoo.com.mx/forms/qa5dlhq0hbqzqf/#public">	
 					<ul>
-						<li id="foli1" class="notranslate titulo-blm">
-							<label class="desc" id="title1" for="Field1">¿Cómo te llamas?</label>
-							<div>
-								<input id="Field1" name="Field1" type="text" class="bg-color_one" value="" maxlength="255" tabindex="1" onkeyup="" placeholder="Nombre y apellidos"/>
-							</div>
-						</li>
+						<fieldset>
+							<legend>Datos de contacto</legend>
+							<li id="foli1" class="notranslate titulo-blm">
+								<label class="desc" id="title1" for="Field1">¿Cómo te llamas?</label>
+								<div>
+									<input id="Field1" name="Field1" type="text" class="bg-color_one" value="" maxlength="255" tabindex="1" onkeyup="" placeholder="Nombre y apellidos"/>
+								</div>
+							</li>
 
-						<li id="foli2" class="notranslate titulo-blm">
-							<label class="desc" id="title2" for="Field2">Dirección de correo electrónico</label>
-							<div>
-								<input id="Field2" name="Field2" type="text" class="bg-color_one" value="" maxlength="255" tabindex="2" onkeyup="" placeholder="ejemplo@email.com"/>
-							</div>
-						</li>
-
-						<li>
-							<label class="desc titulo-blm" id="title4" for="Field4">Dispositivo</label>
-							<div>
-								<select id="Field4" name="Field4" class="bg-color_one selector" tabindex="3" placeholder="" >
-									<option class="placeholder">Selecciona tu dispositivo</option>
-									<option value="Smartphone Apple">Smartphone Apple</option>
-									<option value="Smartphone Android" >Smartphone Android</option>
-									<option value="Smartphone Otros" >Smartphone Otros</option>
-									<option value="MacBook" >MacBook</option>
-									<option value="MacBook Air" >MacBook Air</option>
-									<option value="MacBook Pro" >MacBook Pro</option>
-									<option value="Ordenador portatil Windows" >Ordenador portátil Windows</option>
-									<option value="Ordenador portatil Otro" >Ordenador portátil Otro</option>
-								</select>
-							</div>
-						</li>
-
-						<li id="foli6" class="notranslate titulo-blm">
-							<label class="desc" id="title6" for="Field6">¿Funciona o se tendría que reparar?</label>
-							<div>
-								<textarea id="Field6" name="Field6" class="bg-color_one" spellcheck="true"  tabindex="4" onkeyup="" placeholder="Cuéntanos un poco sobre tu dispositivo. ¿Cuánto hace que lo tienes? Si no funciona, ¿se tendría que reparar?"></textarea>
-							</div>
-						</li>
-
-						<li id="foli7" class="notranslate titulo-blm">
-							<label class="desc" id="title7" for="Field7">¿Dónde y cuando quieres que lo recojamos?</label>
-							<div>
-								<textarea id="Field7" name="Field7" class="bg-color_one" spellcheck="true"  tabindex="5" onkeyup="" placeholder="Escríbenos la dirección, el día y la hora que te vendría bien"></textarea>
-							</div>
-						</li>
-
+							<li id="foli2" class="notranslate titulo-blm">
+								<label class="desc" id="title2" for="Field2">Dirección de correo electrónico</label>
+								<div>
+									<input id="Field2" name="Field2" type="text" class="bg-color_one" value="" maxlength="255" tabindex="2" onkeyup="" placeholder="ejemplo@email.com"/>
+								</div>
+							</li>
+						</fieldset>
+						<fieldset>
+							<legend>Información del dispositivo a donar</legend>
+							<li>
+								<label class="desc titulo-blm" id="title4" for="Field4">Dispositivo</label>
+								<div>
+									<select id="Field4" name="Field4" class="bg-color_one selector" tabindex="3" placeholder="" >
+										<option class="placeholder">Selecciona tu dispositivo</option>
+										<option value="Smartphone Apple">Smartphone Apple</option>
+										<option value="Smartphone Android" >Smartphone Android</option>
+										<option value="Smartphone Otros" >Smartphone Otros</option>
+										<option value="MacBook" >MacBook</option>
+										<option value="MacBook Air" >MacBook Air</option>
+										<option value="MacBook Pro" >MacBook Pro</option>
+										<option value="Ordenador portatil Windows" >Ordenador portátil Windows</option>
+										<option value="Ordenador portatil Otro" >Ordenador portátil Otro</option>
+									</select>
+								</div>
+							</li>
+							<li id="foli6" class="notranslate titulo-blm">
+								<label class="desc" id="title6" for="Field6">¿Funciona o se tendría que reparar?</label>
+								<div>
+									<textarea id="Field6" name="Field6" class="bg-color_one" spellcheck="true"  tabindex="4" onkeyup="" placeholder="Cuéntanos un poco sobre tu dispositivo. ¿Cuánto hace que lo tienes? Si no funciona, ¿se tendría que reparar?"></textarea>
+								</div>
+							</li>
+						</fieldset>
+						<fieldset>
+							<legend>Información de recogida del dispositivo</legend>
+							<li id="foli7" class="notranslate titulo-blm">
+								<label class="desc" id="title7" for="Field7">¿Dónde y cuando quieres que lo recojamos?</label>
+								<div>
+									<textarea id="Field7" name="Field7" class="bg-color_one" spellcheck="true"  tabindex="5" onkeyup="" placeholder="Escríbenos la dirección, el día y la hora que te vendría bien"></textarea>
+								</div>
+							</li>
+						</fieldset>
 						<li class="buttons ">
 							<div>
 								<input id="saveForm" onClick="ga('send', 'event', 'donaciones', 'rellenar_formulario', 'donaciones');" name="saveForm" class="btn titulo-blm btn-shadow" type="submit" value="Enviar formulario"/>

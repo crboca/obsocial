@@ -1,4 +1,15 @@
 // CONTACTO FORMULARIO
+fieldset {
+	border: transparent;
+	padding: 0;
+	margin: 0;
+}
+legend {
+	color: transparent;
+	line-height: 0;
+	margin: 0;
+	padding: 0;
+}
 form {
 	ul {
 		padding: 0;

@@ -15,49 +15,43 @@
 			<a href="index.html" class="logo">
 				<img src="img/logo-obsocial.svg"  class="logo-obsocial" alt="Logotipo Obsocial">
 			</a>	
-			<nav class="menu-desktop">
-				<a class="menu-item" href="donacion.html">Donar</a>
-				<a class="menu-item" href="eventos.html">Reparar</a>
-				<a class="menu-item" href="proyecto.html">Nuestro proyecto</a>
-				<a class="menu-item" href="blog.html">Blog</a>
-				<a class="menu-item active" href="contacto.html">Contacto</a>
-			</nav>
+			<div class="menu-mobile closed">
+		        <a class="btn-anim-three">
+		            <span class="one"></span>
+		            <span class="two"></span>
+		            <span class="three"></span>
+		        </a>
+		        <ul class="nav" role="sidebar">
+		        	<li class="menu-item">
+		                <a class="menu-item-style" href="donacion.html">
+		                    Donar
+		                </a>
+		            </li>
+		            <li class="menu-item">
+		                <a class="menu-item-style" href="eventos.html">
+		                    Reparar
+		                </a>
+		            </li>
+		            <li class="menu-item">
+		                <a class="menu-item-style" href="proyecto.html">
+		                    Nuestro proyecto
+		                </a>
+		            </li>
+		            <li class="menu-item">
+		                <a class="menu-item-style" href="blog.html">
+		                    Blog
+		                </a>
+		            </li>
+		            <li class="menu-item">
+		                <a class="menu-item-style active" href="contacto.html">
+		                    Contacto
+		                </a>
+		            </li>
+		        </ul>
+	    	</div>
 		</div>
 
-		<div class="menu-mobile visible-xs closed">
-	        <a class="btn-anim-three">
-	            <span class="one"></span>
-	            <span class="two"></span>
-	            <span class="three"></span>
-	        </a>
-	        <ul class="nav" role="sidebar">
-	        	<li>
-	                <a href="donacion.html">
-	                    Donar
-	                </a>
-	            </li>
-	            <li>
-	                <a href="eventos.html">
-	                    Reparar
-	                </a>
-	            </li>
-	            <li>
-	                <a href="proyecto.html">
-	                    Nuestro proyecto
-	                </a>
-	            </li>
-	            <li>
-	                <a href="blog.html">
-	                    Blog
-	                </a>
-	            </li>
-	            <li>
-	                <a href="contacto.html">
-	                    Contacto
-	                </a>
-	            </li>
-	        </ul>
-    	</div>
+		
 	</header>
 	<article>
 		<section class="bg-color_two clearfix">
@@ -68,26 +62,32 @@
 			<div id="container" class="container-narrow ltr">
 				<form id="form2" name="form2" class="wufoo topLabel page" accept-charset="UTF-8" autocomplete="off" enctype="multipart/form-data" method="post" novalidate action="https://obsocialbau.wufoo.com.mx/forms/m1xeebr1paai01/#public">
 					<ul>
-						<li id="foli23" class="notranslate">
-							<label class="desc titulo-blm" id="title23" for="Field23">¿cómo te llamas?
-							</label>
-							<div>
-								<input id="Field23" name="Field23" type="text" class="bg-color_one"  placeholder="Nombre y apellidos" maxlength="255" tabindex="1" onkeyup="" required />
-							</div>
-						</li>
-						<li id="foli24" class="notranslate">
-							<label class="desc titulo-blm" id="title24" for="Field24">Correo electrónico</label>
-							<div>
-								<input id="Field24" name="Field24" type="text" class="bg-color_one"  placeholder="ejemplo@email.com" maxlength="255" tabindex="2" onkeyup="" required />
-							</div>
-						</li>
-						<li id="foli16" class="notranslate">
-							<label class="desc titulo-blm" id="title16" for="Field16">Mensaje
-							</label>
-							<div>
-								<textarea id="Field16" name="Field16" class="bg-color_one" spellcheck="true"tabindex="3" onkeyup=""  placeholder="Cuéntanos tu duda" required></textarea>
-							</div>
-						</li>
+						<fieldset>
+							<legend>Datos de contacto</legend>
+							<li id="foli23" class="notranslate">
+								<label class="desc titulo-blm" id="title23" for="Field23">¿cómo te llamas?
+								</label>
+								<div>
+									<input id="Field23" name="Field23" type="text" class="bg-color_one"  placeholder="Nombre y apellidos" maxlength="255" tabindex="1" onkeyup="" required />
+								</div>
+							</li>
+							<li id="foli24" class="notranslate">
+								<label class="desc titulo-blm" id="title24" for="Field24">Correo electrónico</label>
+								<div>
+									<input id="Field24" name="Field24" type="text" class="bg-color_one"  placeholder="ejemplo@email.com" maxlength="255" tabindex="2" onkeyup="" required />
+								</div>
+							</li>
+						</fieldset>
+						<fieldset>
+							<legend>Mensaje</legend>
+							<li id="foli16" class="notranslate">
+								<label class="desc titulo-blm" id="title16" for="Field16">Mensaje
+								</label>
+								<div>
+									<textarea id="Field16" name="Field16" class="bg-color_one" spellcheck="true"tabindex="3" onkeyup=""  placeholder="Cuéntanos tu duda" required></textarea>
+								</div>
+							</li>
+						</fieldset>
 						<li class="">
 							<div>
 								<input id="saveForm" name="saveForm" class="btn  titulo-blm" type="submit" value="Enviar mensaje"/>

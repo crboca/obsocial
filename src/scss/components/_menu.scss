@@ -14,11 +14,11 @@
   }
   .menu-item-style:hover {
     text-decoration: none;
-    border-bottom: 3px solid $color-w;
+    border-bottom: 8px solid rgba(255, 255, 255, .6);
   }
   .menu-item-style.active {
     color: $color-two;
-    border-bottom: 3px solid $color-two;
+    border-bottom: 8px solid $color-two;
   }
   .menu-item-style {
     color: $color-w;
@@ -27,7 +27,7 @@
     letter-spacing: 1px;
     text-transform: uppercase;
     line-height: 3rem;
-    padding-bottom: 1.75rem;
+    padding-bottom: 1.4rem;
   }
 }
 @media all and (max-width: 1023px) {

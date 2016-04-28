@@ -9,12 +9,12 @@
 </head>
 <body>
 	<?php include_once("analyticstracking.php") ?>
-<!--HEADER-->	
+<!--HEADER-->
 	<header class="header">
-		<div class="container">			
+		<div class="container">
 			<a href="index.html" class="logo">
 				<img src="img/logo-obsocial.svg"  class="logo-obsocial" alt="Logotipo Obsocial">
-			</a>	
+			</a>
 			<div class="menu-mobile closed">
 		        <a class="btn-anim-three">
 		            <span class="one"></span>
@@ -51,41 +51,43 @@
 	    	</div>
 		</div>
 
-		
+
 	</header>
-<!--PORTADA-->		
+<!--PORTADA-->
 	<section class="portada portada-index">
-		<div class="container">		
+		<div class="container js-animate">
 			<h1 class="h1">Segundas partes siempre fueron buenas</h1>
-			<h2 class="h2">¡Ayudemos a nuestro planeta, juntos!</h2>
+			<h2 class="h2">Dónalo si no lo usas, repáralo si no funciona</h2>
 			<div class="divider-line"></div>
-			<p class="container-narrow h4">En ObSocial luchamos contra la obsolescencia programada, ayudando así a nuestro planeta. Únete a nosotros, dona los aparatos electrónicos que ya no quieras y/o repara los que quieras que sigan en tu vida.</p>
-			<a class="btn titulo-blm btn-shadow" href="proyecto.html">Conoce nuestro proyecto</a>
+			<p class="container-narrow h4">Te ayudamos a dar una segunda oportunidad a tus aparatos electrónicos, ya sea donándolos a quienes los necesitan o reparándolos en nuestros talleres dónde te enseñaremos cómo hacerlo.</p>
+			<a class="btn titulo-blm btn-shadow" href="proyecto.html">¿Cómo hacerlo?</a>
 		</div>
 	</section>
 	<main>
-		<div class="cover-box">
-			<section class="cover cover-donacion text-center font-color_w">
-				<div class="container-narrow">
-					<h3 class="h1">Donar</h3>
-					<p class="h4">Si tu no lo quieres, ¡alguien lo querrá! Dános los aparatos electrónicos que no utilices y se lo daremos a quien lo necesite.</p>
-					<a class="btn titulo-blm btn-shadow" href="donacion.html">Realizar donación</a>
-				</div>
-				
-			</section>
-			<section class="cover cover-eventos text-center font-color_w">
-				<div class="container-narrow">
-					<h3 class="h1">Reparar</h3>
-					<p class="h4">¿La obsolescencia ha ganado la primera batalla? No te preocupes, ¡no la guerra! Ven a nuestros talleres y revive tus aparatos electrónicos.</p>
-					<a class="btn titulo-blm btn-shadow" href="eventos.html">Ver talleres</a>
-				</div>
-			</section>
-		</div>
-		
+
+		<!--DONACIONES-->
+		<section class="portada_donacion--inicio text-center font-color_w">
+			<div class="container-narrow js-animate bg-color_one-op portada_secundaria">
+				<h3 class="h1">Donar</h3>
+				<p class="h4">Envíanos cualquier aparato electrónico que ya no quieras usar más, nosotros nos encargamos de encontrar a personas sin recursos que los necesiten.</p>
+				<a class="btn titulo-blm btn-shadow" href="donacion.html">Realizar donación</a>
+			</div>
+		</section>
+
+			<!--EVENTOS-->
+		<section class="portada_eventos--inicio text-center font-color_w">
+			<div class="container-narrow js-animate bg-color_two-op portada_secundaria">
+				<h3 class="h1">Reparar</h3>
+				<p class="h4">¿La obsolescencia ha ganado la primera batalla? No te preocupes, ¡no la guerra! Ven a nuestros talleres y revive tus aparatos electrónicos.</p>
+				<a class="btn titulo-blm btn-shadow" href="eventos.html">Ver talleres</a>
+			</div>
+		</section>
+
+		<!--EQUIPO-->
 		<section class="bg-color_four">
-			<div class="container text-center">
+			<div class="container text-center js-animate">
 				<h3 class="h1">Equipo</h3>
-				<p class="h4">No estamos locos, ¡sabemos lo que queremos!</p>
+				<p class="h4 container-narrow">El equipo somos todos. Si te apetece ayudar a los demás a reparar sus electrónicos, participar en nuestros talleres es muy fácil!</p>
 				<div class="i-team">
 					<div class="inline-b text-center">
 						<img class="avatar" src="img/cristina-profile.jpg" alt="Cristina Boix">
@@ -116,10 +118,12 @@
 				<a class="btn btn-alt btn-shadow titulo-blm" href="proyecto.html">Quiero colaborar</a>
 			</div>
 		</section>
+
+		<!--CONTACTO-->
 		<section class="bg-color_two clearfix">
-			<div id="container" class="container-narrow ltr">
+			<div id="container" class="container-narrow ltr js-animate">
 				<h3 class="h1 font-color_w text-center">Contacto</h3>
-				<p class="font-color_w text-center">Quien aprende tiene dudas, ¡pregúntanos!</p>
+				<p class="h4 font-color_w text-center">Quien aprende tiene dudas, ¡pregúntanos!</p>
 				<form id="form2" name="form2" class="wufoo topLabel page" accept-charset="UTF-8" autocomplete="off" enctype="multipart/form-data" method="post" novalidate action="https://obsocialbau.wufoo.com.mx/forms/m1xeebr1paai01/#public">
 					<ul>
 						<fieldset>
@@ -162,17 +166,18 @@
 				</form>
 			</div>
 		</section>
-						
+
 	</main>
-<!--FOOTER-->	
+
+<!--FOOTER-->
 	<footer class="footer-border footer-share">
 		<div class="container">
 			<div class="font-color_w footer-mensaje text-center">Follow the leader, leader, leader!<br>¡Síguenos!</div>
-			<a href="index.html" class="logo">
+			<a href="index.html" class="logo logo-footer">
 				<img class="logo-obsocial footer" src="img/logo-obsocial-footer.svg" alt="logo obsocial">
 			</a>
-			
-			<div class="social-icons">				
+
+			<div class="social-icons">
 				<a target="_blank" class="link-footer" href="https://twitter.com/"><img src="img/social-twitter.svg"></a>
 				<a target="_blank" class="link-footer" href="https://www.facebook.com/"><img src="img/social-facebook.svg"></a>
 				<a target="_blank" class="link-footer" href="https://plus.google.com"><img src="img/social-google.svg"></a>
@@ -180,7 +185,8 @@
 		</div>
 	</footer>
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
-    <script src="js/app.js"></script>
+	<script src="js/viewportChecker.js"></script>
+  <script src="js/app.js"></script>
     <!-- Go to www.addthis.com/dashboard to customize your tools -->
 	<script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-56d9d0c9dcecf2ea"></script>
 	<script>

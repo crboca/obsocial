@@ -10,6 +10,7 @@ body {
 section {
 	padding-top: 2rem;
 	padding-bottom: 2rem;
+	border-bottom: 10px solid $color-one;
 	@media all and (min-width: 1024px) {
 		padding-top: 5rem;
 		padding-bottom: 5rem;

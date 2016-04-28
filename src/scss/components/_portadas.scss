@@ -22,60 +22,43 @@
 	}
 }
 .portada-index {
-	background-position-y: 65%;
 	background: url(../img/index-img.jpg);
+	background-size: cover;
+
 	display: flex;
-  align-items: center;
-  height: 100vh;
-  padding: 0;
+  	align-items: center;
+  	padding: 0;
+  	@media all and (min-width: 768px) {
+		height: 100vh;
+	}
 }
 .portada-donar {
 	background: url(../img/donacion-img.jpg);
-	background-position-y: 100%;
+	background-size: cover;
 }
 .portada-eventos {
 	background: url(../img/eventos-img.jpg);
-	background-position-y: 40%;
+	background-size: cover;
 }
 .portada-blog {
 	background: url(../img/blog-img.jpg);
-	background-position-y: 40%;
+	background-size: cover;
 }
 .portada-proyecto {
-	background: url(../img/nosotros2-img.jpg);
-	background-size: cover;
-	background-position-x: 50%;
-
-	@media all and (min-width: 768px) {
 	background: url(../img/nosotros-img.jpg);
-	background-position-x: 50%;
-	background-position-y: 50%;
-	}
-}
-.portada-index, .portada-contacto, .portada-eventos {
-	background-size: cover;
-	background-position-x: 50%;
-}
-.cover-box {
-	margin: 0;
-	padding: 0;
-	display: block;
-	@media all and (min-width: 768px) {
-	display: flex;
-	}
-}
-.cover {
-	width: 100%;
-	@media all and (min-width: 768px) {
-	width: 50%;
-	display: inline-block;
-	}
-}
-.cover-donacion {
-	background: url(../img/donar-cover.jpg), ;
 	background-size: cover;
 }
-.cover-eventos {
+.portada_secundaria {
+	padding: 0.25rem .5rem 1rem;
+	@media all and (min-width: 1024px) {
+		padding: 3rem 6rem;
+	}
+}
+.portada_eventos--inicio {
 	background: url(../img/reparar-cover.jpg);
+	background-size: cover;
+}
+.portada_donacion--inicio {
+	background: url(../img/donar-cover.jpg), ;
 	background-size: cover;
 }

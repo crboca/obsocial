@@ -1878,8 +1878,14 @@ body {
 .bg-color_one {
   background-color: #2EB197; }
 
+.bg-color_one-op {
+  background-color: rgba(0, 189, 156, 0.4); }
+
 .bg-color_two {
   background-color: #2B3E50; }
+
+.bg-color_two-op {
+  background-color: rgba(43, 62, 80, 0.4); }
 
 .bg-color_three {
   background-color: #F85C45; }
@@ -1919,7 +1925,8 @@ body {
 
 section {
   padding-top: 2rem;
-  padding-bottom: 2rem; }
+  padding-bottom: 2rem;
+  border-bottom: 10px solid #2EB197; }
   @media all and (min-width: 1024px) {
     section {
       padding-top: 5rem;
@@ -2547,6 +2554,9 @@ footer {
 .img-footer {
   height: 1.75rem; }
 
+.logo-footer, .social-icons {
+  max-width: 40%; }
+
 @media all and (max-width: 979px) {
   .footer-share {
     height: 8rem; } }
@@ -2645,8 +2655,8 @@ footer {
     margin: 1rem; }
 
 .portada-index {
-  background-position-y: 65%;
   background: url(../img/index-img.jpg);
+  background-size: cover;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -2655,59 +2665,39 @@ footer {
   -webkit-align-items: center;
       -ms-flex-align: center;
           align-items: center;
-  height: 100vh;
   padding: 0; }
+  @media all and (min-width: 768px) {
+    .portada-index {
+      height: 100vh; } }
 
 .portada-donar {
   background: url(../img/donacion-img.jpg);
-  background-position-y: 100%; }
+  background-size: cover; }
 
 .portada-eventos {
   background: url(../img/eventos-img.jpg);
-  background-position-y: 40%; }
+  background-size: cover; }
 
 .portada-blog {
   background: url(../img/blog-img.jpg);
-  background-position-y: 40%; }
-
-.portada-proyecto {
-  background: url(../img/nosotros2-img.jpg);
-  background-size: cover;
-  background-position-x: 50%; }
-  @media all and (min-width: 768px) {
-    .portada-proyecto {
-      background: url(../img/nosotros-img.jpg);
-      background-position-x: 50%;
-      background-position-y: 50%; } }
-
-.portada-index, .portada-contacto, .portada-eventos {
-  background-size: cover;
-  background-position-x: 50%; }
-
-.cover-box {
-  margin: 0;
-  padding: 0;
-  display: block; }
-  @media all and (min-width: 768px) {
-    .cover-box {
-      display: -webkit-box;
-      display: -webkit-flex;
-      display: -ms-flexbox;
-      display: flex; } }
-
-.cover {
-  width: 100%; }
-  @media all and (min-width: 768px) {
-    .cover {
-      width: 50%;
-      display: inline-block; } }
-
-.cover-donacion {
-  background: url(../img/donar-cover.jpg);
   background-size: cover; }
 
-.cover-eventos {
+.portada-proyecto {
+  background: url(../img/nosotros-img.jpg);
+  background-size: cover; }
+
+.portada_secundaria {
+  padding: 0.25rem .5rem 1rem; }
+  @media all and (min-width: 1024px) {
+    .portada_secundaria {
+      padding: 3rem 6rem; } }
+
+.portada_eventos--inicio {
   background: url(../img/reparar-cover.jpg);
+  background-size: cover; }
+
+.portada_donacion--inicio {
+  background: url(../img/donar-cover.jpg);
   background-size: cover; }
 
 .divider-line {
@@ -2715,6 +2705,15 @@ footer {
   height: 4px;
   background-color: #2EB197;
   margin: 2.625rem auto; }
+
+.divider-line--long {
+  width: 7rem;
+  height: 4px;
+  background-color: #2EB197;
+  margin: 3rem auto; }
+  @media all and (min-width: 768px) {
+    .divider-line--long {
+      margin: -3rem auto 3rem; } }
 
 .under-line {
   width: 3.3125rem;
@@ -2726,4 +2725,7 @@ footer {
       .under-line-center {
         margin: 1.75rem auto -1.75rem; } }
   .under-line-pro {
-    margin: 0 auto; }
+    margin: 3rem auto; }
+    @media all and (min-width: 768px) {
+      .under-line-pro {
+        margin: 1rem auto; } }

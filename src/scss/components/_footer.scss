@@ -38,6 +38,9 @@ footer {
 .img-footer {
 	height: 1.75rem;
 }
+.logo-footer, .social-icons {
+	max-width: 40%;
+}
 .footer-share{
 	@media all and (max-width: 979px) {
 	height: 8rem;

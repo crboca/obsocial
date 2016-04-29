@@ -1925,8 +1925,7 @@ body {
 
 section {
   padding-top: 2rem;
-  padding-bottom: 2rem;
-  border-bottom: 10px solid #2EB197; }
+  padding-bottom: 2rem; }
   @media all and (min-width: 1024px) {
     section {
       padding-top: 5rem;
@@ -2529,12 +2528,6 @@ footer {
   color: #fff; }
   .footer-border {
     border-top: 1px solid #3d5871; }
-  .footer-mensaje {
-    display: none; }
-    @media all and (min-width: 651px) {
-      .footer-mensaje {
-        display: block;
-        margin: 0 auto -50px; } }
 
 .link-footer {
   line-height: 1rem;
@@ -2680,6 +2673,10 @@ footer {
 
 .portada-blog {
   background: url(../img/blog-img.jpg);
+  background-size: cover; }
+
+.portada-contacto {
+  background: url(../img/contacto-img.jpg);
   background-size: cover; }
 
 .portada-proyecto {

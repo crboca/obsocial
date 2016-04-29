@@ -10,14 +10,7 @@ footer {
 
 	&-border {
 		border-top: 1px solid lighten($color-two, 10);
-		}
-	&-mensaje{
-		display: none;
-		@media all and (min-width: 651px) {
-			display: block;
-			margin: 0 auto -50px;
-			}
-		}
+	}
 }
 .link-footer {
     line-height: 1rem;

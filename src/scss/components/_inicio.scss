@@ -43,6 +43,7 @@
 	padding: 0;
 	display: block;
 	width: 100%;
+	position: relative;
 	@media all and (min-width: 1024px) {
 		width: 60%;
 		display: inline-block;
@@ -69,4 +70,42 @@
 	.right {
 		float: right;
 	}	
+}
+.i_img--triangle--one:before {
+	content: "";
+	position: absolute;
+	top: 0;
+	right: 3rem;
+	width: 0; 
+	height: 0;
+	border-top: 1.35rem solid $color-one;
+	border-left: 1.35rem solid transparent; 
+	border-right: 1.35rem solid transparent;
+	@media all and (min-width: 1024px) {
+		top: 3rem;
+		right: 0;
+		border-right: 1.35rem solid $color-one;
+		border-top: 1.35rem solid transparent;
+		border-bottom: 1.35rem solid transparent;
+		border-left: 0 solid transparent; 
+	}
+}
+.i_img--triangle--two:before {
+	content: "";
+	position: absolute;
+	top: 0;
+	left: 3rem;
+	width: 0; 
+	height: 0;
+	border-top: 1.35rem solid $color-two;
+	border-left: 1.35rem solid transparent; 
+	border-right: 1.35rem solid transparent;
+	@media all and (min-width: 1024px) {
+		top: 3rem;
+		left:0;
+		border-left: 1.35rem solid $color-two;
+		border-top: 1.35rem solid transparent;
+		border-bottom: 1.35rem solid transparent;
+		border-right: 0 solid transparent; 
+	}
 }

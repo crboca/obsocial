@@ -2,6 +2,11 @@
 .inline-b {
 	display: inline-block;
 }
+.i_section {
+	margin: 0;
+	padding: 0;
+	vertical-align: middle;
+}
 .i-team {
 	padding: 3.5rem 0 0;
 	display: flex;
@@ -18,4 +23,16 @@
 		width: 80%;
 		margin: 0 auto;
 	}	
+}
+.i_img--cover {
+	margin: 0;
+	padding: 0;
+	width: 59%;
+	line-height: 0;
+}
+.i_img--left {
+	float: left;
+}
+.i_img--right {
+	float: right;
 }

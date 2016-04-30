@@ -32,6 +32,10 @@
 		height: 100vh;
 	}
 }
+.portada_index--texto {
+	width: 40%;
+	display: inline-block;
+}
 .portada-donar {
 	background: url(../img/donacion-img.jpg);
 	background-size: cover;
@@ -50,19 +54,5 @@
 }
 .portada-proyecto {
 	background: url(../img/nosotros-img.jpg);
-	background-size: cover;
-}
-.portada_secundaria {
-	padding: 0.25rem .5rem 1rem;
-	@media all and (min-width: 1024px) {
-		padding: 3rem 6rem;
-	}
-}
-.portada_eventos--inicio {
-	background: url(../img/reparar-cover.jpg);
-	background-size: cover;
-}
-.portada_donacion--inicio {
-	background: url(../img/donar-cover.jpg), ;
 	background-size: cover;
 }

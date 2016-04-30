@@ -2355,7 +2355,8 @@ input::placeholder, textarea::placeholder {
   width: 100%;
   margin: 0;
   padding: 0;
-  height: 12.25rem; }
+  height: 12.25rem;
+  overflow: hidden; }
 
 .taller_hora {
   margin-top: 1.75rem; }
@@ -2557,6 +2558,11 @@ footer {
 .inline-b {
   display: inline-block; }
 
+.i_section {
+  margin: 0;
+  padding: 0;
+  vertical-align: middle; }
+
 .i-team {
   padding: 3.5rem 0 0;
   display: -webkit-box;
@@ -2594,6 +2600,18 @@ footer {
               justify-content: space-between;
       width: 80%;
       margin: 0 auto; } }
+
+.i_img--cover {
+  margin: 0;
+  padding: 0;
+  width: 59%;
+  line-height: 0; }
+
+.i_img--left {
+  float: left; }
+
+.i_img--right {
+  float: right; }
 
 .avatar {
   background-color: #F0F0F0;
@@ -2663,6 +2681,10 @@ footer {
     .portada-index {
       height: 100vh; } }
 
+.portada_index--texto {
+  width: 40%;
+  display: inline-block; }
+
 .portada-donar {
   background: url(../img/donacion-img.jpg);
   background-size: cover; }
@@ -2681,20 +2703,6 @@ footer {
 
 .portada-proyecto {
   background: url(../img/nosotros-img.jpg);
-  background-size: cover; }
-
-.portada_secundaria {
-  padding: 0.25rem .5rem 1rem; }
-  @media all and (min-width: 1024px) {
-    .portada_secundaria {
-      padding: 3rem 6rem; } }
-
-.portada_eventos--inicio {
-  background: url(../img/reparar-cover.jpg);
-  background-size: cover; }
-
-.portada_donacion--inicio {
-  background: url(../img/donar-cover.jpg);
   background-size: cover; }
 
 .divider-line {

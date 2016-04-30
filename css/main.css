@@ -2524,8 +2524,8 @@ input::placeholder, textarea::placeholder {
 footer {
   background-color: #2B3E50;
   height: 5.5rem;
-  line-height: 1.5rem;
-  font-size: 0.8rem; }
+  line-height: 1rem;
+  font-size: 0.7rem; }
 
 .footer-border {
   border-top: 1px solid #3d5871; }
@@ -2536,7 +2536,7 @@ footer {
   position: relative;
   display: block;
   float: left;
-  margin: 0 2rem; }
+  margin: 0 .75rem; }
   .link-footer img {
     width: 100%;
     height: 100%; }

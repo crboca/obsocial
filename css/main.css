@@ -2558,11 +2558,6 @@ footer {
 .inline-b {
   display: inline-block; }
 
-.i_section {
-  margin: 0;
-  padding: 0;
-  vertical-align: middle; }
-
 .i-team {
   padding: 3.5rem 0 0;
   display: -webkit-box;
@@ -2601,16 +2596,42 @@ footer {
       width: 80%;
       margin: 0 auto; } }
 
-.i_img--cover {
+.i_section {
   margin: 0;
   padding: 0;
-  width: 59%;
+  vertical-align: middle; }
+
+.i_section:after {
+  content: "";
+  clear: both;
+  display: block;
+  margin: 0;
+  padding: 0;
   line-height: 0; }
 
-.i_img--left {
+.i_section--img {
+  width: 60vw;
+  margin: 0;
+  padding: 0;
+  line-height: 0;
+  display: block; }
+
+.i_section--img--container {
+  width: 60vw;
+  margin: 0;
+  padding: 0;
+  display: inline-block; }
+
+.i_section--text {
+  width: 40vw;
+  margin: 0;
+  padding: 5% 1rem 0;
+  display: inline-block; }
+
+.left {
   float: left; }
 
-.i_img--right {
+.right {
   float: right; }
 
 .avatar {
@@ -2680,10 +2701,6 @@ footer {
   @media all and (min-width: 768px) {
     .portada-index {
       height: 100vh; } }
-
-.portada_index--texto {
-  width: 40%;
-  display: inline-block; }
 
 .portada-donar {
   background: url(../img/donacion-img.jpg);

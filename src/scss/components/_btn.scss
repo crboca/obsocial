@@ -7,6 +7,10 @@
 	cursor: pointer;
 	margin: 3.5rem auto 0;
 
+	&_blog {
+		margin: 0 auto;
+	}
+
 	
 	&:hover {
 		background-color: $color-three-l;

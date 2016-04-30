@@ -2598,8 +2598,7 @@ footer {
 
 .i_section {
   margin: 0;
-  padding: 0;
-  vertical-align: middle; }
+  padding: 0; }
 
 .i_section:after {
   content: "";
@@ -2610,29 +2609,40 @@ footer {
   line-height: 0; }
 
 .i_section--img {
-  width: 60vw;
+  width: 100%;
   margin: 0;
   padding: 0;
   line-height: 0;
   display: block; }
 
 .i_section--img--container {
-  width: 60vw;
   margin: 0;
   padding: 0;
-  display: inline-block; }
+  display: block;
+  width: 100%; }
+  @media all and (min-width: 1024px) {
+    .i_section--img--container {
+      width: 60%;
+      display: inline-block; } }
 
 .i_section--text {
-  width: 40vw;
+  display: block;
   margin: 0;
-  padding: 8rem 1rem 0;
-  display: inline-block; }
+  padding: 3rem; }
+  @media all and (min-width: 1024px) {
+    .i_section--text {
+      padding: 0 1.5rem;
+      width: 40%;
+      display: inline-block; } }
+  @media all and (min-width: 1280px) {
+    .i_section--text {
+      padding: 4rem 2rem 0; } }
 
-.left {
-  float: left; }
-
-.right {
-  float: right; }
+@media all and (min-width: 1024px) {
+  .left {
+    float: left; }
+  .right {
+    float: right; } }
 
 .avatar {
   background-color: #F0F0F0;

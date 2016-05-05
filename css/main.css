@@ -2815,3 +2815,27 @@ footer {
     @media all and (min-width: 768px) {
       .under-line-pro {
         margin: 1rem auto; } }
+
+.ev_selector {
+  width: 100%;
+  display: block; }
+  .ev_selector select {
+    width: 100%; }
+    @media all and (min-width: 768px) {
+      .ev_selector select {
+        width: 45%; } }
+  .ev_selector:after {
+    content: "";
+    clear: both; }
+
+.blog_selector {
+  width: 100%;
+  display: block; }
+  .blog_selector select {
+    width: 100%; }
+    @media all and (min-width: 768px) {
+      .blog_selector select {
+        width: 45%; } }
+  .blog_selector:after {
+    content: "";
+    clear: both; }

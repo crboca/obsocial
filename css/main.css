@@ -2820,10 +2820,13 @@ footer {
   width: 100%;
   display: block; }
   .ev_selector select {
-    width: 100%; }
-    @media all and (min-width: 768px) {
-      .ev_selector select {
-        width: 45%; } }
+    width: 90%; }
+  .ev_selector label, .ev_selector select {
+    margin-left: 1rem; }
+  @media all and (min-width: 768px) {
+    .ev_selector {
+      width: 50%;
+      display: inline-block; } }
   .ev_selector:after {
     content: "";
     clear: both; }

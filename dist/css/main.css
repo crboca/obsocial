@@ -1,3 +1,4 @@
+@charset "UTF-8";
 html {
   font-family: sans-serif;
   -ms-text-size-adjust: 100%;
@@ -2117,7 +2118,14 @@ a:hover {
   cursor: pointer;
   margin: 3.5rem auto 0; }
   .btn_blog {
-    margin: 0 auto; }
+    margin: 0 auto -1.5rem;
+    display: inline-block;
+    max-width: 14rem; }
+    @media all and (min-width: 1024px) {
+      .btn_blog {
+        margin: 0 7rem -1.5rem;
+        display: inline-block;
+        min-width: 14rem; } }
   .btn:hover {
     background-color: #F28D7E;
     color: #fff;
@@ -2328,8 +2336,14 @@ input::placeholder, textarea::placeholder {
 
 .post {
   position: relative;
-  padding-bottom: 3rem;
-  margin-bottom: 1.75rem; }
+  width: 80%;
+  margin: 0 auto 2.75rem;
+  display: block; }
+  @media all and (min-width: 1024px) {
+    .post {
+      width: 44%;
+      margin: 0 2.5% 2.75rem;
+      display: inline-block; } }
   .post-port {
     width: 100%; }
   .post-info {
@@ -2363,19 +2377,17 @@ input::placeholder, textarea::placeholder {
           justify-content: center; }
 
 .evento_ficha {
-  margin: 10px;
+  margin: 10px 10px 2rem;
   width: 372px;
   box-shadow: 1px 1px 0px rgba(0, 0, 0, 0.1);
   position: relative; }
   .evento_ficha .h5 {
     padding-bottom: 0; }
   .evento_ficha a:not(.no-style) {
-    position: absolute;
-    right: 0;
-    bottom: 0; }
+    margin: 0 5.5rem -1.75rem; }
   .evento_ficha-info {
     padding: 0 1.625rem;
-    margin-bottom: 5rem;
+    margin-bottom: 3rem;
     padding-top: 1.5rem; }
 
 .evento_portada {
@@ -2386,7 +2398,8 @@ input::placeholder, textarea::placeholder {
   overflow: hidden; }
 
 .taller_hora {
-  margin-top: 1.75rem; }
+  margin-top: 1.75rem;
+  margin-bottom: 1rem; }
   .taller_hora:before {
     content: "hora";
     color: transparent;
@@ -2397,7 +2410,7 @@ input::placeholder, textarea::placeholder {
     height: 16px; }
 
 .taller_lugar {
-  margin-bottom: 1.75rem; }
+  margin-bottom: 1rem; }
   .taller_lugar-link {
     color: #2B3E50;
     text-decoration: none;
@@ -2409,6 +2422,50 @@ input::placeholder, textarea::placeholder {
     content: "lugar";
     color: transparent;
     background: url(../img/lugar.svg);
+    background-size: 14px;
+    background-repeat: no-repeat;
+    background-position: left;
+    height: 14px; }
+
+.taller_euro {
+  margin-bottom: 1rem; }
+  .taller_euro:before {
+    content: "euro";
+    color: transparent;
+    background: url(../img/euro.svg);
+    background-size: 14px;
+    background-repeat: no-repeat;
+    background-position: left;
+    height: 14px; }
+
+.taller_silla {
+  margin-bottom: 1rem; }
+  .taller_silla:before {
+    content: "acces";
+    color: transparent;
+    background: url(../img/silla.svg);
+    background-size: 14px;
+    background-repeat: no-repeat;
+    background-position: left;
+    height: 14px; }
+
+.taller_metro {
+  margin-bottom: 1rem; }
+  .taller_metro:before {
+    content: "metro";
+    color: transparent;
+    background: url(../img/metro.svg);
+    background-size: 14px;
+    background-repeat: no-repeat;
+    background-position: left;
+    height: 14px; }
+
+.taller_coche {
+  margin-bottom: 1rem; }
+  .taller_coche:before {
+    content: "park";
+    color: transparent;
+    background: url(../img/coche.svg);
     background-size: 14px;
     background-repeat: no-repeat;
     background-position: left;
@@ -2434,6 +2491,35 @@ input::placeholder, textarea::placeholder {
   @media all and (min-width: 768px) {
     .taller_mapa {
       width: 600px; } }
+
+.ev_detail-box {
+  height: 8rem;
+  overflow: hidden;
+  margin-bottom: 1.75rem;
+  border-bottom: 2px solid #2EB197;
+  position: relative;
+  -webkit-transition: height .8s ease;
+  transition: height .8s ease; }
+  .ev_detail-box:after {
+    content: "Ver más detalles";
+    display: block;
+    color: #fff;
+    background-color: #2EB197;
+    position: absolute;
+    width: 10rem;
+    bottom: 0;
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+            transform: translateX(-50%);
+    text-align: center;
+    cursor: pointer; }
+
+.open {
+  height: 20rem;
+  -webkit-transition: height .8s ease;
+  transition: height .8s ease; }
+  .open:after {
+    content: "Ver menos detalles"; }
 
 .don-info {
   margin-bottom: 3rem; }
@@ -2834,7 +2920,8 @@ footer {
   width: 100%;
   display: block; }
   .ev_selector select {
-    width: 90%; }
+    width: 90%;
+    margin-bottom: 1.75rem; }
   .ev_selector label, .ev_selector select {
     margin-left: 1rem; }
   @media all and (min-width: 768px) {
@@ -2849,6 +2936,7 @@ footer {
   width: 100%;
   display: block; }
   .blog_selector select {
+    margin-bottom: 1.75rem;
     width: 100%; }
     @media all and (min-width: 768px) {
       .blog_selector select {

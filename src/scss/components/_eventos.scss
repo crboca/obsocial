@@ -5,7 +5,7 @@
 	justify-content: center;
 }
 .evento_ficha {
-	margin: 10px;
+	margin: 10px 10px 2rem;
 	width: 372px;
 	box-shadow: 1px 1px 0px rgba(0, 0, 0, 0.1);
 	position: relative;
@@ -14,14 +14,12 @@
 	}
 
 	& a:not(.no-style) {
-	    position: absolute;
-	    right: 0;
-	    bottom: 0;
+	    margin: 0 5.5rem -1.75rem;
 		}
 	
 	&-info{
 		padding: 0 1.625rem;
-		margin-bottom: 5rem;
+		margin-bottom: 3rem;
 		padding-top: 1.5rem;
 		}
 }
@@ -35,6 +33,7 @@
 // TALLERES
 .taller_hora{
 	margin-top: 1.75rem;
+	margin-bottom: 1rem;
 	&:before {
 		content: "hora";
 		color: transparent;
@@ -46,7 +45,7 @@
 		}
 }
 .taller_lugar{
-	margin-bottom: 1.75rem;
+	margin-bottom: 1rem;
 	&-link {
 		color: $color-two;
 		text-decoration: none;
@@ -66,6 +65,56 @@
 		height: 14px;
 		}
 }
+.taller_euro {
+	margin-bottom: 1rem;
+	&:before {
+		content: "euro";
+		color: transparent;
+		background: url(../img/euro.svg);
+		background-size: 14px;
+		background-repeat: no-repeat;
+		background-position: left;
+		height: 14px;
+		}
+}
+.taller_silla {
+	margin-bottom: 1rem;
+	&:before {
+		content: "acces";
+		color: transparent;
+		background: url(../img/silla.svg);
+		background-size: 14px;
+		background-repeat: no-repeat;
+		background-position: left;
+		height: 14px;
+		}
+}
+.taller_metro {
+	margin-bottom: 1rem;
+	&:before {
+		content: "metro";
+		color: transparent;
+		background: url(../img/metro.svg);
+		background-size: 14px;
+		background-repeat: no-repeat;
+		background-position: left;
+		height: 14px;
+		}
+}
+.taller_coche {
+	margin-bottom: 1rem;
+	&:before {
+		content: "park";
+		color: transparent;
+		background: url(../img/coche.svg);
+		background-size: 14px;
+		background-repeat: no-repeat;
+		background-position: left;
+		height: 14px;
+		}
+}
+
+
 .taller_foto {
 	width: 100%;
 	height: auto;
@@ -86,4 +135,34 @@
 	@media all and (min-width: 768px){
 		width: 600px;
 		}
+}
+
+.ev_detail-box {
+	height: 8rem;
+	overflow: hidden;
+	margin-bottom: 1.75rem;
+	border-bottom: 2px solid $color-one;
+	position: relative;
+	transition: height .8s ease;
+	&:after {
+		content: "Ver más detalles";
+		display: block;
+		color: $color-w;
+		background-color: $color-one;
+		position: absolute;
+		width: 10rem;
+		bottom: 0;
+		left: 50%;
+  		transform: translateX(-50%);
+  		text-align: center;
+  		cursor: pointer;
+	}
+
+}
+.open {
+	height: 20rem;
+    transition: height .8s ease;
+	&:after {
+		content: "Ver menos detalles";
+	}
 }

@@ -3,9 +3,11 @@
 	display: block;
 	& select {
 		width: 90%;
+		margin-bottom: 1.75rem;
 	}
 	& label, & select {
 		margin-left: 1rem;
+		
 	}
 	@media all and (min-width: 768px) {
 		width: 50%;
@@ -22,6 +24,7 @@
 	width: 100%;
 	display: block;
 	& select {
+		margin-bottom: 1.75rem;
 		width: 100%;
 		@media all and (min-width: 768px) {
 			width: 45%;

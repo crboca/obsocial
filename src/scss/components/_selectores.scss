@@ -1,0 +1,29 @@
+.ev_selector {
+	width: 100%;
+	display: block;
+	& select {
+		width: 100%;
+		@media all and (min-width: 768px) {
+			width: 45%;
+		}
+	}
+	&:after {
+		content: "";
+		clear: both;
+	}
+}
+
+.blog_selector {
+	width: 100%;
+	display: block;
+	& select {
+		width: 100%;
+		@media all and (min-width: 768px) {
+			width: 45%;
+		}
+	}
+	&:after {
+		content: "";
+		clear: both;
+	}
+}

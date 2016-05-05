@@ -42,6 +42,15 @@
 	line-height: 0;
 	display: block;
 }
+.in_col--img {
+	display: block;
+	margin: 1.75rem auto;
+	height: 6rem;
+	@media all and (min-width: 1024px) {
+		margin: 0 10%;
+		display: inline-block;
+	}
+}
 .i_section--img--container {
 	margin: 0;
 	padding: 0;

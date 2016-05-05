@@ -2708,7 +2708,12 @@ footer {
     .avatar {
       height: 7rem;
       width: 7rem;
-      margin: 0 auto; } }
+      margin: 0 auto;
+      display: inline-block;
+      position: relative;
+      top: 50%;
+      -webkit-transform: translateY(50%);
+              transform: translateY(50%); } }
 
 .pro-img {
   height: 6.25rem; }
@@ -2731,7 +2736,8 @@ footer {
       display: inline-block;
       width: 40%;
       clear: left;
-      margin: 1.75rem 3rem; } }
+      margin: 1.75rem 3rem;
+      text-align: left; } }
 
 .portada {
   color: #fff;
@@ -2814,7 +2820,7 @@ footer {
     margin: 3rem auto; }
     @media all and (min-width: 768px) {
       .under-line-pro {
-        margin: 1rem auto; } }
+        margin: 1rem 0; } }
 
 .ev_selector {
   width: 100%;

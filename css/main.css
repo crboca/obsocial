@@ -2531,12 +2531,12 @@ footer {
   border-top: 1px solid #3d5871; }
 
 .link-footer {
-  height: 1.25rem;
-  width: 1.25rem;
+  height: 2.25rem;
+  width: 2.25rem;
   position: relative;
   display: block;
   float: left;
-  margin: 0 .75rem; }
+  margin: 0 .25rem; }
   @media all and (min-width: 1024px) {
     .link-footer {
       margin: 0 2rem; } }
@@ -2627,7 +2627,7 @@ footer {
   height: 6rem; }
   @media all and (min-width: 1024px) {
     .in_col--img {
-      margin: 0 10%;
+      margin: 0 5%;
       display: inline-block; } }
 
 .i_section--img--container {

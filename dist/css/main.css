@@ -2005,7 +2005,6 @@ h1 {
       letter-spacing: 0.046875rem; } }
 
 h2 {
-  text-transform: uppercase;
   font-size: 1.6rem;
   font-weight: 300; }
   @media all and (min-width: 768px) {

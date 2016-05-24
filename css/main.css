@@ -2333,6 +2333,11 @@ input::placeholder, textarea::placeholder {
     -webkit-transform: rotate(-225deg);
     transform: rotate(-225deg); } }
 
+.container_blog:after {
+  content: "";
+  display: block;
+  clear: both; }
+
 .post {
   position: relative;
   width: 80%;
@@ -2344,11 +2349,12 @@ input::placeholder, textarea::placeholder {
   .post_portada {
     position: relative;
     width: 80%;
-    margin: 0 auto 2.75rem;
+    margin: 0 auto;
     display: block; }
     @media all and (min-width: 1024px) {
       .post_portada {
         width: 44%;
+        float: left;
         margin: 0 2.5% 2.75rem;
         display: inline-block; } }
   .post-port {
@@ -2528,38 +2534,49 @@ input::placeholder, textarea::placeholder {
   .open:after {
     content: "Ver menos detalles"; }
 
-.don-info {
+.don_info {
   margin-bottom: 3rem; }
 
-.don-img {
+.don_img {
   height: 95px;
   margin-bottom: 1.75rem;
   margin-top: 3rem; }
 
-.don-step {
+.don_step {
   width: 100%;
   max-width: 400px;
   margin-right: auto;
   margin-left: auto;
   position: relative; }
   @media all and (min-width: 768px) {
-    .don-step {
+    .don_step {
       width: 400px; } }
   @media all and (min-width: 1024px) {
-    .don-step {
+    .don_step {
       width: 271px; } }
 
-.don-flecha-d, .don-flecha-i {
+.don_arrow:after {
+  content: "";
+  width: 0;
+  height: 0;
+  border-top: 25px solid #2EB197;
+  border-left: 50px solid transparent;
+  border-right: 50px solid transparent; }
+  @media all and (min-width: 1024px) {
+    .don_arrow:after {
+      content: none; } }
+
+.don_arrow--d, .don_arrow--i {
   display: none; }
   @media all and (min-width: 1024px) {
-    .don-flecha-d, .don-flecha-i {
+    .don_arrow--d, .don_arrow--i {
       width: 250px;
       height: 4px;
       background-color: #2EB197;
       display: inline-block;
       position: absolute;
       top: 40%; }
-      .don-flecha-d:after, .don-flecha-i:after {
+      .don_arrow--d:after, .don_arrow--i:after {
         position: absolute;
         content: "";
         width: 0;
@@ -2569,75 +2586,64 @@ input::placeholder, textarea::placeholder {
         border-right: 20px solid transparent; } }
 
 @media all and (min-width: 1024px) {
-  .don-flecha-d {
+  .don_arrow--d {
     left: 100%; }
-    .don-flecha-d:after {
+    .don_arrow--d:after {
       left: 230px; } }
 
 @media all and (min-width: 1024px) {
-  .don-flecha-i {
+  .don_arrow--i {
     right: 100%; }
-    .don-flecha-i:after {
+    .don_arrow--i:after {
       right: 230px; } }
 
 @media all and (min-width: 1024px) {
-  .don-step_uno, .don-step_tres, .don-step_cinco {
+  .don_step_uno, .don_step_tres, .don_step_cinco {
     float: left;
     clear: left; }
-  .don-step_dos, .don-step_cuatro {
+  .don_step_dos, .don_step_cuatro {
     float: right;
     clear: right; } }
 
-.don-step_uno_bg, .don-step_dos_bg, .don-step_tres_bg, .don-step_cuatro_bg, .don-step_cinco_bg {
+.don_step_uno--bg, .don_step_dos--bg, .don_step_tres--bg, .don_step_cuatro--bg, .don_step_cinco--bg {
   background-repeat: no-repeat;
   background-position: left top;
   height: 200px; }
 
-.don-step_uno_bg {
+.don_step_uno--bg {
   background-image: url(../img/don-step-uno.svg); }
 
 @media all and (min-width: 1024px) {
-  .don-step_uno {
+  .don_step_uno {
     margin: 0 0 3rem 20%; } }
 
-.don-step_dos_bg {
+.don_step_dos--bg {
   background-image: url(../img/don-step-dos.svg); }
 
 @media all and (min-width: 1024px) {
-  .don-step_dos {
+  .don_step_dos {
     margin: 13rem 20% 6rem 0; } }
 
-.don-step_tres_bg {
+.don_step_tres--bg {
   background-image: url(../img/don-step-tres.svg); }
 
 @media all and (min-width: 1024px) {
-  .don-step_tres {
+  .don_step_tres {
     margin: 3rem 0 6rem 20%; } }
 
-.don-step_cuatro_bg {
+.don_step_cuatro--bg {
   background-image: url(../img/don-step-cuatro.svg); }
 
 @media all and (min-width: 1024px) {
-  .don-step_cuatro {
+  .don_step_cuatro {
     margin: 3rem 20% 0 0; } }
 
-.don-step_cinco_bg {
+.don_step_cinco--bg {
   background-image: url(../img/don-step-cinco.svg); }
 
 @media all and (min-width: 1024px) {
-  .don-step_cinco {
+  .don_step_cinco {
     margin-left: 20%; } }
-
-.arrow:after {
-  content: "";
-  width: 0;
-  height: 0;
-  border-top: 25px solid #2EB197;
-  border-left: 50px solid transparent;
-  border-right: 50px solid transparent; }
-  @media all and (min-width: 1024px) {
-    .arrow:after {
-      content: none; } }
 
 footer {
   background-color: #2B3E50;

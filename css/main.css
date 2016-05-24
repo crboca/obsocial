@@ -2778,14 +2778,14 @@ footer {
       float: right;
       margin: 0 10%; } }
 
-.avatar {
+.pro_avatar {
   background-color: #F0F0F0;
   height: 10rem;
   width: 10rem;
   border-radius: 50%;
   margin: 1.75rem auto -1.75rem; }
   @media all and (min-width: 768px) {
-    .avatar {
+    .pro_avatar {
       height: 7rem;
       width: 7rem;
       margin: 0 auto;
@@ -2795,24 +2795,24 @@ footer {
       -webkit-transform: translateY(50%);
               transform: translateY(50%); } }
 
-.pro-img {
+.pro_img {
   height: 6.25rem; }
 
-.pro-proceso {
+.pro_proceso {
   margin-bottom: 3rem; }
   @media all and (min-width: 768px) {
-    .pro-proceso {
+    .pro_proceso {
       margin-bottom: 6rem; } }
 
-.pro-box {
+.pro_box {
   text-align: center; }
 
-.pro-member {
+.pro_member {
   display: block;
   vertical-align: top;
   margin: 1.75rem 0; }
   @media all and (min-width: 768px) {
-    .pro-member {
+    .pro_member {
       display: inline-block;
       width: 40%;
       clear: left;

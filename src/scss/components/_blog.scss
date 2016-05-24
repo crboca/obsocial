@@ -5,11 +5,20 @@
 	margin: 0 auto 2.75rem;
 	display: block;
 	@media all and (min-width: 1024px){
-		width: 44%;
-		margin: 0 2.5% 2.75rem;
-		display: inline-block;
-		}
+		width: 100%;
+	}
 
+	&_portada {
+		position: relative;
+		width: 80%;
+		margin: 0 auto 2.75rem;
+		display: block;
+		@media all and (min-width: 1024px){
+			width: 44%;
+			margin: 0 2.5% 2.75rem;
+			display: inline-block;
+			}	
+	}
 	&-port {
 		width: 100%;
 	}

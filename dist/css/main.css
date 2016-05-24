@@ -2340,9 +2340,17 @@ input::placeholder, textarea::placeholder {
   display: block; }
   @media all and (min-width: 1024px) {
     .post {
-      width: 44%;
-      margin: 0 2.5% 2.75rem;
-      display: inline-block; } }
+      width: 100%; } }
+  .post_portada {
+    position: relative;
+    width: 80%;
+    margin: 0 auto 2.75rem;
+    display: block; }
+    @media all and (min-width: 1024px) {
+      .post_portada {
+        width: 44%;
+        margin: 0 2.5% 2.75rem;
+        display: inline-block; } }
   .post-port {
     width: 100%; }
   .post-info {

@@ -13,7 +13,7 @@
 		width: 100%;
 	}
 
-	&_portada {
+	&_thumbnail {
 		position: relative;
 		width: 80%;
 		margin: 0 auto;
@@ -25,22 +25,22 @@
 			display: inline-block;
 		}	
 	}
-	&-port {
+	&_port {
 		width: 100%;
 	}
 
-	&-info {
+	&_info {
 		padding:  0 1.75rem;
 		position: relative;
 	}
 
-	&-comentarios {
+	&_comentarios {
 		margin-top: 3rem;
 	}
 }
-.post-fecha,
-.post-like,
-.post-tag {
+.post_fecha,
+.post_like,
+.post_tag {
 	margin-right: 1.75rem;
 	margin-bottom: 0;
 

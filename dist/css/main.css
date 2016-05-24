@@ -2346,33 +2346,33 @@ input::placeholder, textarea::placeholder {
   @media all and (min-width: 1024px) {
     .post {
       width: 100%; } }
-  .post_portada {
+  .post_thumbnail {
     position: relative;
     width: 80%;
     margin: 0 auto;
     display: block; }
     @media all and (min-width: 1024px) {
-      .post_portada {
+      .post_thumbnail {
         width: 44%;
         float: left;
         margin: 0 2.5% 2.75rem;
         display: inline-block; } }
-  .post-port {
+  .post_port {
     width: 100%; }
-  .post-info {
+  .post_info {
     padding: 0 1.75rem;
     position: relative; }
-  .post-comentarios {
+  .post_comentarios {
     margin-top: 3rem; }
 
-.post-fecha,
-.post-like,
-.post-tag {
+.post_fecha,
+.post_like,
+.post_tag {
   margin-right: 1.75rem;
   margin-bottom: 0; }
-  .post-fecha img,
-  .post-like img,
-  .post-tag img {
+  .post_fecha img,
+  .post_like img,
+  .post_tag img {
     height: 1.1rem;
     vertical-align: middle; }
 

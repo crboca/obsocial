@@ -2394,11 +2394,9 @@ input::placeholder, textarea::placeholder {
   width: 372px;
   box-shadow: 1px 1px 0px rgba(0, 0, 0, 0.1);
   position: relative; }
-  .evento_ficha .h5 {
-    padding-bottom: 0; }
   .evento_ficha a:not(.no-style) {
     margin: 0 5.5rem -1.75rem; }
-  .evento_ficha-info {
+  .evento_ficha--info {
     padding: 0 1.625rem;
     margin-bottom: 3rem;
     padding-top: 1.5rem; }
@@ -2505,7 +2503,7 @@ input::placeholder, textarea::placeholder {
     .taller_mapa {
       width: 600px; } }
 
-.ev_detail-box {
+.taller_detail-box {
   height: 8rem;
   overflow: hidden;
   margin-bottom: 1.75rem;
@@ -2513,7 +2511,7 @@ input::placeholder, textarea::placeholder {
   position: relative;
   -webkit-transition: height .8s ease;
   transition: height .8s ease; }
-  .ev_detail-box:after {
+  .taller_detail-box:after {
     content: "Ver más detalles";
     display: block;
     color: #fff;

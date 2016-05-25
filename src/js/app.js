@@ -8,8 +8,25 @@ $(document).ready(function() {
 
     //Animation content
     $('.js-animate').addClass("hidden").viewportChecker({
-        classToAdd: 'visible animated fadeInDown',
-        offset: 100
-       });
+      classToAdd: 'visible animated fadeInDown',
+      offset: 100
+    });
 
-});
+    //Detalles evento
+    $('.taller_detail-box').click(function(ev) {
+      $(this).toggleClass("open");
+    });
+
+    //scroll especial index
+    $('#to-donaciones').click(function(ev) {
+      ev.preventDefault();
+      $(window).scrollTo('#donaciones',700);
+    });
+
+    //scroll especial proyecto
+    $('#to-colaborar').click(function(ev) {
+      ev.preventDefault();
+      $(window).scrollTo('#colaborar',700);
+    });
+    
+   });

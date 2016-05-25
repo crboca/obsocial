@@ -2292,6 +2292,11 @@ input::placeholder, textarea::placeholder {
     line-height: 3rem;
     padding-bottom: 1.4rem; } }
 
+.container_blog:after {
+  content: "";
+  clear: both;
+  display: block; }
+
 .post {
   position: relative;
   width: 80%;

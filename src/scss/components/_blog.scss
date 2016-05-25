@@ -1,4 +1,9 @@
 // BLOG
+.container_blog:after {
+	content: "";
+	clear: both;
+	display: block;
+}
 .post {
 	position: relative;
 	width: 80%;

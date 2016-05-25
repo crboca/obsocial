@@ -15,7 +15,7 @@ footer {
     display: block;
     float: left;
     margin: 0 .25rem;
-    @media all and (min-width: 1024px) {
+    @media all and (min-width: $desktop) {
 		margin: 0 2rem;
 	}
     & img{
@@ -33,7 +33,7 @@ footer {
 	max-width: 40%;
 }
 .footer-share{
-	@media all and (max-width: 979px) {
+	@media all and (max-width: $bp_footer) {
 	height: 8rem;
 	}
 }

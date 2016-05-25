@@ -40,30 +40,18 @@ h4 {
 	line-height: 2.375rem;
 	font-size: 1.875rem;
 }
-.h5 {
-	text-transform: uppercase;
-	letter-spacing: 0.02125rem;
-	font-size: 1.0625rem;
-	font-weight: 700;
-	line-height: 1.1875rem;
-	padding-bottom: 1.75rem;
-}
 .tipo-evento {
 	text-transform: uppercase;
 	font-weight: 600;
 	letter-spacing: 0.134375rem;
 	font-size: 0.875rem;
 }
-.titulo-evento {
-	font-weight: 600;
-	line-height: 1.875rem;
-	font-size: 1.25rem;
-}
-.titulo-blm {
+.titulo-evento,
+.titulo-post {
 	text-transform: uppercase;
-	letter-spacing: .8px;
-	font-size: 1rem;
-	font-weight: 600;
+	letter-spacing: 0.02125rem;
+	font-size: 1.0625rem;
+	font-weight: 700;
 	line-height: 1.1875rem;
-	margin-bottom: .5rem;
+	padding-bottom: 1.75rem;
 }

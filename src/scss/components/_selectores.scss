@@ -9,15 +9,11 @@
 		margin-left: 1rem;
 		
 	}
-	@media all and (min-width: 768px) {
+	@media all and (min-width: $tablet) {
 		width: 50%;
 		display: inline-block;
 	}
 
-	&:after {
-		content: "";
-		clear: both;
-	}
 }
 
 .blog_selector {
@@ -26,12 +22,8 @@
 	& select {
 		margin-bottom: 1.75rem;
 		width: 100%;
-		@media all and (min-width: 768px) {
+		@media all and (min-width: $tablet) {
 			width: 45%;
 		}
-	}
-	&:after {
-		content: "";
-		clear: both;
 	}
 }

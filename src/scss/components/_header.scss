@@ -8,7 +8,7 @@
 	width: 10rem;
 	float: left;
 }
-@media all and (min-width: 1024px) {
+@media all and (min-width: $desktop) {
 	.logo{
 		width: 14rem;
 	}

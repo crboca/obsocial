@@ -9,7 +9,7 @@
 	height: 4px;
 	background-color: $color-one;
 	margin: 3rem auto;
-	@media all and (min-width: 768px) {
+	@media all and (min-width: $tablet) {
 		margin: -3rem auto 3rem;
 	}
 }
@@ -20,13 +20,13 @@
 
 	&-center {
 		margin: 3.5rem auto -1.75rem;
-		@media all and (min-width: 1024px) {
+		@media all and (min-width: $desktop) {
 			margin: 1.75rem auto -1.75rem;
 		}
 	}
 	&-pro{
 		margin: 3rem auto;
-		@media all and (min-width: 768px) {
+		@media all and (min-width: $tablet) {
 			margin: 1rem 0;
 		}
 	}

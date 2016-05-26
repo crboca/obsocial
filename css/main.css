@@ -2323,6 +2323,41 @@ input::placeholder, textarea::placeholder {
     height: 1.1rem;
     vertical-align: middle; }
 
+/* ---- grid ---- */
+.grid {
+  width: 100%; }
+
+/* clearfix */
+.grid:after {
+  content: '';
+  display: block;
+  clear: both; }
+
+/* ---- grid-item ---- */
+.grid_sizer,
+.grid_item {
+  width: 90%;
+  margin: 0 5% 3.75rem; }
+  @media all and (min-width: 768px) {
+    .grid_sizer,
+    .grid_item {
+      width: 45%;
+      margin: 0 2.5% 3.75rem;
+      max-width: none; } }
+  @media all and (min-width: 1280px) {
+    .grid_sizer,
+    .grid_item {
+      width: 30%;
+      margin: 0 1.5% 3.75rem; } }
+
+.grid_item {
+  float: left;
+  background-color: #fff; }
+
+.grid_item > a > img {
+  display: block;
+  margin-bottom: 0.5rem; }
+
 .evento_galeria {
   display: -webkit-box;
   display: -webkit-flex;
@@ -2855,38 +2890,3 @@ footer {
     @media all and (min-width: 768px) {
       .blog_selector select {
         width: 45%; } }
-
-/* ---- grid ---- */
-.grid {
-  width: 100%; }
-
-/* clearfix */
-.grid:after {
-  content: '';
-  display: block;
-  clear: both; }
-
-/* ---- grid-item ---- */
-.grid_sizer,
-.grid_item {
-  width: 90%;
-  margin: 0 5% 3.75rem; }
-  @media all and (min-width: 768px) {
-    .grid_sizer,
-    .grid_item {
-      width: 45%;
-      margin: 0 2.5% 3.75rem;
-      max-width: none; } }
-  @media all and (min-width: 1280px) {
-    .grid_sizer,
-    .grid_item {
-      width: 30%;
-      margin: 0 1.5% 3.75rem; } }
-
-.grid_item {
-  float: left;
-  background-color: #fff; }
-
-.grid_item > a > img {
-  display: block;
-  margin-bottom: 0.5rem; }

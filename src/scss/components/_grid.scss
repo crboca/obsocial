@@ -15,8 +15,17 @@
 
 .grid_sizer,
 .grid_item {
-  width: 45%;
-  margin: 0 2.5% 1.75rem;
+  width: 90%;
+  margin: 0 5% 3.75rem;
+  @media all and (min-width: $tablet){
+    width: 45%;
+    margin: 0 2.5% 3.75rem;
+    max-width: none;
+  }
+  @media all and (min-width: $desktop-hd){
+    width: 30%;
+    margin: 0 1.5% 3.75rem;
+  }
 }
 
 .grid_item {

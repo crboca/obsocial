@@ -2867,3 +2867,27 @@ footer {
     @media all and (min-width: 768px) {
       .blog_selector select {
         width: 45%; } }
+
+/* ---- grid ---- */
+.grid {
+  width: 100%; }
+
+/* clearfix */
+.grid:after {
+  content: '';
+  display: block;
+  clear: both; }
+
+/* ---- grid-item ---- */
+.grid_sizer,
+.grid_item {
+  width: 45%;
+  margin: 0 2.5% 1.75rem; }
+
+.grid_item {
+  float: left;
+  background-color: #fff; }
+
+.grid_item > a > img {
+  display: block;
+  margin-bottom: 0.5rem; }

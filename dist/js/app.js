@@ -28,5 +28,7 @@ $(document).ready(function() {
       ev.preventDefault();
       $(window).scrollTo('#colaborar',700);
     });
+
+    $(document).reload();
     
    });

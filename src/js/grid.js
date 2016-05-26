@@ -4,4 +4,3 @@ $('.grid').masonry({
 	columnWidth: '.grid_sizer',
 	percentPosition: true
 });
-$(document).reload();

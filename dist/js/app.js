@@ -1,5 +1,4 @@
 $(document).ready(function() {
-
     //Animation mobile menu
     $( ".btn-anim-three" ).on( "click", function() {
       $(this).toggleClass( "closed" );

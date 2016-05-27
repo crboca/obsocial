@@ -29,6 +29,13 @@
 		bottom: 0;
 	}
 
+	&_subir {
+		position: fixed;
+		right: 0;
+		bottom: 3rem;
+		z-index: 1;
+	}
+
 	
 	&:hover {
 		background-color: $color-three-l;

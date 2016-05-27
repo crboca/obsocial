@@ -2085,6 +2085,11 @@ a:hover {
   .btn_evento {
     position: absolute;
     bottom: 0; }
+  .btn_subir {
+    position: fixed;
+    right: 0;
+    bottom: 3rem;
+    z-index: 1; }
   .btn:hover {
     background-color: #F28D7E;
     color: #fff;

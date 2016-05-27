@@ -22,6 +22,11 @@
 		margin: 0 auto -1.75rem;
 		text-align: center;
 		max-width: 13rem;
+		&--back {
+			position: fixed;
+			bottom: 6rem;
+			left: 0;
+		}
 	}
 
 	&_evento {
@@ -32,7 +37,7 @@
 	&_subir {
 		position: fixed;
 		right: 0;
-		bottom: 3rem;
+		bottom: 6rem;
 		z-index: 1;
 	}
 

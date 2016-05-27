@@ -27,8 +27,10 @@ $(document).ready(function() {
     $(window).scroll(function() {
       if ($(window).scrollTop() < $(window).height()) {
           $(".btn_subir").fadeOut(400);
+          $(".btn_blog--back").fadeOut(400);
       } else {
           $(".btn_subir").fadeIn(400);
+          $(".btn_blog--back").fadeIn(400);
       };
     })
 

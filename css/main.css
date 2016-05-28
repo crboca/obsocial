@@ -2085,7 +2085,8 @@ a:hover {
     .btn_blog--back {
       position: fixed;
       bottom: 6rem;
-      left: 0; }
+      left: 0;
+      display: none; }
   .btn_evento {
     position: absolute;
     bottom: 0; }

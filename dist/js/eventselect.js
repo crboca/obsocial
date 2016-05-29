@@ -6,9 +6,9 @@ $(document).ready(function() {
 		if ($("#dispositivo option:selected").val() == 1) {
 			$('.smartphone').show();
 
-			if ($("#lugar option:selected").val() == 6) {
+			if ($("#lugar option:selected").val() == 1) {
 				$('.ateneu').hide();
-			} else if ($("#lugar option:selected").val() == 7) {
+			} else if ($("#lugar option:selected").val() == 2) {
 				$('.bau').hide();
 			};
 

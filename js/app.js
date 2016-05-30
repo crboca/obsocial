@@ -12,8 +12,13 @@ $(document).ready(function() {
     });
 
     //Detalles evento
-    $('.taller_detail-box').click(function(ev) {
-      $(this).toggleClass("open");
+    $('.taller_detail-box_btn').click(function(ev) {
+      $('.taller_detail-box').toggleClass("open");
+      if ($('.taller_detail-box').hasClass("open")) {
+        $('.taller_detail-box_btn').html("Ocultar detalles");
+      } else{
+        $('.taller_detail-box_btn').html("Mostrar detalles");
+      };
     });
 
     //scroll general subir pagina

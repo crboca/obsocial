@@ -53,21 +53,35 @@
     		transform: rotate(180deg);
 		}
 	}
-
-	
-	&:hover {
+	&:active {
 		background-color: $color-three-l;
 		color: $color-w;
 		text-decoration: none;
 	}
+	@media all and (min-width: $desktop) {
+		&:hover {
+			background-color: $color-three-l;
+			color: $color-w;
+			text-decoration: none;
+		}
+	}
+	
 
 	&--alt {
 		background-color: $color-one;
 		
-		&:hover {
+		&:active {
 			background-color: $color-one-l;
 			text-decoration: none;
+		}
+		
+		@media all and (min-width: $desktop) {
+			&:hover {
+				background-color: $color-one-l;
+				text-decoration: none;
 			}
+		}
+		
 	}
 
 }

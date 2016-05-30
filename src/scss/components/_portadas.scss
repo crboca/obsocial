@@ -1,7 +1,11 @@
 // PORTADAS
+
 .portada-index {
-	background: url(../img/index-img.jpg);
-	background-size: cover;
+	background: -moz-linear-gradient(top, $color_portada--top 0%, $color_portada--bottom 100%), url(../img/index-img.jpg); /* FF3.6-15 */
+	background: -webkit-linear-gradient(top, $color_portada--top 0%,$color_portada--bottom 100%) ,url(../img/index-img.jpg); /* Chrome10-25,Safari5.1-6 */
+	background: linear-gradient(to bottom, $color_portada--top 0%,$color_portada--bottom 100%), url(../img/index-img.jpg); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#992b3e50', endColorstr='#99f85c45',GradientType=0 ), url(../img/index-img.jpg); /* IE6-9 */
+	background-size: cover, cover;
 
 	display: flex;
   	align-items: center;
@@ -13,22 +17,37 @@
 }
 
 .portada-donar {
-	background: url(../img/donacion-img.jpg);
-	background-size: cover;
+	background: -moz-linear-gradient(top, $color_portada--top 0%, $color_portada--bottom 100%), url(../img/donacion-img.jpg); /* FF3.6-15 */
+	background: -webkit-linear-gradient(top, $color_portada--top 0%,$color_portada--bottom 100%) ,url(../img/donacion-img.jpg); /* Chrome10-25,Safari5.1-6 */
+	background: linear-gradient(to bottom, $color_portada--top 0%,$color_portada--bottom 100%), url(../img/donacion-img.jpg); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#992b3e50', endColorstr='#99f85c45',GradientType=0 ), url(../img/donacion-img.jpg); /* IE6-9 */
+	background-size: cover, cover;
 }
 .portada-eventos {
-	background: url(../img/eventos-img.jpg);
-	background-size: cover;
+	background: -moz-linear-gradient(top, $color_portada--top 0%, $color_portada--bottom 100%), url(../img/eventos-img.jpg); /* FF3.6-15 */
+	background: -webkit-linear-gradient(top, $color_portada--top 0%,$color_portada--bottom 100%) ,url(../img/eventos-img.jpg); /* Chrome10-25,Safari5.1-6 */
+	background: linear-gradient(to bottom, $color_portada--top 0%,$color_portada--bottom 100%), url(../img/eventos-img.jpg); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#992b3e50', endColorstr='#99f85c45',GradientType=0 ), url(../img/eventos-img.jpg); /* IE6-9 */
+	background-size: cover, cover;
 }
 .portada-blog {
-	background: url(../img/blog-img.jpg);
-	background-size: cover;
+	background: -moz-linear-gradient(top, $color_portada--top 0%, $color_portada--bottom 100%), url(../img/blog-img.jpg); /* FF3.6-15 */
+	background: -webkit-linear-gradient(top, $color_portada--top 0%,$color_portada--bottom 100%) ,url(../img/blog-img.jpg); /* Chrome10-25,Safari5.1-6 */
+	background: linear-gradient(to bottom, $color_portada--top 0%,$color_portada--bottom 100%), url(../img/blog-img.jpg); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#992b3e50', endColorstr='#99f85c45',GradientType=0 ), url(../img/blog-img.jpg); /* IE6-9 */
+	background-size: cover, cover;
 }
 .portada-contacto {
-	background: url(../img/contacto-img.jpg);
-	background-size: cover;
+	background: -moz-linear-gradient(top, $color_portada--top 0%, $color_portada--bottom 100%), url(../img/contacto-img.jpg); /* FF3.6-15 */
+	background: -webkit-linear-gradient(top, $color_portada--top 0%,$color_portada--bottom 100%) ,url(../img/contacto-img.jpg); /* Chrome10-25,Safari5.1-6 */
+	background: linear-gradient(to bottom, $color_portada--top 0%,$color_portada--bottom 100%), url(../img/contacto-img.jpg); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#992b3e50', endColorstr='#99f85c45',GradientType=0 ), url(../img/contacto-img.jpg); /* IE6-9 */
+	background-size: cover, cover;
 }
 .portada-proyecto {
-	background: url(../img/nosotros-img.jpg);
-	background-size: cover;
+	background: -moz-linear-gradient(top, $color_portada--top 0%, $color_portada--bottom 100%), url(../img/nosotros-img.jpg); /* FF3.6-15 */
+	background: -webkit-linear-gradient(top, $color_portada--top 0%,$color_portada--bottom 100%) ,url(../img/nosotros-img.jpg); /* Chrome10-25,Safari5.1-6 */
+	background: linear-gradient(to bottom, $color_portada--top 0%,$color_portada--bottom 100%), url(../img/nosotros-img.jpg); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#992b3e50', endColorstr='#99f85c45',GradientType=0 ), url(../img/nosotros-img.jpg); /* IE6-9 */
+	background-size: cover, cover;
 }

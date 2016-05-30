@@ -28,6 +28,11 @@
 			left: 0;
 			display: none;
 		}
+		&_arrow--back {
+			-ms-transform: rotate(90deg); /* IE 9 */
+    		-webkit-transform: rotate(90deg); /* Chrome, Safari, Opera */
+    		transform: rotate(90deg);
+		}
 	}
 
 	&_evento {
@@ -40,6 +45,13 @@
 		right: 0;
 		bottom: 6rem;
 		z-index: 1;
+		padding-left: 1rem;
+		padding-right: 1rem;
+		&_arrow--top {
+			-ms-transform: rotate(180deg); /* IE 9 */
+    		-webkit-transform: rotate(180deg); /* Chrome, Safari, Opera */
+    		transform: rotate(180deg);
+		}
 	}
 
 	

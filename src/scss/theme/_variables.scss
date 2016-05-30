@@ -8,6 +8,7 @@ $desktop-hd: 1280px;
 //breakpoint especial
 $bp_footer: 979px;
 $bp_menu: 1023px;
+
 //COLORES
 $color-w: #fff; //blanco
 $color-w-op: rgba(255, 255, 255, .65);
@@ -21,6 +22,10 @@ $color-three: #F85C45; //naranja
 $color-three-l: #F28D7E; //naranja clarito
 $color-four: #E1E1E1; //color gris backgrounds
 $color-five: #F5F6F7;
+
+//portadas
+$color_portada--top: rgba(43,62,80,0.6); //azul oscuro casi negro
+$color_portada--bottom: rgba(248,92,69,0.6); //naranja obsocial fabuloso
 
 .bg{
 	&-color_w {

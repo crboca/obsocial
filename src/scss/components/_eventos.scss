@@ -141,31 +141,32 @@
 	&_detail-box {
 		height: 8rem;
 		overflow: hidden;
-		margin-bottom: 1.75rem;
 		border-bottom: 2px solid $color-one;
 		position: relative;
 		transition: height .8s ease;
-		&:after {
-			content: "Ver más detalles";
-			display: block;
-			color: $color-w;
-			background-color: $color-one;
-			position: absolute;
-			width: 10rem;
-			bottom: 0;
-			left: 50%;
-	  		transform: translateX(-50%);
-	  		text-align: center;
-	  		cursor: pointer;
-		}
+	}
+	&_detail-box_btn {
 
+		-webkit-box-shadow: .75rem 0px 0px 0px $color-four,
+			-.75rem 0px 0px 0px $color-four,
+			1px 1px 0px rgba(0, 0, 0, 0.1);
+		-moz-box-shadow: .75rem 0px 0px 0px $color-four,
+			-.75rem 0px 0px 0px $color-four,
+			1px 1px 0px rgba(0, 0, 0, 0.1);
+		box-shadow: .75rem 0px 0px 0px $color-four,
+			-.75rem 0px 0px 0px $color-four,
+			1px 1px 0px rgba(0, 0, 0, 0.1);
+
+		margin: -1.75rem auto 1.75rem;
+		display: block;
+		width: 14rem;
+		text-align: center;
+		z-index: 1;
+		position: relative;
 	}
 }
 
 .open {
-	height: 20rem;
+	height: 21rem;
     transition: height .8s ease;
-	&:after {
-		content: "Ver menos detalles";
-	}
 }

@@ -1,4 +1,3 @@
-@charset "UTF-8";
 html {
   font-family: sans-serif;
   -ms-text-size-adjust: 100%;
@@ -2510,31 +2509,24 @@ input::placeholder, textarea::placeholder {
 .taller_detail-box {
   height: 8rem;
   overflow: hidden;
-  margin-bottom: 1.75rem;
   border-bottom: 2px solid #2EB197;
   position: relative;
   -webkit-transition: height .8s ease;
   transition: height .8s ease; }
-  .taller_detail-box:after {
-    content: "Ver más detalles";
-    display: block;
-    color: #fff;
-    background-color: #2EB197;
-    position: absolute;
-    width: 10rem;
-    bottom: 0;
-    left: 50%;
-    -webkit-transform: translateX(-50%);
-            transform: translateX(-50%);
-    text-align: center;
-    cursor: pointer; }
+
+.taller_detail-box_btn {
+  box-shadow: 0.75rem 0px 0px 0px #E1E1E1, -0.75rem 0px 0px 0px #E1E1E1, 1px 1px 0px rgba(0, 0, 0, 0.1);
+  margin: -1.75rem auto 1.75rem;
+  display: block;
+  width: 14rem;
+  text-align: center;
+  z-index: 1;
+  position: relative; }
 
 .open {
-  height: 20rem;
+  height: 21rem;
   -webkit-transition: height .8s ease;
   transition: height .8s ease; }
-  .open:after {
-    content: "Ver menos detalles"; }
 
 .don_info {
   margin-bottom: 3rem; }

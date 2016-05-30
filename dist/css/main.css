@@ -2234,7 +2234,7 @@ input::placeholder, textarea::placeholder {
     -webkit-transition: .3s ease-in-out;
     transition: .3s ease-in-out;
     color: #000;
-    z-index: 1; }
+    z-index: 2; }
   .menu-mobile.closed {
     right: -200px; }
   .menu-mobile .btn-anim-three {

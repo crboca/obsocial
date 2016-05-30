@@ -2106,15 +2106,24 @@ a:hover {
       -webkit-transform: rotate(180deg);
       /* Chrome, Safari, Opera */
       transform: rotate(180deg); }
-  .btn:hover {
+  .btn:active {
     background-color: #F28D7E;
     color: #fff;
     text-decoration: none; }
+  @media all and (min-width: 1024px) {
+    .btn:hover {
+      background-color: #F28D7E;
+      color: #fff;
+      text-decoration: none; } }
   .btn--alt {
     background-color: #2EB197; }
-    .btn--alt:hover {
+    .btn--alt:active {
       background-color: #74D5C4;
       text-decoration: none; }
+    @media all and (min-width: 1024px) {
+      .btn--alt:hover {
+        background-color: #74D5C4;
+        text-decoration: none; } }
 
 fieldset {
   border: transparent;
@@ -2225,7 +2234,7 @@ input::placeholder, textarea::placeholder {
     -webkit-transition: .3s ease-in-out;
     transition: .3s ease-in-out;
     color: #000;
-    z-index: 1; }
+    z-index: 2; }
   .menu-mobile.closed {
     right: -200px; }
   .menu-mobile .btn-anim-three {

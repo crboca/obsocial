@@ -66,8 +66,11 @@
 				<a class="btn btn--alt btn-shadow titulo-blm" href="proyecto.html">Conoce nuestro proyecto</a>
 			</div>
 			<div class="container">
-				<h3>Una cosa fabulosa</h3>
-				<label class="font-color_two"for="pais">País</label>
+				<p class="index_map--message--notanto container-narrow text-center">Afortunadamente, no tanto.</p>
+				<h4 class="index_map--message text-center">En España se generan 17.77kg de basura electrónica por habitante al año.</h4>
+				<p class="container-narrow text-center">¿Cuanto crees que se genera en...?</p>
+
+				<label class="font-color_two" for="country">Escoge el país</label>
 				<select id="country" class="bg-color_one selector">
 					<option value="espana">España</option>
 					<option value="francia">Francia</option>
@@ -77,9 +80,12 @@
 					<option value="irlanda">Irlanda</option>
 				</select>
 
-				<p class="index_map--message text-center container">En España se generan 10kg de basura electrónica por habitante al año.</p>
+				<label class="font-color_two" for="kilo">Intenta adivinar</label>
+				<input id="kilo" type="number" class="bg-color_one"  placeholder="Introduce los Kg que creas"/>
 
-				<p class="container-narrow">Busca en el mapa cuanta basura electrónica genera cada habitante al año por país y sorprendete.</p>
+				<input id="index_map--btn" class="btn" type="submit" value="Comprobar"/>
+
+				<p class="container-narrow">Busca en el mapa cuanta basura electrónica genera cada habitante al año en otros países y sorprendete.</p>
 			</div>
 		</section>
 <!--FOOTER-->

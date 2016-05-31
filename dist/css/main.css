@@ -2771,17 +2771,17 @@ footer {
   display: block;
   margin: 1.75rem auto;
   height: 6rem; }
-  @media all and (min-width: 1024px) {
+  @media all and (min-width: 768px) {
     .in_col--logo--center {
-      margin: 0 auto; }
+      margin: 1.75rem auto 0; }
     .in_col--logo--left {
       display: inline-block;
       float: left;
-      margin: 0 10%; }
+      margin: 1.75rem 10% 0; }
     .in_col--logo--right {
       display: inline-block;
       float: right;
-      margin: 0 10%; } }
+      margin: 1.75rem 10% 0; } }
 
 .pro_avatar {
   background-color: #F0F0F0;

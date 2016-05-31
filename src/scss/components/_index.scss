@@ -93,19 +93,19 @@
 	display: block;
 	margin: 1.75rem auto;
 	height: 6rem;
-	@media all and (min-width: $desktop) {
+	@media all and (min-width: $tablet) {
 		&--center {
-			margin: 0 auto;
+			margin: 1.75rem auto 0;
 		}
 		&--left {
 			display: inline-block;
 			float: left;
-			margin: 0 10%;
+			margin: 1.75rem 10% 0;
 		}
 		&--right {
 			display: inline-block;
 			float: right;
-			margin: 0 10%;
+			margin: 1.75rem 10% 0;
 		}	
 	}
 }

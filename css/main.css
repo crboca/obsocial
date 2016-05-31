@@ -2007,7 +2007,8 @@ h4 {
   font-size: 1.0625rem;
   font-weight: 700;
   line-height: 1.1875rem;
-  padding-bottom: 1.75rem; }
+  padding-bottom: 1.75rem;
+  color: #2B3E50; }
 
 p {
   font-size: 1.125rem;
@@ -2343,15 +2344,23 @@ input::placeholder, textarea::placeholder {
     margin-top: 3rem; }
 
 .post_fecha,
-.post_like,
 .post_tag {
-  margin-right: 1.75rem;
-  margin-bottom: 0; }
+  margin: 0.5rem; }
   .post_fecha img,
-  .post_like img,
   .post_tag img {
     height: 1.1rem;
     vertical-align: middle; }
+
+.post_like {
+  vertical-align: middle;
+  margin: 0.5rem;
+  width: 145px;
+  height: 20px;
+  float: none;
+  display: inline-block; }
+
+.post_comentarios {
+  margin-top: 1.75rem; }
 
 /* ---- grid ---- */
 .grid {

@@ -1,8 +1,8 @@
 $(document).ready(function() {
 
+  $('.index_map--message--notanto').hide();
 	
 	$("#index_map--btn").click(function(ev) {
-
     $('.index_map--message--notanto').hide();
 
     if ($("#country").val() == "espana") {

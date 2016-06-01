@@ -1,8 +1,5 @@
 //pag inicio
-.in--map {
-	width: 100%;
-	height: 36rem;
-}
+
 .in_section {
 	margin: 0;
 	padding: 0;
@@ -87,6 +84,35 @@
 			border-right: 0 solid transparent; 
 		}
 	}
+}
+
+.in--map {
+	width: 100%;
+	height: 36rem;
+}
+
+.in_map--map {
+	height: 24rem;
+}
+.in_map--map,
+.in_map--text {
+	display: block;
+	width: 100%;
+	@media all and (min-width: $tablet) {
+		width: 45%;
+		margin: 0 2%;
+		height: 40rem;
+		display: inline-block;
+	}
+}
+.in_map--message {
+	font-size: 1.5rem;
+	margin: .5rem 0;
+}
+.in_map--message--uno,
+.in_map--message--dos,
+.in_map--message--tres {
+	margin: 0.75rem 0 0;
 }
 
 .in_col--logo {

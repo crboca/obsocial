@@ -94,8 +94,12 @@
 .in_map--map {
 	height: 24rem;
 }
+.in_map--text {
+padding-top: 1.5rem;
+}
 .in_map--map,
 .in_map--text {
+	vertical-align: middle;
 	display: block;
 	width: 100%;
 	@media all and (min-width: $tablet) {
@@ -107,12 +111,14 @@
 }
 .in_map--message {
 	font-size: 1.5rem;
-	margin: .5rem 0;
+	margin: 1rem 0 .5rem;
 }
 .in_map--message--uno,
 .in_map--message--dos,
 .in_map--message--tres {
-	margin: 0.75rem 0 0;
+	margin: 0.75rem 0;
+	font-size: 1rem;
+	font-weight: bold;
 }
 
 .in_col--logo {

@@ -97,14 +97,51 @@
 
 		<!--MAPA-->
 		<section class="bg-color_four clearfix">
-			<div class="container text-center js-animate">
-				<h3>¿Sabes cuantos kilos de basura electrónica genera cada persona al año?</h3>
-				<iframe class="in--map" frameborder="0" src="https://obsocial.cartodb.com/viz/5ed1ba8e-1138-11e6-a6e9-0ecd1babdde5/embed_map" allowfullscreen webkitallowfullscreen mozallowfullscreen oallowfullscreen msallowfullscreen></iframe>
-				<h3 class="h3">Increíble, ¿no crees?</h3>
-				<p class="container-narrow">¿Te animas a poner tu granito de arena para evitarlo? ¡Nosotros ya lo estamos haciendo!</p>
-				<a class="btn btn--alt btn-shadow titulo-blm" href="proyecto.html">Conoce nuestro proyecto</a>
+		<div class="container text-center js-animate">
+			<h3>¿Sabes cuantos kilos de basura electrónica genera cada persona al año?</h3>
+			<iframe class="in_map--map" frameborder="0" src="https://obsocial.cartodb.com/viz/5ed1ba8e-1138-11e6-a6e9-0ecd1babdde5/embed_map" allowfullscreen webkitallowfullscreen mozallowfullscreen oallowfullscreen msallowfullscreen></iframe>
+			<div class="in_map--text">
+				<p class="text-center">¿Cuanto crees que se genera en...?</p>
+
+				<label class="font-color_two" for="country">Escoge el país</label>
+				<select id="country" class="bg-color_one selector">
+					<option value="alemania">Alemania</option>
+					<option value="argentina">Argentina</option>
+					<option value="bangladesh">Bangladesh</option>
+					<option value="belgica">Bélgica</option>
+					<option value="bolivia">Bolivia</option>
+					<option value="brasil">Brasil</option>
+					<option value="canada">Canadá</option>
+					<option value="china">China</option>
+					<option value="colombia">Colombia</option>
+					<option value="espana">España</option>
+					<option value="eua">Estados Unidos de América</option>
+					<option value="francia">Francia</option>
+					<option value="ghana">Ghana</option>
+					<option value="india">India</option>
+					<option value="islandia">Islandia</option>
+					<option value="japon">Japón</option>
+					<option value="mexico">México</option>
+					<option value="noruega">Noruega</option>
+					<option value="reinounido">Reino Unido</option>
+					<option value="senegal">Senegal</option>
+				</select>
+
+				<label class="font-color_two" for="kilo">Intenta adivinar</label>
+				<input id="kilo" type="number" class="bg-color_one"  placeholder="Introduce los Kg que creas"/>
+
+				<input id="in_map--btn" class="btn" type="submit" value="Comprobar"/>
+
+				<p class="in_map--message--uno text-center">Afortunadamente, no tanto.</p>
+
+				<h4 class="in_map--message text-center">En España se generan 17.77kg de basura electrónica por habitante al año.</h4>
+
+				<p class="in_map--message--dos text-center"></p>
+
+				<p class="in_map--message--tres text-center"></p>
+
+				<p class="">Busca en el mapa cuanta basura electrónica genera cada habitante al año en otros países y sorprendete.</p>
 			</div>
-			
 		</section>
 
 		<!--CONTACTO-->
@@ -187,6 +224,7 @@
 	<script src="https://cdn.jsdelivr.net/jquery.scrollto/2.1.0/jquery.scrollTo.min.js"></script>
 	<!-- general-->
   	<script src="js/app.js"></script>
+  	<script src="js/map.js"></script>
     <!-- addthis-->
 	<script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-56d9d0c9dcecf2ea"></script>
 	<!-- GA-->

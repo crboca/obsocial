@@ -1,13 +1,13 @@
 $(document).ready(function() {
   $("#country").val("espana");
-  $('.index_map--message--uno').hide();
-  $('.index_map--message--dos').hide();
-  $('.index_map--message--tres').hide();
+  $('.in_map--message--uno').hide();
+  $('.in_map--message--dos').hide();
+  $('.in_map--message--tres').hide();
 	
-	$("#index_map--btn").click(function(ev) {
-    $('.index_map--message--uno').hide();
-    $('.index_map--message--dos').hide();
-    $('.index_map--message--tres').hide();
+	$("#in_map--btn").click(function(ev) {
+    $('.in_map--message--uno').hide();
+    $('.in_map--message--dos').hide();
+    $('.in_map--message--tres').hide();
 
     if ($("#country").val() == "alemania") {
       var country ={ pais: 'Alemania',
@@ -76,18 +76,18 @@ $(document).ready(function() {
     };
 
     if (country.persona) {
-      $('.index_map--message--dos').html(country.pais +" es uno de los paises que más basura electrónica genera por habitante al año.");
-      $('.index_map--message--dos').show();
+      $('.in_map--message--dos').html(country.pais +" es uno de los paises que más basura electrónica genera por habitante al año.");
+      $('.in_map--message--dos').show();
     };
     if (country.general) {
-      $('.index_map--message--tres').html(country.pais+" es uno de los países que más basura electrónica genera al año en conjunto.");
-      $('.index_map--message--tres').show();
+      $('.in_map--message--tres').html(country.pais+" es uno de los países que más basura electrónica genera al año en conjunto.");
+      $('.in_map--message--tres').show();
     }
 
-    $('.index_map--message').html("En "+ country.pais +" se generan "+ country.kilo +"kg de basura electrónica por habitante al año.");
+    $('.in_map--message').html("En "+ country.pais +" se generan "+ country.kilo +"kg de basura electrónica por habitante al año.");
 
     if ($("#kilo").val() > country.kilo) {
-        $('.index_map--message--uno').show();
+        $('.in_map--message--uno').show();
     };
 
     $("#kilo").val("");

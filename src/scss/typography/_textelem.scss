@@ -31,7 +31,7 @@ a:hover {
 		font-size: 1.1rem;
 		font-weight: 600;
 		line-height: 1.875rem;
-		@media all and (min-width: 1024px) {
+		@media all and (min-width: $desktop) {
 			font-size: 1.25rem;
 		}
 	}

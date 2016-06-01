@@ -67,6 +67,8 @@ textarea {
 	padding: 0.5rem 1rem;
 	height: 12.25rem;
 }
+
+input::-webkit-input-placeholder, textarea::-webkit-textarea-placeholder,
 input::placeholder, textarea::placeholder {
 	font-size: 16px;
 	font-family: 'Open Sans', sans-serif;

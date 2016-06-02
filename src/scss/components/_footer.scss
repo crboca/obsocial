@@ -9,13 +9,17 @@ footer {
 	border-top: 1px solid lighten($color-two, 10);
 }
 .link-footer {
-    height: 2.25rem;
-    width: 2.25rem;
+    height: 1.25rem;
+    width: 1.25rem;
     position: relative;
     display: block;
     float: left;
     margin: 0 .25rem;
-    @media all and (min-width: $desktop) {
+	@media all and (min-width: $tablet) {
+		height: 2.25rem;
+    	width: 2.25rem;
+	}    
+	@media all and (min-width: $desktop) {
 		margin: 0 2rem;
 	}
     & img{

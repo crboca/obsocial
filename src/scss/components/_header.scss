@@ -3,12 +3,16 @@
 	overflow: hidden;
 	padding: 1rem auto;
 	background-color: $color-one;
+	height: 60px;
+	@media all and (min-width: $desktop) {
+		height: 79px;
+	}
 }
 .logo {
-	width: 10rem;
+	height: 25px;
 	float: left;
 	@media all and (min-width: $desktop) {
-		width: 14rem;
+		height: 40px;
 	}
 }
 

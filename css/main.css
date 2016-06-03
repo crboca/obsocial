@@ -2049,14 +2049,18 @@ a:hover {
 .header {
   overflow: hidden;
   padding: 1rem auto;
-  background-color: #2EB197; }
+  background-color: #2EB197;
+  height: 60px; }
+  @media all and (min-width: 1024px) {
+    .header {
+      height: 79px; } }
 
 .logo {
-  width: 10rem;
+  height: 25px;
   float: left; }
   @media all and (min-width: 1024px) {
     .logo {
-      width: 14rem; } }
+      height: 40px; } }
 
 .logo-obsocial {
   height: 100%;
@@ -2370,11 +2374,6 @@ input::placeholder, textarea::placeholder {
       width: 45%;
       margin: 0 2.5% 3.75rem;
       max-width: none; } }
-  @media all and (min-width: 1280px) {
-    .grid_sizer,
-    .grid_item {
-      width: 30%;
-      margin: 0 1.5% 3.75rem; } }
 
 .grid_item {
   float: left;
@@ -2961,20 +2960,33 @@ footer {
   width: 100%;
   display: block; }
   .ev_selector select {
-    width: 90%;
-    margin-bottom: 1.75rem; }
-  .ev_selector label, .ev_selector select {
-    margin-left: 1rem; }
+    margin-bottom: 1.25rem; }
+  .ev_selector--left label, .ev_selector--left select {
+    margin-left: 10px; }
+  .ev_selector--right label, .ev_selector--right select {
+    margin-right: 10px; }
   @media all and (min-width: 768px) {
     .ev_selector {
       width: 50%;
-      display: inline-block; } }
+      display: inline-block; }
+      .ev_selector select {
+        margin-bottom: 6rem; }
+      .ev_selector label, .ev_selector select {
+        width: 90%;
+        max-width: 28rem;
+        display: block; }
+      .ev_selector--left label, .ev_selector--left select {
+        float: left; }
+      .ev_selector--right label, .ev_selector--right select {
+        float: right; } }
 
 .blog_selector {
   width: 100%;
   display: block; }
+  .blog_selector label, .blog_selector select {
+    margin: 0 2.5% 0.75rem 0; }
   .blog_selector select {
-    margin-bottom: 1.75rem;
+    margin-bottom: 3rem;
     width: 100%; }
     @media all and (min-width: 768px) {
       .blog_selector select {

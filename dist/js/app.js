@@ -50,21 +50,26 @@ $(document).ready(function() {
         $(".header .container").addClass("container--minimized");
         $(".logo").addClass("logo--minimized");
         $(".menu-item-style").addClass("menu-item-style--minimized");
-
-        $(".header").mouseenter(function() {
-          $(".header").removeClass("header--minimized");
-          $(".header .container").removeClass("container--minimized");
-          $(".logo").removeClass("logo--minimized");
-          $(".menu-item-style").removeClass("menu-item-style--minimized");
-        })
-        $(".header").mouseleave(function() {
-          $(".header").addClass("header--minimized");
-          $(".header .container").addClass("container--minimized");
-          $(".logo").addClass("logo--minimized");
-          $(".menu-item-style").addClass("menu-item-style--minimized");
-        })
       };
     })
+
+    $(".header").mouseenter(function() {
+      if ($(window).scrollTop() > $(window).height()) {
+        $(".header").removeClass("header--minimized");
+        $(".header .container").removeClass("container--minimized");
+        $(".logo").removeClass("logo--minimized");
+        $(".menu-item-style").removeClass("menu-item-style--minimized");
+      }
+    })
+    $(".header").mouseleave(function() {
+      if ($(window).scrollTop() > $(window).height()) {
+        $(".header").addClass("header--minimized");
+        $(".header .container").addClass("container--minimized");
+        $(".logo").addClass("logo--minimized");
+        $(".menu-item-style").addClass("menu-item-style--minimized");
+      }
+    })
+
     //scroll especial index
     $('#to-donaciones').click(function(ev) {
       ev.preventDefault();

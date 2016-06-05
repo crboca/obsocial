@@ -120,24 +120,22 @@ padding-top: 1.5rem;
 	font-size: 1rem;
 	font-weight: bold;
 }
-
+.in_col--logo-cont {
+	@media all and (min-width: $tablet) {
+		display: flex;
+		justify-content: space-around;
+	}
+}
 .in_col--logo {
 	display: block;
 	margin: 1.75rem auto;
 	height: 6rem;
 	@media all and (min-width: $tablet) {
-		&--center {
-			margin: 1.75rem auto 0;
-		}
-		&--left {
-			display: inline-block;
-			float: left;
-			margin: 1.75rem 10% 0;
-		}
-		&--right {
-			display: inline-block;
-			float: right;
-			margin: 1.75rem 10% 0;
-		}	
+		display: inline-block;
+	}
+	& img {
+		height: 100%;
+		display: block;
+		margin: 0 auto;
 	}
 }

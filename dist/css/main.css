@@ -2064,7 +2064,11 @@ a:hover {
 
 .logo-obsocial {
   height: 100%;
-  width: 100%; }
+  width: 5rem; }
+  @media all and (min-width: 1024px) {
+    .logo-obsocial {
+      height: 100%;
+      width: 100%; } }
 
 .btn {
   text-transform: uppercase;
@@ -2796,21 +2800,27 @@ footer {
   font-size: 1rem;
   font-weight: bold; }
 
+@media all and (min-width: 768px) {
+  .in_col--logo-cont {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-justify-content: space-around;
+        -ms-flex-pack: distribute;
+            justify-content: space-around; } }
+
 .in_col--logo {
   display: block;
   margin: 1.75rem auto;
   height: 6rem; }
   @media all and (min-width: 768px) {
-    .in_col--logo--center {
-      margin: 1.75rem auto 0; }
-    .in_col--logo--left {
-      display: inline-block;
-      float: left;
-      margin: 1.75rem 10% 0; }
-    .in_col--logo--right {
-      display: inline-block;
-      float: right;
-      margin: 1.75rem 10% 0; } }
+    .in_col--logo {
+      display: inline-block; } }
+  .in_col--logo img {
+    height: 100%;
+    display: block;
+    margin: 0 auto; }
 
 .pro_avatar {
   background-color: #F0F0F0;

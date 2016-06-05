@@ -2714,6 +2714,13 @@ footer {
 .logo-footer, .social-icons {
   max-width: 40%; }
 
+.logo-footer {
+  height: 25px;
+  float: left; }
+  @media all and (min-width: 1024px) {
+    .logo-footer {
+      height: 40px; } }
+
 @media all and (max-width: 979px) {
   .footer-share {
     height: 8rem; } }

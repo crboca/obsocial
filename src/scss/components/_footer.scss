@@ -36,6 +36,13 @@ footer {
 .logo-footer, .social-icons {
 	max-width: 40%;
 }
+.logo-footer {
+	height: 25px;
+	float: left;
+	@media all and (min-width: $desktop) {
+		height: 40px;
+	}
+}
 .footer-share{
 	@media all and (max-width: $bp_footer) {
 	height: 8rem;

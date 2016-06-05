@@ -134,5 +134,8 @@
     text-transform: uppercase;
     line-height: 3rem;
     padding-bottom: 1.4rem;
+    transition: .3s line-height ease,
+    .3s padding-bottom ease,
+    .3s font-size ease;
   }
 }

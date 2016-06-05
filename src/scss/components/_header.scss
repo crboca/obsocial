@@ -4,18 +4,47 @@
 	padding: 1rem auto;
 	background-color: $color-one;
 	height: 60px;
+	
 	@media all and (min-width: $desktop) {
 		height: 79px;
+		position: fixed;
+		width: 100%;
+		z-index: 3;
+		transition: .3s ease;
 	}
 }
+
 .logo {
 	height: 25px;
 	float: left;
 	@media all and (min-width: $desktop) {
 		height: 40px;
+		transition: .3s ease;
 	}
 }
 
+@media all and (min-width: $desktop) {
+	.header--minimized {
+		height: 36px;
+		transition: .3s ease;
+	}
+	.logo--minimized {
+		height: 20px;
+		transition: .3s ease;
+	}
+	.container--minimized {
+		margin: 0.5rem auto;
+		transition: .3s ease;
+	}
+	.menu-item-style--minimized {
+		line-height: 1.4rem;
+		padding-bottom: 0.2rem;
+		font-size: 0.7rem;
+		transition: .3s line-height ease,
+    	.3s padding-bottom ease,
+    	.3s font-size ease;
+	}
+}
 .logo-obsocial {
 	height: 100%;
 	width: 5rem;

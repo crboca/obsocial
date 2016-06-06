@@ -2356,6 +2356,22 @@ input::placeholder, textarea::placeholder {
 .hide {
   display: none; }
 
+.colorblind-label {
+  position: absolute;
+  bottom: 0;
+  left: 20px;
+  display: inline-block;
+  margin: 0;
+  line-height: 1rem; }
+
+input.colorblind-input {
+  display: inline-block;
+  position: absolute;
+  bottom: 0;
+  left: 0px;
+  margin: 0;
+  height: 1rem; }
+
 .container_blog:after {
   content: "";
   clear: both;
@@ -2694,7 +2710,8 @@ footer {
   background-color: #2B3E50;
   height: 5.5rem;
   line-height: 1rem;
-  font-size: 0.7rem; }
+  font-size: 0.7rem;
+  position: relative; }
 
 .footer-border {
   border-top: 1px solid #3d5871; }

@@ -26,7 +26,7 @@ $(document).ready(function() {
 
     $('#to-header').click(function(ev) {
       ev.preventDefault();
-      $(window).scrollTo('#header',700);
+      $(window).scrollTo('#top',700);
     });
 
     $(window).scroll(function() {

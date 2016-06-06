@@ -2227,7 +2227,14 @@ a:hover {
       position: fixed;
       bottom: 6rem;
       left: 0;
-      display: none; }
+      display: none;
+      padding-left: 1rem;
+      padding-right: 1rem; }
+      .btn_blog--back span {
+        display: none; }
+        @media all and (min-width: 1024px) {
+          .btn_blog--back span {
+            display: inline; } }
     .btn_blog_arrow--back {
       /* IE 9 */
       -webkit-transform: rotate(90deg);

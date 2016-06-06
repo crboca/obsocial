@@ -27,6 +27,14 @@
 			bottom: 6rem;
 			left: 0;
 			display: none;
+			padding-left: 1rem;
+			padding-right: 1rem;
+			& span {
+				display: none;
+				@media all and (min-width: $desktop) {
+					display: inline;
+				}
+			}
 		}
 		&_arrow--back {
 			-ms-transform: rotate(90deg); /* IE 9 */

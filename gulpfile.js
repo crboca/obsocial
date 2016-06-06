@@ -52,6 +52,12 @@ gulp.task('js', function() {
     .pipe(gulp.dest('./dist/js'));
 });
 
+//deploy
+gulp.task('deploy', function() {
+  return gulp.src('./dist/**/*')
+    .pipe(ghPages());
+});
+
 //Copiar las IMG de SRC a DIST
 gulp.task('imagemin', function() {
     return gulp.src('./src/img/*')

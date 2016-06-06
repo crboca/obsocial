@@ -17,7 +17,7 @@ $(document).ready(function() {
       if ($('.taller_detail-box').hasClass("open")) {
         $('.taller_detail-box_btn').html("Ocultar detalles");
       } else{
-        $('.taller_detail-box_btn').html("Mostrar detalles");
+        $('.taller_detail-box_btn').html("Ver detalles");
       };
     });
 

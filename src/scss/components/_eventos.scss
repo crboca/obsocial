@@ -126,20 +126,20 @@
 		border-style: 0;
 		height: 10rem;
 		width: 250px;
-		@media all and (min-width: 320px){
+		@media all and (min-width: $mobile){
 			width: 280px;
 			}
-		@media all and (min-width: 550px){
+		@media all and (min-width: $bp_map){
 			width: 400px;
 			height: 20rem;
 			}
-		@media all and (min-width: 768px){
+		@media all and (min-width: $tablet){
 			width: 600px;
 			}
 	}
 
 	&_detail-box {
-		height: 8rem;
+		height: 7.8rem;
 		overflow: hidden;
 		border-bottom: 2px solid $color-one;
 		position: relative;
@@ -157,8 +157,9 @@
 			-.75rem 0px 0px 0px $color-four,
 			1px 1px 0px rgba(0, 0, 0, 0.1);
 
-		margin: -1.75rem auto 1.75rem;
+		margin: -1rem auto 1.75rem;
 		display: block;
+		padding: 0.5rem 2rem;
 		width: 14rem;
 		text-align: center;
 		z-index: 1;
@@ -169,4 +170,7 @@
 .open {
 	height: 21rem;
     transition: height .8s ease;
+    @media all and (min-width: $tablet){
+		height: 20rem;
+	}
 }

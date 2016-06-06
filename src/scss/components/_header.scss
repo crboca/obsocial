@@ -4,6 +4,7 @@
 	padding: 1rem auto;
 	background-color: $color-one;
 	height: 60px;
+	border-bottom: 1px solid lighten($color-one, 10);
 	
 	@media all and (min-width: $desktop) {
 		height: 79px;

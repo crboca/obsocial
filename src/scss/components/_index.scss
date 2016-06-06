@@ -93,9 +93,14 @@
 
 .in_map--map {
 	height: 24rem;
+	margin-top: 1.75rem;
+	padding: 0 1.5rem;
+	@media all and (min-width: $tablet) {
+		padding: 0;
+	}
 }
 .in_map--text {
-padding-top: 1.5rem;
+	padding-top: 1.5rem;
 }
 .in_map--map,
 .in_map--text {

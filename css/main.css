@@ -2156,7 +2156,8 @@ a:hover {
   overflow: hidden;
   padding: 1rem auto;
   background-color: #2EB197;
-  height: 60px; }
+  height: 60px;
+  border-bottom: 1px solid #44ceb3; }
   @media all and (min-width: 1024px) {
     .header {
       height: 79px;
@@ -2546,7 +2547,7 @@ input::placeholder, textarea::placeholder {
       width: 600px; } }
 
 .taller_detail-box {
-  height: 8rem;
+  height: 7.8rem;
   overflow: hidden;
   border-bottom: 2px solid #2EB197;
   position: relative;
@@ -2555,8 +2556,9 @@ input::placeholder, textarea::placeholder {
 
 .taller_detail-box_btn {
   box-shadow: 0.75rem 0px 0px 0px #E1E1E1, -0.75rem 0px 0px 0px #E1E1E1, 1px 1px 0px rgba(0, 0, 0, 0.1);
-  margin: -1.75rem auto 1.75rem;
+  margin: -1rem auto 1.75rem;
   display: block;
+  padding: 0.5rem 2rem;
   width: 14rem;
   text-align: center;
   z-index: 1;
@@ -2566,6 +2568,9 @@ input::placeholder, textarea::placeholder {
   height: 21rem;
   -webkit-transition: height .8s ease;
   transition: height .8s ease; }
+  @media all and (min-width: 768px) {
+    .open {
+      height: 20rem; } }
 
 .don_info {
   margin-bottom: 3rem; }
@@ -2723,7 +2728,7 @@ footer {
 
 @media all and (max-width: 979px) {
   .footer-share {
-    height: 8rem; } }
+    height: 6rem; } }
 
 .in_section {
   margin: 0;
@@ -2809,7 +2814,12 @@ footer {
   height: 36rem; }
 
 .in_map--map {
-  height: 24rem; }
+  height: 24rem;
+  margin-top: 1.75rem;
+  padding: 0 1.5rem; }
+  @media all and (min-width: 768px) {
+    .in_map--map {
+      padding: 0; } }
 
 .in_map--text {
   padding-top: 1.5rem; }

@@ -82,4 +82,22 @@ $(document).ready(function() {
       $(window).scrollTo('#colaborar',700);
     });
     
+    //  $('#colorblind').click(function(ev) {
+    //   if ($('#colorblind:checked')) {
+    //     $('.header').css("background-color","#006553");
+    //     $('.bg-color_one').css("background-color","#006553");
+    //     $('.bg-color_two').css("background-color","#2B3E50");
+    //     $('.btn').css("background-color","#A81B07");
+    //     $('.btn-alt').css("background-color","#006553");
+    //     $('footer').css("background-color","#2B3E50");
+    //   } if ($('#colorblind.not(:checked)')) {
+    //     $('.header').css("background-color","#2EB197");
+    //     $('.bg-color_one').css("background-color","#2EB197");
+    //     $('.bg-color_two').css("background-color","#2B3E50");
+    //     $('.btn').css("background-color","#F85C45");
+    //     $('.btn-alt').css("background-color","#2EB197");
+    //     $('footer').css("background-color","#2B3E50");
+    //   };
+    // });
+
    });

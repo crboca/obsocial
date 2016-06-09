@@ -92,15 +92,25 @@
 }
 
 .in_map--map {
-	height: 24rem;
+	
 	margin-top: 1.75rem;
 	padding: 0 1.5rem;
+	& iframe {
+		height: 24rem;
+		width: 100%;
+		margin-bottom: 1.75rem;
+	}
 	@media all and (min-width: $tablet) {
 		padding: 0;
 	}
 }
 .in_map--text {
 	padding-top: 1.5rem;
+}
+.in_map--box {
+	border: solid 1px $color-two;
+	padding: 1.5rem;
+	margin: 1.75rem auto;
 }
 .in_map--map,
 .in_map--text {

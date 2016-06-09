@@ -2006,7 +2006,7 @@ h5 {
   text-transform: uppercase;
   font-weight: 600;
   letter-spacing: 0.134375rem;
-  font-size: 0.875rem; }
+  font-size: 1.575rem; }
 
 .titulo-evento,
 .titulo-post {
@@ -2851,15 +2851,23 @@ footer {
   height: 36rem; }
 
 .in_map--map {
-  height: 24rem;
   margin-top: 1.75rem;
   padding: 0 1.5rem; }
+  .in_map--map iframe {
+    height: 24rem;
+    width: 100%;
+    margin-bottom: 1.75rem; }
   @media all and (min-width: 768px) {
     .in_map--map {
       padding: 0; } }
 
 .in_map--text {
   padding-top: 1.5rem; }
+
+.in_map--box {
+  border: solid 1px #2B3E50;
+  padding: 1.5rem;
+  margin: 1.75rem auto; }
 
 .in_map--map,
 .in_map--text {

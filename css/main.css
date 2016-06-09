@@ -2175,7 +2175,8 @@ a:hover {
 
 .logo {
   height: 25px;
-  float: left; }
+  float: left;
+  margin-top: 5px; }
   @media all and (min-width: 1024px) {
     .logo {
       height: 40px;
@@ -2484,13 +2485,14 @@ input.colorblind-input {
   margin-top: 1.75rem;
   margin-bottom: 1rem; }
   .taller_hora:before {
-    content: "hora";
+    content: "___";
     color: transparent;
     background: url(../img/reloj.svg);
     background-size: 16px;
     background-repeat: no-repeat;
     background-position: left;
-    height: 16px; }
+    height: 16px;
+    width: 14px; }
 
 .taller_lugar {
   margin-bottom: 1rem; }
@@ -2502,57 +2504,62 @@ input.colorblind-input {
     text-decoration: underline;
     color: #2B3E50; }
   .taller_lugar:before {
-    content: "lugar";
+    content: "___";
     color: transparent;
     background: url(../img/lugar.svg);
     background-size: 14px;
     background-repeat: no-repeat;
     background-position: left;
-    height: 14px; }
+    height: 14px;
+    width: 14px; }
 
 .taller_euro {
   margin-bottom: 1rem; }
   .taller_euro:before {
-    content: "euro";
+    content: "___";
     color: transparent;
     background: url(../img/euro.svg);
     background-size: 14px;
     background-repeat: no-repeat;
     background-position: left;
-    height: 14px; }
+    height: 14px;
+    width: 14px; }
 
 .taller_silla {
   margin-bottom: 1rem; }
   .taller_silla:before {
-    content: "acces";
+    content: "___";
     color: transparent;
     background: url(../img/silla.svg);
     background-size: 14px;
     background-repeat: no-repeat;
     background-position: left;
-    height: 14px; }
+    height: 14px;
+    width: 14px; }
 
 .taller_metro {
   margin-bottom: 1rem; }
   .taller_metro:before {
-    content: "metro";
+    content: "___";
     color: transparent;
     background: url(../img/metro.svg);
     background-size: 14px;
     background-repeat: no-repeat;
     background-position: left;
-    height: 14px; }
+    height: 14px;
+    width: 14px; }
 
 .taller_coche {
   margin-bottom: 1rem; }
   .taller_coche:before {
-    content: "park";
+    content: "___";
     color: transparent;
     background: url(../img/coche.svg);
     background-size: 14px;
     background-repeat: no-repeat;
     background-position: left;
-    height: 14px; }
+    height: 14px;
+    width: 14px; }
 
 .taller_foto {
   width: 100%;

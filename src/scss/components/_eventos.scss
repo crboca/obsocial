@@ -36,13 +36,14 @@
 		margin-top: 1.75rem;
 		margin-bottom: 1rem;
 		&:before {
-			content: "hora";
+			content: "___";
 			color: transparent;
 			background: url(../img/reloj.svg);
 			background-size: 16px;
 			background-repeat: no-repeat;
 			background-position: left;
 			height: 16px;
+			width: 14px;
 			}
 	}
 	&_lugar{
@@ -57,61 +58,66 @@
 			color: $color-two;
 			}
 		&:before {
-			content: "lugar";
+			content: "___";
 			color: transparent;
 			background: url(../img/lugar.svg);
 			background-size: 14px;
 			background-repeat: no-repeat;
 			background-position: left;
 			height: 14px;
+			width: 14px;
 			}
 	}
 	&_euro {
 		margin-bottom: 1rem;
 		&:before {
-			content: "euro";
+			content: "___";
 			color: transparent;
 			background: url(../img/euro.svg);
 			background-size: 14px;
 			background-repeat: no-repeat;
 			background-position: left;
 			height: 14px;
+			width: 14px;
 			}
 	}
 	&_silla {
 		margin-bottom: 1rem;
 		&:before {
-			content: "acces";
+			content: "___";
 			color: transparent;
 			background: url(../img/silla.svg);
 			background-size: 14px;
 			background-repeat: no-repeat;
 			background-position: left;
 			height: 14px;
+			width: 14px;
 			}
 	}
 	&_metro {
 		margin-bottom: 1rem;
 		&:before {
-			content: "metro";
+			content: "___";
 			color: transparent;
 			background: url(../img/metro.svg);
 			background-size: 14px;
 			background-repeat: no-repeat;
 			background-position: left;
 			height: 14px;
+			width: 14px;
 			}
 	}
 	&_coche {
 		margin-bottom: 1rem;
 		&:before {
-			content: "park";
+			content: "___";
 			color: transparent;
 			background: url(../img/coche.svg);
 			background-size: 14px;
 			background-repeat: no-repeat;
 			background-position: left;
 			height: 14px;
+			width: 14px;
 			}
 	}
 

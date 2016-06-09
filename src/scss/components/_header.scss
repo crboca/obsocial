@@ -18,7 +18,9 @@
 .logo {
 	height: 25px;
 	float: left;
+	margin-top: 5px;
 	@media all and (min-width: $desktop) {
+		
 		height: 40px;
 		transition: .3s ease;
 	}

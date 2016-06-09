@@ -15,3 +15,7 @@ section {
 		padding-bottom: 5rem;
 		}
 }
+section:after {
+	content: "";
+	clear: both;
+}

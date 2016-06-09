@@ -1,4 +1,15 @@
 // CONTACTO FORMULARIO
+fieldset {
+	border: transparent;
+	padding: 0;
+	margin: 0;
+}
+legend {
+	color: transparent;
+	line-height: 0;
+	margin: 0;
+	padding: 0;
+}
 form {
 	ul {
 		padding: 0;
@@ -6,7 +17,7 @@ form {
 	li {
 		list-style: none;
 		}
-	@media all and (min-width: 1024px) {
+	@media all and (min-width: $desktop) {
 		padding-top: 1.75rem;
 		}
 }
@@ -56,6 +67,8 @@ textarea {
 	padding: 0.5rem 1rem;
 	height: 12.25rem;
 }
+
+input::-webkit-input-placeholder, textarea::-webkit-textarea-placeholder,
 input::placeholder, textarea::placeholder {
 	font-size: 16px;
 	font-family: 'Open Sans', sans-serif;
@@ -65,4 +78,21 @@ input::placeholder, textarea::placeholder {
 }
 .hide {
 	display: none;
+}
+
+.colorblind-label {
+	position: absolute;
+	bottom: 0;
+	left: 20px;
+	display: inline-block;
+	margin: 0;
+	line-height: 1rem;
+}
+input.colorblind-input {
+	display: inline-block;
+	position: absolute;
+	bottom: 0;
+	left: 0px;
+	margin: 0;
+	height: 1rem;
 }

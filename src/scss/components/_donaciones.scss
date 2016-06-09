@@ -1,33 +1,44 @@
 .don {
-	&-info{
+	&_info{
 		margin-bottom: 3rem;
 	}
-	&-img{
+	&_img{
 		height: 95px;
 		margin-bottom: 1.75rem;
 		margin-top: 3rem;
 	}
-	&-step {
+	&_step {
 		width: 100%;
 		max-width: 400px;
 		margin-right: auto;
 		margin-left: auto;
 		position: relative;
-		@media all and (min-width: 768px){
+		@media all and (min-width: $tablet){
 			width: 400px;
 			
 			}
-		@media all and (min-width: 1024px){
+		@media all and (min-width: $desktop){
 			width: 271px;	
 			}
 
 	}
 }
-.don-flecha{
-	&-d,
-	&-i{
+.don_arrow{
+	&:after {
+		content: "";
+		width: 0;
+		height: 0;
+		border-top: 25px solid $color-one;
+		border-left: 50px solid transparent; 
+		border-right: 50px solid transparent;
+		@media all and (min-width: $desktop){
+			content: none;
+		}
+	}
+	&--d,
+	&--i{
 		display: none;
-		@media all and (min-width: 1024px){	
+		@media all and (min-width: $desktop){	
 		width: 250px;
 		height: 4px;
 		background-color: $color-one;
@@ -45,16 +56,16 @@
 			}
 		}
 	}
-	&-d{
-		@media all and (min-width: 1024px){	
+	&--d{
+		@media all and (min-width: $desktop){	
 		left: 100%;
 		&:after{
 			left: 230px;
 			}
 		}
 	}
-	&-i{
-		@media all and (min-width: 1024px){	
+	&--i{
+		@media all and (min-width: $desktop){	
 		right: 100%;
 		&:after{
 			right: 230px;
@@ -62,8 +73,8 @@
 		}
 	}
 }
-.don-step{
-	@media all and (min-width: 1024px){
+.don_step{
+	@media all and (min-width: $desktop){
 		&_uno,
 		&_tres,
 		&_cinco{
@@ -76,11 +87,11 @@
 			clear: right;
 			}
 	}
-	&_uno_bg,
-	&_dos_bg,
-	&_tres_bg,
-	&_cuatro_bg,
-	&_cinco_bg{
+	&_uno--bg,
+	&_dos--bg,
+	&_tres--bg,
+	&_cuatro--bg,
+	&_cinco--bg{
 		background-repeat: no-repeat;
 		background-position: left top;
 		height: 200px;
@@ -88,55 +99,43 @@
 	
 }
 
-.don-step_uno {
-	&_bg{
+.don_step_uno {
+	&--bg{
 		background-image: url(../img/don-step-uno.svg);
 		}
-	@media all and (min-width: 1024px){
+	@media all and (min-width: $desktop){
 		margin: 0 0 3rem 20%;
 		}
 }
-.don-step_dos {
-	&_bg{
+.don_step_dos {
+	&--bg{
 		background-image: url(../img/don-step-dos.svg);
 		}
-	@media all and (min-width: 1024px){
+	@media all and (min-width: $desktop){
 		margin: 13rem 20% 6rem 0;	
 		}
 }
-.don-step_tres {
-	&_bg{
+.don_step_tres {
+	&--bg{
 		background-image: url(../img/don-step-tres.svg);
 		}
-	@media all and (min-width: 1024px){
+	@media all and (min-width: $desktop){
 		margin: 3rem 0 6rem 20%;			
 		}
 }
-.don-step_cuatro {
-	&_bg{
+.don_step_cuatro {
+	&--bg{
 		background-image: url(../img/don-step-cuatro.svg);
 		}
-	@media all and (min-width: 1024px){
+	@media all and (min-width: $desktop){
 		margin: 3rem 20% 0 0;		
 		}
 }
-.don-step_cinco {
-	&_bg{
+.don_step_cinco {
+	&--bg{
 		background-image: url(../img/don-step-cinco.svg);	
 		}
-	@media all and (min-width: 1024px){
+	@media all and (min-width: $desktop){
 		margin-left: 20%;	
-		}
-}
-
-.arrow:after {
-	content: "";
-	width: 0;
-	height: 0;
-	border-top: 25px solid $color-one;
-	border-left: 50px solid transparent; 
-	border-right: 50px solid transparent;
-	@media all and (min-width: 1024px){
-		content: none;
 		}
 }

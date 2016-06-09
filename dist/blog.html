@@ -5,135 +5,221 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Obsocial</title>
 	<link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700' rel='stylesheet' type='text/css'>
+	<script src="js/pace.js"></script>
 	<link rel="stylesheet" href="css/main.css">
 </head>
 <body>
 	<?php include_once("analyticstracking.php") ?>
-<!--HEADER-->	
-	<header class="header">
-		<div class="container">			
+<!--HEADER-->
+	<header class="header" id="header">
+		<div class="container">
 			<a href="index.html" class="logo">
 				<img src="img/logo-obsocial.svg"  class="logo-obsocial" alt="Logotipo Obsocial">
-			</a>	
-			<nav class="menu-desktop">
-				<a class="menu-item" href="donacion.html">Donar</a>
-				<a class="menu-item" href="eventos.html">Reparar</a>
-				<a class="menu-item" href="proyecto.html">Nuestro proyecto</a>
-				<a class="menu-item active" href="blog.html">Blog</a>
-				<a class="menu-item" href="contacto.html">Contacto</a>
-			</nav>
+			</a>
+			<div class="menu-mobile closed">
+		        <a class="btn-anim-three">
+		            <span class="one"></span>
+		            <span class="two"></span>
+		            <span class="three"></span>
+		        </a>
+		        <ul class="nav" role="sidebar">
+		        	<li class="menu-item">
+		                <a class="menu-item-style" href="donacion.html">
+		                    Donar
+		                </a>
+		            </li>
+		            <li class="menu-item">
+		                <a class="menu-item-style" href="eventos.html">
+		                    Reparar
+		                </a>
+		            </li>
+		            <li class="menu-item">
+		                <a class="menu-item-style" href="proyecto.html">
+		                    Nuestro proyecto
+		                </a>
+		            </li>
+		            <li class="menu-item">
+		                <a class="menu-item-style active" href="blog.html">
+		                    Blog
+		                </a>
+		            </li>
+		            <li class="menu-item">
+		                <a class="menu-item-style" href="contacto.html">
+		                    Contacto
+		                </a>
+		            </li>
+		        </ul>
+	    	</div>
 		</div>
-
-		<div class="menu-mobile visible-xs closed">
-	        <a class="btn-anim-three">
-	            <span class="one"></span>
-	            <span class="two"></span>
-	            <span class="three"></span>
-	        </a>
-	        <ul class="nav" role="sidebar">
-	        	<li>
-	                <a href="donacion.html">
-	                    Donar
-	                </a>
-	            </li>
-	            <li>
-	                <a href="eventos.html">
-	                    Reparar
-	                </a>
-	            </li>
-	            <li>
-	                <a href="proyecto.html">
-	                   Nuestro proyecto
-	                </a>
-	            </li>
-	            <li>
-	                <a href="blog.html">
-	                    Blog
-	                </a>
-	            </li>
-	            <li>
-	                <a href="contacto.html">
-	                    Contacto
-	                </a>
-	            </li>
-	        </ul>
-    	</div>
 	</header>
-	<main>
+	<a class="btn btn_subir" id="to-header" href="#header">
+		<img src="img/arrow.png" class="btn_subir_arrow--top">
+	</a>
+	<main id="top">
 		<section class="portada portada-blog">
-			<div class="container">
-				<h1 class="h1">Obsoblog</h1>
+			<div class="container js-animate">
+				<h1>Obsoblog</h1>
+				<div class="divider-line"></div>
 				<p class="container-narrow">Lee nuestra selección de articulos sobre la Obsolescencia Programada y las crónicas de los eventos y charlas que realizamos.</p>
 			</div>
 		</section>
 		<section class="bg-color_four">
-			<div class="container-narrow">
-				<div class="post bg-color_w">
-					<a href="post-uno.html">
-						<img class="post-port" src="img/ev-uno.jpg">
-					</a>
-					<div class="post-info">
-						<div>
-							<span class="info-tags post-fecha">
-								<img src="img/post-reloj.svg">
-								28/11/2015
-							</span>
-							<span class="info-tags post-like">
-								<img src="img/post-like.svg">
-								5389
-							</span>
-							<span class="info-tags post-tag">
-								<img src="img/post-tag.svg">
-								Teléfonos, Ahorro, Ideas
-							</span>
-						</div>
-						<a class="no-style" href="post-uno.html">
-							<h3 class="h5 font-color_two">Obsolescencia programada: un duro enemigo para el ahorro</h3>
-						</a>
-						<p>Todos somos testigos de cómo, año a año, los aparatos electrónicos, electrodomésticos u otro tipo de dispositivos evolucionan, introduciendo grandes mejoras que se traducen en una mejor funcionalidad. Mejoras que, sin embargo, no siempre alargan la vida útil del aparato. ¿Quién no ha vivido la curiosa paradoja en la que sale más barato adquirir un nuevo producto que arreglar el antiguo?</p>
-						<a class="btn  titulo-blm btn-shadow" href="post-uno.html">Seguir leyendo</a>
-					</div>
-				</div>
-
-				<div class="post bg-color_w">
-					<a href="post-uno.html">
-						<img class="post-port" src="img/ev-tres.jpg">
-					</a>
-					<div class="post-info">
-						<div>
-							<span class="info-tags post-fecha">
-								<img src="img/post-reloj.svg">
-								28/11/2015
-							</span>
-							<span class="info-tags post-like">
-								<img src="img/post-like.svg">
-								5389
-							</span>
-							<span class="info-tags post-tag">
-								<img src="img/post-tag.svg">
-								Teléfonos, Ahorro, Ideas
-							</span>
-						</div>
-						<a class="no-style" href="post-uno.html">
-							<h3 class="h5 font-color_two">7 Productos preparados para fallar en nombre de la Obsolescencia Programada</h3>
-						</a>
-						<p>La sociedad de consumo y la obsolescencia programada son la base del sistema económico y social actual. Pero a diferencia de lo que muchos creen, este sistema no es nada nuevo.</p>
-						<p>En este artículo te contaremos algunas de las estrategias y te mostraremos, uno por uno, productos específicos y de uso masivo en las que se aplican.</p>
-						<a class="btn titulo-blm btn-shadow" href="post-uno.html">Seguir leyendo</a>
-					</div>
+			<div class="container">
+				<div class="blog_selector ">
+					<label class="font-color_two">Filtra los posts por temas</label>
+					<select class="bg-color_one selector">
+						<option value="0">Todos los eventos</option>
+						<option value="1">Bitácora de Eventos</option>
+						<option value="2" >Noticias de Donaciones</option>
+						<option value="3" >Noticias Obsocial</option>
+					</select>		
 				</div>
 			</div>
+			<div class="grid container">
+			    <div class="grid_sizer">
+			    </div>
+			    <div class="grid_item eventos">
+			        <a href="post-uno.html">
+			        	<img class="post_port" src="img/blog-uno.jpg">
+			        </a>
+			        <div class="post_info">
+			          <div>
+			            <span class=" post_fecha">
+			              <img src="img/post-reloj.svg">
+			                5/6/2016
+			            </span>
+			            <span class=" post_tag">
+			              <img src="img/post-tag.svg">
+			              Evento, batería.
+			            </span>
+			            <iframe class="post_like" src="https://www.facebook.com/plugins/like.php?href=https%3A%2F%2Fcrboca.github.io%2Fobsocial&layout=button&action=like&show_faces=true&share=true&appId" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true"></iframe>
+			          </div>
+			          <a class="no-style" href="post-uno.html">
+			            <h3 class="titulo-post ">Ana nos cuenta su experiéncia en el taller de reparación de baterías</h3>
+			          </a>
+			        </div>
+			        <a class="btn btn_blog" href="post-uno.html">Seguir leyendo</a>
+			      </div>
+			      <div class="grid_item donaciones">
+			        <a href="post-dos.html">
+			          <img class="post_port" src="img/blog-dos.jpg">
+			        </a>
+			        <div class="post_info">
+			          <div>
+			            <span class=" post_fecha">
+			              <img src="img/post-reloj.svg">
+			              22/5/2016
+			            </span>
+			            <span class=" post_tag">
+			              <img src="img/post-tag.svg">
+			              Donar, tablet.
+			            </span>
+			            <iframe class="post_like" src="https://www.facebook.com/plugins/like.php?href=https%3A%2F%2Fcrboca.github.io%2Fobsocial&layout=button&action=like&show_faces=true&share=true&appId" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true"></iframe>
+			          </div>
+			          <a class="no-style" href="post-dos.html">
+			            <h3 class="titulo-post ">Donación de 3 tablets en un colegio de Barcelona</h3>
+			          </a>
+			        </div>
+			        <a class="btn btn_blog" href="post-dos.html">Seguir leyendo</a>
+			      </div>
+			      <div class="grid_item noticias">
+			        <a href="post-tres.html">
+			          <img class="post_port" src="img/blog-tres.jpg">
+			        </a>
+			        <div class="post_info">
+			          <div>
+			            <span class=" post_fecha">
+			              <img src="img/post-reloj.svg">
+			              8/5/2016
+			            </span>
+			            <span class=" post_tag">
+			              <img src="img/post-tag.svg">
+			              Equipo, colaborar.
+			            </span>
+			            <iframe class="post_like" src="https://www.facebook.com/plugins/like.php?href=https%3A%2F%2Fcrboca.github.io%2Fobsocial&layout=button&action=like&show_faces=true&share=true&appId" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true"></iframe>
+			          </div>
+			          <a class="no-style" href="post-tres.html">
+			            <h3 class="titulo-post ">¡Pedro ha decidio colaborar con nosotros!</h3>
+			          </a>
+			        </div>
+			        <a class="btn btn_blog" href="post-tres.html">Seguir leyendo</a>
+			      </div>
+			      <div class="grid_item eventos">
+			        <a href="post-cuatro.html">
+			          <img class="post_port" src="img/ev-dos.jpg">
+			        </a>
+			        <div class="post_info">
+			          <div>
+			            <span class=" post_fecha">
+			              <img src="img/post-reloj.svg">
+			              24/4/2016
+			            </span>
+			            <span class=" post_tag">
+			              <img src="img/post-tag.svg">
+			              Equipo, experiencia.
+			            </span>
+			            <iframe class="post_like" src="https://www.facebook.com/plugins/like.php?href=https%3A%2F%2Fcrboca.github.io%2Fobsocial&layout=button&action=like&show_faces=true&share=true&appId" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true"></iframe>
+			          </div>
+			          <a class="no-style" href="post-cuatro.html">
+			            <h3 class="titulo-post ">Obsocial lo mueven los voluntarios desde dentro</h3>
+			          </a>
+			        </div>
+			        <a class="btn btn_blog" href="post-cuatro.html">Seguir leyendo</a>
+			      </div>
+			      <div class="grid_item donaciones">
+			        <a href="post-cinco.html">
+			          <img class="post_port" src="img/donar-cover.jpg">
+			        </a>
+			        <div class="post_info">
+			          <div>
+			            <span class=" post_fecha">
+			              <img src="img/post-reloj.svg">
+			              10/4/2016
+			            </span>
+			            <span class=" post_tag">
+			              <img src="img/post-tag.svg">
+			              Donar, ordenador.
+			            </span>
+			            <iframe class="post_like" src="https://www.facebook.com/plugins/like.php?href=https%3A%2F%2Fcrboca.github.io%2Fobsocial&layout=button&action=like&show_faces=true&share=true&appId" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true"></iframe>
+			          </div>
+			          <a class="no-style" href="post-cinco.html">
+			            <h3 class="titulo-post ">¡Reparamos dos ordenadores listos para donar!</h3>
+			          </a>
+			        </div>
+			        <a class="btn btn_blog" href="post-cinco.html">Seguir leyendo</a>
+			      </div>
+			      <div class="grid_item noticias">
+			        <a href="post-seis.html">
+			          <img class="post_port" src="img/ev-cinco.jpg">
+			        </a>
+			        <div class="post_info">
+			          <div>
+			            <span class=" post_fecha">
+			              <img src="img/post-reloj.svg">
+			              27/3/2016
+			            </span>
+			            <span class=" post_tag">
+			              <img src="img/post-tag.svg">
+			              Evento, noticia.
+			            </span>
+			            <iframe class="post_like" src="https://www.facebook.com/plugins/like.php?href=https%3A%2F%2Fcrboca.github.io%2Fobsocial&layout=button&action=like&show_faces=true&share=true&appId" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true"></iframe>
+			          </div>
+			          <a class="no-style" href="post-seis.html">
+			            <h3 class="titulo-post ">Abrimos talleres nuevos para reparar audio</h3>
+			          </a>
+			        </div>
+			        <a class="btn btn_blog" href="post-seis.html">Seguir leyendo</a>
+			      </div>
+			    </div>
 		</section>
 	</main>
-<!--FOOTER-->	
-	<footer>
+<!--FOOTER-->
+	<footer class="footer-border">
 		<div class="container">
-			<div class="font-color_w footer-mensaje text-center">Follow the leader, leader, leader!<br>¡Síguenos!</div>
-			<a href="index.html" class="logo">
+			<a href="index.html" class="logo-footer">
 				<img class="logo-obsocial footer" src="img/logo-obsocial-footer.svg" alt="logo obsocial">
 			</a>
-			
-			<div class="social-icons">				
+			<div class="social-icons">
 				<a target="_blank" class="link-footer" href="https://twitter.com/"><img src="img/social-twitter.svg"></a>
 				<a target="_blank" class="link-footer" href="https://www.facebook.com/"><img src="img/social-facebook.svg"></a>
 				<a target="_blank" class="link-footer" href="https://plus.google.com"><img src="img/social-google.svg"></a>
@@ -141,7 +227,17 @@
 		</div>
 	</footer>
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
-    <script src="js/app.js"></script>
+	<script src="https://cdn.rawgit.com/dirkgroenen/jQuery-viewport-checker/master/dist/jquery.viewportchecker.min.js"></script>
+
+	<script src="js/app.js"></script>
+
+	<script src='https://cdn.jsdelivr.net/masonry/4.1.0/masonry.pkgd.min.js'></script>
+	<script src="js/grid.js"></script>
+
+	<script src="js/blogselect.js"></script>
+
+	<script src="https://cdn.jsdelivr.net/jquery.scrollto/2.1.0/jquery.scrollTo.min.js"></script>
+	
 	<script>
 	  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
 	  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),

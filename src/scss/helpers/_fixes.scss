@@ -18,3 +18,10 @@ html {
   overflow: auto;
   zoom: 1;
 }
+.hidden{
+	opacity: 0;
+}
+
+.visible{
+	opacity: 1;
+}

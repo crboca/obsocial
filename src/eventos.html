@@ -5,173 +5,187 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Obsocial</title>
 	<link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700' rel='stylesheet' type='text/css'>
+	<script src="js/pace.js"></script>
 	<link rel="stylesheet" href="css/main.css">
 </head>
 <body>
 	<?php include_once("analyticstracking.php") ?>
-<!--HEADER-->	
-	<header class="header">
-		<div class="container">			
+<!--HEADER-->
+	<header class="header" id="header">
+		<div class="container">
 			<a href="index.html" class="logo">
 				<img src="img/logo-obsocial.svg"  class="logo-obsocial" alt="Logotipo Obsocial">
-			</a>	
-			<nav class="menu-desktop">
-				<a class="menu-item" href="donacion.html">Donar</a>
-				<a class="menu-item active" href="eventos.html">Reparar</a>
-				<a class="menu-item" href="proyecto.html">Nuestro proyecto</a>
-				<a class="menu-item" href="blog.html">Blog</a>
-				<a class="menu-item" href="contacto.html">Contacto</a>
-			</nav>
+			</a>
+			<div class="menu-mobile closed">
+		        <a class="btn-anim-three">
+		            <span class="one"></span>
+		            <span class="two"></span>
+		            <span class="three"></span>
+		        </a>
+		        <ul class="nav" role="sidebar">
+		        	<li class="menu-item">
+		                <a class="menu-item-style" href="donacion.html">
+		                    Donar
+		                </a>
+		            </li>
+		            <li class="menu-item">
+		                <a class="menu-item-style active" href="eventos.html">
+		                    Reparar
+		                </a>
+		            </li>
+		            <li class="menu-item">
+		                <a class="menu-item-style" href="proyecto.html">
+		                    Nuestro proyecto
+		                </a>
+		            </li>
+		            <li class="menu-item">
+		                <a class="menu-item-style" href="blog.html">
+		                    Blog
+		                </a>
+		            </li>
+		            <li class="menu-item">
+		                <a class="menu-item-style" href="contacto.html">
+		                    Contacto
+		                </a>
+		            </li>
+		        </ul>
+	    	</div>
 		</div>
-
-		<div class="menu-mobile visible-xs closed">
-	        <a class="btn-anim-three">
-	            <span class="one"></span>
-	            <span class="two"></span>
-	            <span class="three"></span>
-	        </a>
-	        <ul class="nav" role="sidebar">
-	        	<li>
-	                <a href="donacion.html">
-	                    Donar
-	                </a>
-	            </li>
-	            <li>
-	                <a href="eventos.html">
-	                    Reparar
-	                </a>
-	            </li>
-	            <li>
-	                <a href="proyecto.html">
-	                    Nuestro proyecto
-	                </a>
-	            </li>
-	            <li>
-	                <a href="blog.html">
-	                    Blog
-	                </a>
-	            </li>
-	            <li>
-	                <a href="contacto.html">
-	                    Contacto
-	                </a>
-	            </li>
-	        </ul>
-    	</div>
 	</header>
-	<main>
+	<a class="btn btn_subir" id="to-header" href="#header">
+		<img src="img/arrow.png" class="btn_subir_arrow--top">
+	</a>
+	<main id="top">
 		<section class="portada portada-eventos">
-			<div class="container">
-				<h1 class="h1">Aprende a reparar</h1>
-				<p class="container-narrow">¿Necesitas reparar algún dispositivo electrónico? ¡Ven a nuestros talleres y aprende con nosotros! Si no conseguimos el objetivo, ¡te garantizamos que se reciclará óptimamente!</p>
+			<div class="container js-animate">
+				<h1>Reparar</h1>
+				<div class="divider-line"></div>
+				<p class="container-narrow">¿Necesitas reparar algún dispositivo electrónico? ¡Ven a nuestros talleres y aprende con nosotros! Si no conseguimos arreglarlo, ¡te garantizamos que lo reciclaremos óptimamente!</p>
 			</div>
 		</section>
 		<section class="bg-color_four clearfix">
 			<div class="evento_galeria container">
-				<div class="evento_ficha bg-color_five">
+				<div class="ev_selector ev_selector--left">
+					<label class="font-color_two ">Selecciona un dispositivo</label>
+					<select class="bg-color_one selector" id="dispositivo">
+						<option value="0">Cualquier dispositivo</option>
+						<option value="1">Smartphone</option>
+						<option value="2" >Tablet o Ipad</option>
+						<option value="3" >Ordenador portátil</option>
+						<option value="4" >Ordenador sobremesa (desktop)</option>
+					</select>	
+				</div>
+				<div class="ev_selector ev_selector--right">
+					<label class="font-color_two ">Selecciona un lugar o zona</label>
+					<select class="bg-color_one selector" id="lugar">
+						<option value="0">Cualquier lugar o zona</option>
+						<option value="1">Bau</option>
+						<option value="2">Ateneu Sol</option>
+					</select>	
+				</div>
+				
+				<div class="evento_ficha smartphone tablet bau bg-color_five">
 					<div class="evento_portada">
 						<a class="no-style" href="evento-uno.html">
 							<img src="img/ev-uno.jpg">
 						</a>
 					</div>
-					<div class="evento_ficha-info">
+					<div class="evento_ficha--info">
 						<a class="no-style" href="evento-uno.html">
-							<h3 class="h5 font-color_two">Reparación de iphones</h3>
+							<h3 class="titulo-evento">Reparación de pantallas de smartphone y tablets</h3>
 						</a>
-						<p class="taller_hora">Viernes 26/02/2016 | 18.00h.</p>
-						<p class="taller_lugar">Ateneu de Fabricación Fabrica del Sol</p>
+						<p class="taller_hora">Viernes 10/06/2016 | 19.00h.</p>
+						<p class="taller_lugar">BAU Centro de Diseño</p>
 					</div>
-					<a class="btn titulo-blm" href="evento-uno.html">Ver detalles</a>
+					<a class="btn btn_evento" href="evento-uno.html">Ver detalles</a>
 				</div>
-				<div class="evento_ficha bg-color_five">
+				<div class="evento_ficha smartphone tablet ateneu bg-color_five">
 					<div class="evento_portada">
-						<a class="no-style" href="evento-uno.html">
+						<a class="no-style" href="evento-dos.html">
 							<img src="img/ev-dos.jpg">
 						</a>
 					</div>
-					<div class="evento_ficha-info">
-						<a class="no-style" href="evento-uno.html">
-							<h3 class="h5 font-color_two">Reparación de tablets</h3>
+					<div class="evento_ficha--info">
+						<a class="no-style" href="evento-dos.html">
+							<h3 class="titulo-evento">Reparación de carcasas de smartphones y tablets</h3>
 						</a>
-						<p class="taller_hora">Viernes 26/02/2016 | 18.00h.</p>
+						<p class="taller_hora">Domingo 26/06/2016 | 16.00h.</p>
 						<p class="taller_lugar">Ateneu de Fabricación Fabrica del Sol</p>
 					</div>
-					<a class="btn titulo-blm" href="evento-uno.html">Ver detalles</a>
+					<a class="btn btn_evento" href="evento-dos.html">Ver detalles</a>
 				</div>
-				<div class="evento_ficha bg-color_five">
+				<div class="evento_ficha portatil bau bg-color_five">
 					<div class="evento_portada">
-						<a class="no-style" href="evento-uno.html">
+						<a class="no-style" href="evento-tres.html">
 							<img src="img/ev-tres.jpg">
 						</a>
 					</div>
-					<div class="evento_ficha-info">
-						<a class="no-style" href="evento-uno.html">
-							<h3 class="h5 font-color_two">Reparación de portátiles</h3>
+					<div class="evento_ficha--info">
+						<a class="no-style" href="evento-tres.html">
+							<h3 class="titulo-evento">Revisión general de portátiles</h3>
 						</a>
-						<p class="taller_hora">Viernes 26/02/2016 | 18.00h.</p>
-						<p class="taller_lugar">Ateneu de Fabricación Fabrica del Sol</p>
-					</div>				
-					<a class="btn titulo-blm" href="evento-uno.html">Ver detalles</a>
+						<p class="taller_hora">Viernes 08/07/2016 | 17.00h.</p>
+						<p class="taller_lugar">BAU Centro de Diseño</p>
+					</div>
+					<a class="btn btn_evento" href="evento-tres.html">Ver detalles</a>
 				</div>
-				<div class="evento_ficha bg-color_five">
+				<div class="evento_ficha portatil ateneu bg-color_five">
 					<div class="evento_portada">
-						<a class="no-style" href="evento-uno.html">
-							<img src="img/ev-uno.jpg">
+						<a class="no-style" href="evento-cuatro.html">
+							<img src="img/ev-cuatro.jpg">
 						</a>
 					</div>
-					<div class="evento_ficha-info">
-						<a class="no-style" href="evento-uno.html">
-							<h3 class="h5 font-color_two">Reparación de iphones</h3>
+					<div class="evento_ficha--info">
+						<a class="no-style" href="evento-cuatro.html">
+							<h3 class="titulo-evento">Cambio de baterías de portátiles</h3>
 						</a>
-						<p class="taller_hora">Viernes 26/02/2016 | 18.00h.</p>
+						<p class="taller_hora">Domingo 24/07/2016 | 18.00h.</p>
 						<p class="taller_lugar">Ateneu de Fabricación Fabrica del Sol</p>
 					</div>
-					<a class="btn titulo-blm" href="evento-uno.html">Ver detalles</a>
+					<a class="btn btn_evento" href="evento-cuatro.html">Ver detalles</a>
 				</div>
-				<div class="evento_ficha bg-color_five">
+				<div class="evento_ficha smartphone tablet desktop bau bg-color_five">
 					<div class="evento_portada">
-						<a class="no-style" href="evento-uno.html">
-							<img src="img/ev-dos.jpg">
+						<a class="no-style" href="evento-cinco.html">
+							<img src="img/ev-cinco.jpg">
 						</a>
 					</div>
-					<div class="evento_ficha-info">
-						<a class="no-style" href="evento-uno.html">
-							<h3 class="h5 font-color_two">Reparación de tablets</h3>
+					<div class="evento_ficha--info">
+						<a class="no-style" href="evento-cinco.html">
+							<h3 class="titulo-evento">Reparación de sonido para smartphones, tablets y desktops</h3>
 						</a>
-						<p class="taller_hora">Viernes 26/02/2016 | 18.00h.</p>
-						<p class="taller_lugar">Ateneu de Fabricación Fabrica del Sol</p>
+						<p class="taller_hora">Viernes 05/08/2016 | 18.00h.</p>
+						<p class="taller_lugar">BAU Centro de Diseño</p>
 					</div>
-					<a class="btn titulo-blm" href="evento-uno.html">Ver detalles</a>
+					<a class="btn btn_evento" href="evento-cinco.html">Ver detalles</a>
 				</div>
-				<div class="evento_ficha bg-color_five">
+				<div class="evento_ficha smartphone tablet desktop ateneu bg-color_five">
 					<div class="evento_portada">
-						<a class="no-style" href="evento-uno.html">
-							<img src="img/ev-tres.jpg">
+						<a class="no-style" href="evento-seis.html">
+							<img src="img/ev-seis.jpg">
 						</a>
 					</div>
-					<div class="evento_ficha-info">
-						<a class="no-style" href="evento-uno.html">
-							<h3 class="h5 font-color_two">Reparación de portátiles</h3>
+					<div class="evento_ficha--info">
+						<a class="no-style" href="evento-seis.html">
+							<h3 class="titulo-evento">Configuración inicial de smartphones, tablets y desktops</h3>
 						</a>
-						<p class="taller_hora">Viernes 26/02/2016 | 18.00h.</p>
+						<p class="taller_hora">Sábado 03/09/2016 | 16.00h.</p>
 						<p class="taller_lugar">Ateneu de Fabricación Fabrica del Sol</p>
-					</div>				
-					<a class="btn titulo-blm" href="evento-uno.html">Ver detalles</a>
+					</div>
+					<a class="btn btn_evento" href="evento-seis.html">Ver detalles</a>
 				</div>
 			</div>
 
-			
+
 		</section>
 	</main>
-<!--FOOTER-->	
-	<footer>
+<!--FOOTER-->
+	<footer class="footer-border">
 		<div class="container">
-			<div class="font-color_w footer-mensaje text-center">Follow the leader, leader, leader!<br>¡Síguenos!</div>
-			<a href="index.html" class="logo">
+			<a href="index.html" class="logo-footer">
 				<img class="logo-obsocial footer" src="img/logo-obsocial-footer.svg" alt="logo obsocial">
 			</a>
-			
-			<div class="social-icons">				
+			<div class="social-icons">
 				<a target="_blank" class="link-footer" href="https://twitter.com/"><img src="img/social-twitter.svg"></a>
 				<a target="_blank" class="link-footer" href="https://www.facebook.com/"><img src="img/social-facebook.svg"></a>
 				<a target="_blank" class="link-footer" href="https://plus.google.com"><img src="img/social-google.svg"></a>
@@ -179,7 +193,10 @@
 		</div>
 	</footer>
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
-    <script src="js/app.js"></script>
+	<script src="https://cdn.jsdelivr.net/jquery.scrollto/2.1.0/jquery.scrollTo.min.js"></script>
+	<script src="js/app.js"></script>
+	<script src="js/eventselect.js"></script>
+	<script src="https://cdn.rawgit.com/dirkgroenen/jQuery-viewport-checker/master/dist/jquery.viewportchecker.min.js"></script>
 	<script>
 	  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
 	  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),

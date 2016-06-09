@@ -3,43 +3,56 @@
 	overflow: hidden;
 	padding: 1rem auto;
 	background-color: $color-one;
+	height: 60px;
+	border-bottom: 1px solid lighten($color-one, 10);
+	
+	@media all and (min-width: $desktop) {
+		height: 79px;
+		position: fixed;
+		width: 100%;
+		z-index: 3;
+		transition: .3s ease;
+	}
 }
+
 .logo {
-	width: 10rem;
+	height: 25px;
 	float: left;
+	margin-top: 5px;
+	@media all and (min-width: $desktop) {
+		
+		height: 40px;
+		transition: .3s ease;
+	}
 }
-@media all and (min-width: 1024px) {
-	.logo{
-		width: 14rem;
+
+@media all and (min-width: $desktop) {
+	.header--minimized {
+		height: 36px;
+		transition: .3s ease;
+	}
+	.logo--minimized {
+		height: 20px;
+		transition: .3s ease;
+	}
+	.container--minimized {
+		margin: 0.5rem auto;
+		transition: .3s ease;
+	}
+	.menu-item-style--minimized {
+		line-height: 1.4rem;
+		padding-bottom: 0.2rem;
+		font-size: 0.7rem;
+		transition: .3s line-height ease,
+    	.3s padding-bottom ease,
+    	.3s font-size ease;
 	}
 }
 .logo-obsocial {
 	height: 100%;
-	width: 100%;
-}
-.menu-desktop{
-	display: none;
-}
-@media all and (min-width: 1024px) {
-	.menu-desktop{
-		display: block;
-		float: right;
+	width: 5rem;
+	@media all and (min-width: $desktop) {
+		height: 100%;
+		width: 100%;
 	}
-}
-.menu-item {
-	color: $color-w;
-	font-weight: 400;
-	font-size: 0.9rem;
-	margin-left: 1.5rem;
-	letter-spacing: 1px;
-	text-transform: uppercase;
-	display: inline-block;
-	line-height: 3rem;
-}
-
-.menu-item:hover {
-	text-decoration: underline;
-}
-.menu-item.active {
-	color: $color-two;
 }

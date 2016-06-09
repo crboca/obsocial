@@ -1,0 +1,156 @@
+//pag inicio
+
+.in_section {
+	margin: 0;
+	padding: 0;
+	&:after {
+		content: "";
+		clear: both;
+		display: block;
+		margin: 0;
+		padding: 0;
+		line-height: 0;
+	}
+	&--img {
+		width: 100%;
+		margin: 0;
+		padding: 0;
+		line-height: 0;
+		display: block;
+		&--container {
+			margin: 0;
+			padding: 0;
+			display: block;
+			width: 100%;
+			position: relative;
+			@media all and (min-width: $desktop) {
+				width: 60%;
+				display: inline-block;
+			}
+		}
+	}
+	&--text {
+		display: block;
+		margin: 0;
+		padding: 3rem;
+		@media all and (min-width: $desktop) {
+			padding: 0 1.5rem;
+			width: 40%;
+			display: inline-block;
+			position: relative;
+	  		top: 50%;
+	  		transform: translateY(15%);
+		}
+		@media all and (min-width: $desktop-hd) {
+			padding: 4rem 2rem 0;
+			transform: translateY(20%);
+		}
+	}
+}
+.in_img--triangle {
+	&--one:before,
+	&--two:before {
+		content: "";
+		position: absolute;
+		top: 0;
+		width: 0; 
+		height: 0;
+		border-left: 1.35rem solid transparent; 
+		border-right: 1.35rem solid transparent;
+		@media all and (min-width: $desktop) {
+			top: 3rem;
+			border-top: 1.35rem solid transparent;
+			border-bottom: 1.35rem solid transparent;
+		}
+	}
+
+	&--one:before {
+		right: 3rem;
+		border-top: 1.35rem solid $color-one;
+		@media all and (min-width: $desktop) {
+			right: 0;
+			border-right: 1.35rem solid $color-one;
+			border-top: 1.35rem solid transparent;
+			border-left: 0 solid transparent; 
+		}
+	}
+	&--two:before {
+		left: 3rem;
+		border-top: 1.35rem solid $color-two;
+		@media all and (min-width: $desktop) {
+			left:0;
+			border-left: 1.35rem solid $color-two;
+			border-top: 1.35rem solid transparent;
+			border-right: 0 solid transparent; 
+		}
+	}
+}
+
+.in--map {
+	width: 100%;
+	height: 36rem;
+}
+
+.in_map--map {
+	
+	margin-top: 1.75rem;
+	padding: 0 1.5rem;
+	& iframe {
+		height: 24rem;
+		width: 100%;
+		margin-bottom: 1.75rem;
+	}
+	@media all and (min-width: $tablet) {
+		padding: 0;
+	}
+}
+.in_map--text {
+	padding-top: 1.5rem;
+}
+.in_map--box {
+	border: solid 1px $color-two;
+	padding: 1.5rem;
+	margin: 1.75rem auto;
+}
+.in_map--map,
+.in_map--text {
+	vertical-align: middle;
+	display: block;
+	width: 100%;
+	@media all and (min-width: $tablet) {
+		width: 45%;
+		margin: 0 2%;
+		height: 40rem;
+		display: inline-block;
+	}
+}
+.in_map--message {
+	font-size: 1.5rem;
+	margin: 1rem 0 .5rem;
+}
+.in_map--message--uno,
+.in_map--message--dos,
+.in_map--message--tres {
+	margin: 0.75rem 0;
+	font-size: 1rem;
+	font-weight: bold;
+}
+.in_col--logo-cont {
+	@media all and (min-width: $tablet) {
+		display: flex;
+		justify-content: space-around;
+	}
+}
+.in_col--logo {
+	display: block;
+	margin: 1.75rem auto;
+	height: 6rem;
+	@media all and (min-width: $tablet) {
+		display: inline-block;
+	}
+	& img {
+		height: 100%;
+		display: block;
+		margin: 0 auto;
+	}
+}

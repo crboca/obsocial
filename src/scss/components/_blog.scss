@@ -1,30 +1,85 @@
 // BLOG
+.container_blog:after {
+	content: "";
+	clear: both;
+	display: block;
+}
 .post {
 	position: relative;
-	padding-bottom: 3rem;
-	margin-bottom: 1.75rem;
-
-	&-port {
+	width: 80%;
+	margin: 0 auto 2.75rem;
+	display: block;
+	@media all and (min-width: $desktop){
 		width: 100%;
 	}
 
-	&-info {
+	&_port {
+		width: 100%;
+	}
+
+	&_info {
 		padding:  0 1.75rem;
 		position: relative;
 	}
 
-	&-comentarios {
+	&_comentarios {
 		margin-top: 3rem;
 	}
 }
-.post-fecha,
-.post-like,
-.post-tag {
-	margin-right: 1.75rem;
-	margin-bottom: 0;
+.post_fecha,
+.post_tag {
+	margin: 0.5rem;
 
 	& img{
 		height: 1.1rem;
 		vertical-align: middle;
 	}
+}
+.post_like {
+	vertical-align: middle;
+	margin: 0.5rem;
+	width: 145px;
+	height: 20px;
+	float: none;
+	display: inline-block;
+}
+
+.post_comentarios {
+	margin-top: 1.75rem;
+}
+
+/* ---- grid ---- */
+
+.grid {
+  width: 100%;
+}
+
+/* clearfix */
+.grid:after {
+  content: '';
+  display: block;
+  clear: both;
+}
+
+/* ---- grid-item ---- */
+
+.grid_sizer,
+.grid_item {
+  width: 90%;
+  margin: 0 5% 3.75rem;
+  @media all and (min-width: $tablet){
+    width: 45%;
+    margin: 0 2.5% 3.75rem;
+    max-width: none;
+  }
+}
+
+.grid_item {
+  float: left;
+  background-color: $color-w;
+}
+
+.grid_item>a>img {
+  display: block;
+  margin-bottom: 0.5rem;
 }

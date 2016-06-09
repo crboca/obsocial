@@ -3,124 +3,142 @@
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>Obsocial</title> 
+	<title>Obsocial</title>
 	<link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700' rel='stylesheet' type='text/css'>
+	<script src="js/pace.js"></script>
 	<link rel="stylesheet" href="css/main.css">
 </head>
 <body>
 	<?php include_once("analyticstracking.php") ?>
-<!--HEADER-->	
-	<header class="header">
-		<div class="container">			
+<!--HEADER-->
+	<header class="header" id="header">
+		<div class="container">
 			<a href="index.html" class="logo">
 				<img src="img/logo-obsocial.svg"  class="logo-obsocial" alt="Logotipo Obsocial">
-			</a>	
-			<nav class="menu-desktop">
-				<a class="menu-item" href="donacion.html">Donar</a>
-				<a class="menu-item" href="eventos.html">Reparar</a>
-				<a class="menu-item active" href="proyecto.html">Nuestro proyecto</a>
-				<a class="menu-item" href="blog.html">Blog</a>
-				<a class="menu-item" href="contacto.html">Contacto</a>
-			</nav>
+			</a>
+			<div class="menu-mobile closed">
+		        <a class="btn-anim-three">
+		            <span class="one"></span>
+		            <span class="two"></span>
+		            <span class="three"></span>
+		        </a>
+		        <ul class="nav" role="sidebar">
+		        	<li class="menu-item">
+		                <a class="menu-item-style" href="donacion.html">
+		                    Donar
+		                </a>
+		            </li>
+		            <li class="menu-item">
+		                <a class="menu-item-style" href="eventos.html">
+		                    Reparar
+		                </a>
+		            </li>
+		            <li class="menu-item">
+		                <a class="menu-item-style active" href="proyecto.html">
+		                    Nuestro proyecto
+		                </a>
+		            </li>
+		            <li class="menu-item">
+		                <a class="menu-item-style" href="blog.html">
+		                    Blog
+		                </a>
+		            </li>
+		            <li class="menu-item">
+		                <a class="menu-item-style" href="contacto.html">
+		                    Contacto
+		                </a>
+		            </li>
+		        </ul>
+	    	</div>
 		</div>
-
-		<div class="menu-mobile visible-xs closed">
-	        <a class="btn-anim-three">
-	            <span class="one"></span>
-	            <span class="two"></span>
-	            <span class="three"></span>
-	        </a>
-	        <ul class="nav" role="sidebar">
-	        	<li>
-	                <a href="donacion.html">
-	                    Donar
-	                </a>
-	            </li>
-	            <li>
-	                <a href="eventos.html">
-	                    Reparar
-	                </a>
-	            </li>
-	            <li>
-	                <a href="proyecto.html">
-	                    Nuestro proyecto
-	                </a>
-	            </li>
-	            <li>
-	                <a href="blog.html">
-	                    Blog
-	                </a>
-	            </li>
-	            <li>
-	                <a href="contacto.html">
-	                    Contacto
-	                </a>
-	            </li>
-	        </ul>
-    	</div>
 	</header>
-	<main>
+	<a class="btn btn_subir" id="to-header" href="#header">
+		<img src="img/arrow.png" class="btn_subir_arrow--top">
+	</a>
+	<main id="top">
 		<section class="portada portada-proyecto clearfix">
-			<div class="container">			
-				<h1 class="h1">Nuestro proyecto</h1>
+			<div class="container  js-animate">
+				<h1>Nuestro proyecto</h1>
+				<div class="divider-line"></div>
 				<p class="container-narrow">Inquietudes que empiezan en un mundo puramente tecnológico, pero que han acabado centrándose en una razón social y medioambiental.</p>
 			</div>
 		</section>
 		<section class="bg-color_two font-color_w">
 			<div class="container-narrow clearfix">
-				<div class="text-center pro-proceso">
-					<img class="pro-img" src="img/pro-mundo.svg" alt="Icono de la Tierra">
-					<h5 class="h4">Queremos ayudar a nuestro planeta</h5>
-					<p>Luchar contra la obsolescencia programada. Ese es el objetivo de ObSocial. Queremos ayudar a nuestro planeta y, para ello, queremos impulsar la reutilización y, en caso de ser inservibles, el correcto reciclaje de todos los aparatos electrónicos del día a día.</p>
+				<div class="text-center pro_proceso">
+					<img class="pro_img" src="img/pro-mundo.svg" alt="Icono de la Tierra">
+					<h2>Tirar no es la solución</h2>
+					<p>Nuestro planeta ya de síntomas de que no puede con toda la basura que creamos cada día. Buscamos alternativas a tirar: reparar, reciclar, reutilizar…</p>
 				</div>
-				<div class="text-center pro-proceso">
-					<img class="pro-img" src="img/pro-movil.svg" alt="Icono simbolizando la reparación de dispositivos">
-					<h5 class="h4">Te enseñamos a reparar lo “roto”</h5>
-					<p>A consecuencia de la Obsolescencia Programada, todos los productos salen de fábrica con una fecha de caducidad impuesta por el fabricante, ¡pero no están rotos! Ven a nuestros talleres y aprende a repararlos. ¡Ahuyenta a la obsolescencia de tu vida!</p>
+				<div class="divider-line--long"></div>
+				<div class="text-center pro_proceso">
+					<img class="pro_img" src="img/pro-movil.svg" alt="Icono simbolizando la reparación de dispositivos">
+					<h2>Contra la Obsolescencia Programada</h2>
+					<p>Cuando un dispositivo electrónico deja de funcionar, muchas veces es debido a que se ha fabricado para que tenga un límite de vida útil.</p>
 				</div>
+				<div class="divider-line--long"></div>
 				<div class="text-center">
-					<img class="pro-img" src="img/pro-donar.svg" alt="Icono simbólico de donar">
-					<h5 class="h4">Buscamos a quien necesite lo que no usas</h5>
-					<p>Nos preocupamos de que esos aparatos electrónicos que no usas cubran las necesidades de otras personas y que además acaben en buenas manos. Si nos das tu dispositivo, sacaremos tu información y lo daremos vacío de contenido a quien lo quiera.</p>
+					<img class="pro_img" src="img/pro-donar.svg" alt="Icono simbólico de donar">
+					<h2>Personas sin recursos</h2>
+					<p>No todo el mundo se puede permitir comprarse un electrónico nuevo. Queremos darles la oportunidad de que lo puedan tener si lo necesitan.</p>
 				</div>
 			</div>
 		</section>
 		<section class="bg-color_four equipo font-color_two">
-			<div class="container text-center">			
-				<h2 class="h1">El equipo</h2>
-				<p class="container-narrow">Somos cuatro amantes de la tecnología, sensibilizados con el medioambiente y no podemos vivir sin ambientes dónde socializar.</p>
+			<div class="container text-center">
+				<h3>El equipo</h3>
 			</div>
-			<div class="container clearfix pro-box">
-				<div class="text-center pro-member">
-					<img class="avatar" src="img/cristina-profile.jpg" alt="Cristina Boix">
-					<div class="under-line under-line-pro"></div>
-					<h5>Cristina</h5>
-					<p>Diseñadora Industrial enamorada de Barcelona, aunque con raíces muy fuertes en Olot. Amante de los vermouths bajo el sol. Haber tocado también diseño gráfico y web no significa que le disguste lo industrial, al contrario, le apasionan todos.</p>
+			<div class="container clearfix pro_box">
+				<div>
+					<img class="pro_avatar" src="img/cristina-profile.jpg" alt="Cristina Boix">
+					<div class="pro_member">
+						<h5>Cristina</h5>
+						<div class="under-line under-line-pro"></div>
+						<p>Diseñadora Industrial enamorada de Barcelona, aunque con raíces muy fuertes en Olot. Amante de los vermouths bajo el sol. Haber tocado también diseño gráfico y web no significa que le disguste lo industrial, al contrario, le apasionan todos.</p>
+					</div>
+					
 				</div>
-				<div class="text-center pro-member">
-					<img class="avatar" src="img/jorge-profile.jpg" alt="Jorge Valencia">
-					<div class="under-line under-line-pro"></div>
-					<h5>Jorge</h5>
-					<p>Colombiano nacido en Argentina y residente en Barcelona. Diseñador web. Amante de las nuevas tecnologías, las buenas películas y la cerveza. Desde hace un par de años está entregado a cualquier causa en favor de mejorar nuestro planeta.</p>
+				<div>
+					<img class="pro_avatar" src="img/jorge-profile.jpg" alt="Jorge Valencia">
+					<div class="pro_member">
+						<h5>Jorge</h5>
+						<div class="under-line under-line-pro"></div>
+						<p>Colombiano nacido en Argentina y residente en Barcelona. Diseñador web. Amante de las nuevas tecnologías, las buenas películas y la cerveza. Desde hace un par de años está entregado a cualquier causa en favor de mejorar nuestro planeta.</p>
+					</div>
+					
 				</div>
-				<div class="text-center pro-member">
-					<img class="avatar" src="img/itsaso-profile.jpg" alt="Itsaso Altuna">
-					<div class="under-line under-line-pro"></div>
-					<h5>Itsaso</h5>
-					<p>Diseñadora industrial que huye de las tuercas y tornillos. Programadora front-end por vocación e ilustradora amateur por vacación. Experimentando el consumo <i>slow</i> para una vida más ecológica y responsable.</p>
+				<div>
+					<img class="pro_avatar" src="img/itsaso-profile.jpg" alt="Itsaso Altuna">
+					<div class="pro_member">
+						<h5>Itsaso</h5>
+						<div class="under-line under-line-pro"></div>
+						<p>Diseñadora industrial que huye de las tuercas y tornillos. Programadora front-end por vocación e ilustradora amateur por vacación. Experimentando el consumo <i>slow</i> para una vida más ecológica y responsable.</p>
+					</div>
+					
 				</div>
-				<div class="text-center pro-member">
-					<img class="avatar" src="img/monika-profile.jpg" alt="Monika Juaristi">
-					<div class="under-line under-line-pro"></div>
-					<h5>Monika</h5>
-					<p>Vasca con casta. Licenciada en Comunicación Audiovisual y diseñadora gráfica. Amante del deporte, la tecnología, la música y la cerveza en buena compañía. Entonando la canción protesta siempre que se pueda.</p>
+				<div>
+					<img class="pro_avatar" src="img/monika-profile.jpg" alt="Monika Juaristi">
+					<div class="pro_member">
+						<h5>Monika</h5>
+						<div class="under-line under-line-pro"></div>
+						<p>Vasca con casta. Licenciada en Comunicación Audiovisual y diseñadora gráfica. Amante del deporte, la tecnología, la música y la cerveza en buena compañía. Entonando la canción protesta siempre que se pueda.</p>
+					</div>
 				</div>
+				<div>
+					<img class="pro_avatar" src="img/tu-profile.jpg">
+					<div class="pro_member">
+						<h5>Tú</h5>
+						<div class="under-line under-line-pro"></div>
+						<p>El equipo somos todos. Si te apetece ayudar a los demás a reparar sus electrónicos, participar en nuestros talleres es muy fácil!</p>
+					</div>
+				</div>
+				<a class="btn btn-alt btn-shadow titulo-blm" href="#colaborar" id="to-colaborar">Quiero colaborar</a>
 			</div>
 		</section>
-		<section class="bg-color_two clearfix">
-			<div class="container font-color_w text-center">			
-				<h2 class="h4">¿Quieres ser parte de nuestro proyecto?</h2>
-				<p class="container-narrow">Si te apetece participar con nosotros y ayudar a los demás a reparar sus dispositivos en nuestros talleres, ¡no lo dudes!</p>
+		<section id="colaborar" class="bg-color_two clearfix">
+			<div class="container font-color_w text-center">
+				<h3>¿Quieres colaborar con nosotros?</h3>
+				<p class="container-narrow">El equipo somos todos. Si te apetece ayudar a los demás a reparar sus electrónicos, participar en nuestros talleres es muy fácil!</p>
 			</div>
 			<div id="container" class="container-narrow ltr">
 				<form id="form2" name="form2" class="wufoo topLabel page" accept-charset="UTF-8" autocomplete="off" enctype="multipart/form-data" method="post" novalidate action="https://obsocialbau.wufoo.com.mx/forms/m1xeebr1paai01/#public">
@@ -139,7 +157,7 @@
 							</div>
 						</li>
 						<li id="foli16" class="notranslate titulo-blm">
-							<label class="desc" id="title16" for="Field16">Mensaje
+							<label class="desc" id="title16" for="Field16">¿Por qué quieres unirte a Obsocial?
 							</label>
 							<div>
 								<textarea id="Field16" name="Field16" class="bg-color_one" spellcheck="true"tabindex="3" onkeyup=""  placeholder="Cuéntanos un poco sobre ti" required></textarea>
@@ -147,7 +165,7 @@
 						</li>
 						<li class="">
 							<div>
-								<input id="saveForm" name="saveForm" class="btn btn-shadow titulo-blm" type="submit" value="Enviar mensaje"/>
+								<input id="saveForm" name="saveForm" class="btn btn-shadow titulo-blm" type="submit" value="Quiero colaborar"/>
 							</div>
 						</li>
 						<li class="hide">
@@ -160,15 +178,13 @@
 			</div>
 		</section>
 	</main>
-<!--FOOTER-->	
+<!--FOOTER-->
 	<footer class="footer-border">
 		<div class="container">
-			<div class="font-color_w footer-mensaje text-center">Follow the leader, leader, leader!<br>¡Síguenos!</div>
-			<a href="index.html" class="logo">
+			<a href="index.html" class="logo-footer">
 				<img class="logo-obsocial footer" src="img/logo-obsocial-footer.svg" alt="logo obsocial">
 			</a>
-			
-			<div class="social-icons">				
+			<div class="social-icons">
 				<a target="_blank" class="link-footer" href="https://twitter.com/"><img src="img/social-twitter.svg"></a>
 				<a target="_blank" class="link-footer" href="https://www.facebook.com/"><img src="img/social-facebook.svg"></a>
 				<a target="_blank" class="link-footer" href="https://plus.google.com"><img src="img/social-google.svg"></a>
@@ -176,7 +192,10 @@
 		</div>
 	</footer>
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
-    <script src="js/app.js"></script>
+	<script src="https://cdn.jsdelivr.net/jquery.scrollto/2.1.0/jquery.scrollTo.min.js"></script>
+	<script src="js/app.js"></script>
+	<script src="https://cdn.rawgit.com/dirkgroenen/jQuery-viewport-checker/master/dist/jquery.viewportchecker.min.js"></script>
+	
 	<script>
 	  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
 	  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),

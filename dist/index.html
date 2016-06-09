@@ -5,152 +5,185 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Obsocial</title>
 	<link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700' rel='stylesheet' type='text/css'>
+	<script src="js/pace.js"></script>
 	<link rel="stylesheet" href="css/main.css">
 </head>
 <body>
 	<?php include_once("analyticstracking.php") ?>
-<!--HEADER-->	
-	<header class="header">
-		<div class="container">			
+<!--HEADER-->
+	<header class="header" id="header">
+		<div class="container">
 			<a href="index.html" class="logo">
 				<img src="img/logo-obsocial.svg"  class="logo-obsocial" alt="Logotipo Obsocial">
-			</a>	
-			<nav class="menu-desktop">
-				<a class="menu-item" href="donacion.html">Donar</a>
-				<a class="menu-item" href="eventos.html">Reparar</a>
-				<a class="menu-item" href="proyecto.html">Nuestro proyecto</a>
-				<a class="menu-item" href="blog.html">Blog</a>
-				<a class="menu-item" href="contacto.html">Contacto</a>
-			</nav>
+			</a>
+			<div class="menu-mobile closed">
+		        <a class="btn-anim-three">
+		            <span class="one"></span>
+		            <span class="two"></span>
+		            <span class="three"></span>
+		        </a>
+		        <ul class="nav" role="sidebar">
+		        	<li class="menu-item">
+		                <a class="menu-item-style" href="donacion.html">
+		                    Donar
+		                </a>
+		            </li>
+		            <li class="menu-item">
+		                <a class="menu-item-style" href="eventos.html">
+		                    Reparar
+		                </a>
+		            </li>
+		            <li class="menu-item">
+		                <a class="menu-item-style" href="proyecto.html">
+		                    Nuestro proyecto
+		                </a>
+		            </li>
+		            <li class="menu-item">
+		                <a class="menu-item-style" href="blog.html">
+		                    Blog
+		                </a>
+		            </li>
+		            <li class="menu-item">
+		                <a class="menu-item-style" href="contacto.html">
+		                    Contacto
+		                </a>
+		            </li>
+		        </ul>
+	    	</div>
 		</div>
-
-		<div class="menu-mobile visible-xs closed">
-	        <a class="btn-anim-three">
-	            <span class="one"></span>
-	            <span class="two"></span>
-	            <span class="three"></span>
-	        </a>
-	        <ul class="nav" role="sidebar">
-	        	<li>
-	                <a href="donacion.html">
-	                    Donar
-	                </a>
-	            </li>
-	            <li>
-	                <a href="eventos.html">
-	                    Reparar
-	                </a>
-	            </li>
-	            <li>
-	                <a href="proyecto.html">
-	                    Nuestro proyecto
-	                </a>
-	            </li>
-	            <li>
-	                <a href="blog.html">
-	                    Blog
-	                </a>
-	            </li>
-	            <li>
-	                <a href="contacto.html">
-	                    Contacto
-	                </a>
-	            </li>
-	        </ul>
-    	</div>
 	</header>
-<!--PORTADA-->		
-	<section class="portada portada-index">
-		<div class="container">		
-			<h1 class="h1">Segundas partes siempre fueron buenas</h1>
-			<h2 class="h2">¡Ayudemos a nuestro planeta, juntos!</h2>
+	<a class="btn btn_subir" id="to-header" href="#header">
+		<img src="img/arrow.png" class="btn_subir_arrow--top">
+	</a>
+<!--PORTADA-->
+	<section class="portada portada-index"  id="top">
+		<div class="container js-animate">
+			<h1>Dónalo si no lo usas, repáralo si no funciona</h1>
+			<h2>Segundas partes siempre fueron buenas</h2>
 			<div class="divider-line"></div>
-			<p class="container-narrow h4">En ObSocial luchamos contra la obsolescencia programada, ayudando así a nuestro planeta. Únete a nosotros, dona los aparatos electrónicos que ya no quieras y/o repara los que quieras que sigan en tu vida.</p>
-			<a class="btn titulo-blm btn-shadow" href="proyecto.html">Conoce nuestro proyecto</a>
+			<p class="container-narrow">Te ayudamos a dar una segunda oportunidad a tus aparatos electrónicos, ya sea donándolos a quienes los necesitan o reparándolos en nuestros talleres dónde te enseñaremos cómo hacerlo</p>
+			<a class="btn titulo-blm btn-shadow" href="#donaciones" id="to-donaciones">¿Cómo hacerlo?</a>
 		</div>
 	</section>
 	<main>
-		<div class="cover-box">
-			<section class="cover cover-donacion text-center font-color_w">
-				<div class="container-narrow">
-					<h3 class="h1">Donar</h3>
-					<p class="h4">Si tu no lo quieres, ¡alguien lo querrá! Dános los aparatos electrónicos que no utilices y se lo daremos a quien lo necesite.</p>
+
+		<!--DONACIONES-->
+		<section id="donaciones" class="in_section bg-color_one font-color_w">
+			<div class="in_section--text right">
+					<div class="js-animate text-center ">
+					<h3>Donar</h3>
+					<p>Envíanos cualquier aparato electrónico que no vayas a usar más, y nosotros encontraremos a personas sin recursos que los necesiten.</p>
 					<a class="btn titulo-blm btn-shadow" href="donacion.html">Realizar donación</a>
 				</div>
-				
-			</section>
-			<section class="cover cover-eventos text-center font-color_w">
-				<div class="container-narrow">
-					<h3 class="h1">Reparar</h3>
-					<p class="h4">¿La obsolescencia ha ganado la primera batalla? No te preocupes, ¡no la guerra! Ven a nuestros talleres y revive tus aparatos electrónicos.</p>
-					<a class="btn titulo-blm btn-shadow" href="eventos.html">Ver talleres</a>
-				</div>
-			</section>
-		</div>
-		
-		<section class="bg-color_four">
-			<div class="container text-center">
-				<h3 class="h1">Equipo</h3>
-				<p class="h4">No estamos locos, ¡sabemos lo que queremos!</p>
-				<div class="i-team">
-					<div class="inline-b text-center">
-						<img class="avatar" src="img/cristina-profile.jpg" alt="Cristina Boix">
-						<div class="under-line under-line-center"></div>
-						<h5 class="h3">Cristina</h5>
-					</div>
-					<div class="inline-b text-center">
-						<img class="avatar" src="img/itsaso-profile.jpg" alt="Itsaso Altuna">
-						<div class="under-line under-line-center"></div>
-						<h5 class="h3">Itsaso</h5>
-					</div>
-					<div class="inline-b text-center">
-						<img class="avatar" src="img/monika-profile.jpg" alt="Monika Juaristi">
-						<div class="under-line under-line-center"></div>
-						<h5 class="h3">Monika</h5>
-					</div>
-					<div class="inline-b text-center">
-						<img class="avatar" src="img/jorge-profile.jpg" alt="Jorge Valencia">
-						<div class="under-line under-line-center"></div>
-						<h5 class="h3">Jorge</h5>
-					</div>
-					<div class="inline-b text-center">
-						<div class="avatar"></div>
-						<div class="under-line under-line-center"></div>
-						<h5 class="h3">Tú</h5>
-					</div>
-				</div>
-				<a class="btn btn-alt btn-shadow titulo-blm" href="proyecto.html">Quiero colaborar</a>
+			</div>
+			<div class="in_section--img--container left in_img--triangle--one">
+				<img class="in_section--img" src="img/donar-cover.jpg">
 			</div>
 		</section>
+
+			<!--EVENTOS-->
+		<section  class="in_section bg-color_two font-color_w">
+			<div class="in_section--text left">
+				<div class="js-animate text-center ">
+					<h3>Reparar</h3>
+					<p>¿Quieres aprender a reparar tú mismo cualquier dispositivo electrónico que se te haya estropeado? ¡Echa un vistazo a nuestros talleres!</p>
+					<a class="btn titulo-blm btn-shadow" href="eventos.html">Ver talleres</a>
+				</div>
+			</div>
+			<div class="in_section--img--container right in_img--triangle--two">
+				<img class="in_section--img" src="img/reparar-cover.jpg">
+			</div>
+		</section>
+
+		<!--MAPA-->
+		<section class="bg-color_four clearfix">
+		<div class="container text-center js-animate">
+			<h3>¿Sabes cuantos kilos de basura electrónica generamos cada año?</h3>
+			
+			<div class="in_map--text">
+				<p class="text-center">Intenta adivinar cuántos kilos se generan en...</p>
+
+				<label class="font-color_two" for="country">Selecciona el país</label>
+				<select id="country" class="bg-color_one selector">
+					<option value="alemania">Alemania</option>
+					<option value="argentina">Argentina</option>
+					<option value="bangladesh">Bangladesh</option>
+					<option value="belgica">Bélgica</option>
+					<option value="bolivia">Bolivia</option>
+					<option value="brasil">Brasil</option>
+					<option value="canada">Canadá</option>
+					<option value="china">China</option>
+					<option value="colombia">Colombia</option>
+					<option value="espana">España</option>
+					<option value="eua">Estados Unidos de América</option>
+					<option value="francia">Francia</option>
+					<option value="ghana">Ghana</option>
+					<option value="india">India</option>
+					<option value="islandia">Islandia</option>
+					<option value="japon">Japón</option>
+					<option value="mexico">México</option>
+					<option value="noruega">Noruega</option>
+					<option value="reinounido">Reino Unido</option>
+					<option value="senegal">Senegal</option>
+				</select>
+
+				<label class="font-color_two" for="kilo">Introduce los Kg que creas</label>
+				<input id="kilo" type="number" class="bg-color_one"  placeholder="Número de kg"/>
+
+				<input id="in_map--btn" class="btn" type="submit" value="Comprobar"/>
+
+				<p class="in_map--message--uno text-center">Afortunadamente, no tanto.</p>
+				<div class="in_map--box">
+					<h4 class="in_map--message text-center">En España se generan 17.77kg de basura electrónica por habitante al año.</h4>
+					<p class="in_map--message--dos text-center"></p>
+					<p class="in_map--message--tres text-center"></p>
+				</div>
+				
+
+				
+			</div>
+			<div class="in_map--map left">
+				<iframe frameborder="0" src="https://obsocial.cartodb.com/viz/5ed1ba8e-1138-11e6-a6e9-0ecd1babdde5/embed_map" allowfullscreen webkitallowfullscreen mozallowfullscreen oallowfullscreen msallowfullscreen></iframe>
+				<p class="text-center">Busca en el mapa cuanta basura electrónica genera cada habitante al año en otros países y sorprendete.</p>
+			</div>
+			
+		</section>
+
+		<!--CONTACTO-->
 		<section class="bg-color_two clearfix">
-			<div id="container" class="container-narrow ltr">
-				<h3 class="h1 font-color_w text-center">Contacto</h3>
+			<div id="container" class="container-narrow js-animate">
+				<h3 class="font-color_w text-center">Contacto</h3>
 				<p class="font-color_w text-center">Quien aprende tiene dudas, ¡pregúntanos!</p>
 				<form id="form2" name="form2" class="wufoo topLabel page" accept-charset="UTF-8" autocomplete="off" enctype="multipart/form-data" method="post" novalidate action="https://obsocialbau.wufoo.com.mx/forms/m1xeebr1paai01/#public">
 					<ul>
-						<li id="foli23" class="notranslate">
-							<label class="desc" id="title23" for="Field23">Nombre
-							</label>
-							<div>
-								<input id="Field23" name="Field23" type="text" class="bg-color_one"  placeholder="Tu nombre" maxlength="255" tabindex="1" onkeyup="" required />
-							</div>
-						</li>
-						<li id="foli24" class="notranslate">
-							<label class="desc" id="title24" for="Field24">Correo electrónico</label>
-							<div>
-								<input id="Field24" name="Field24" type="text" class="bg-color_one"  placeholder="Tu email" maxlength="255" tabindex="2" onkeyup="" required />
-							</div>
-						</li>
-						<li id="foli16" class="notranslate">
-							<label class="desc" id="title16" for="Field16">Mensaje
-							</label>
-							<div>
-								<textarea id="Field16" name="Field16" class="bg-color_one" spellcheck="true"tabindex="3" onkeyup=""  placeholder="Tu mensaje" required></textarea>
-							</div>
-						</li>
+						<fieldset>
+							<legend>Datos de contacto</legend>
+							<li id="foli23" class="notranslate">
+								<label class="desc titulo-blm" id="title23" for="Field23">¿cómo te llamas?
+								</label>
+								<div>
+									<input id="Field23" name="Field23" type="text" class="bg-color_one"  placeholder="Nombre y apellidos" maxlength="255" tabindex="1" onkeyup="" required />
+								</div>
+							</li>
+							<li id="foli24" class="notranslate">
+								<label class="desc titulo-blm" id="title24" for="Field24">Correo electrónico</label>
+								<div>
+									<input id="Field24" name="Field24" type="text" class="bg-color_one"  placeholder="ejemplo@email.com" maxlength="255" tabindex="2" onkeyup="" required />
+								</div>
+							</li>
+						</fieldset>
+						<fieldset>
+							<legend>Mensaje</legend>
+							<li id="foli16" class="notranslate">
+								<label class="desc titulo-blm" id="title16" for="Field16">¿Qué nos quieres comentar?</label>
+								<div>
+									<textarea id="Field16" name="Field16" class="bg-color_one" spellcheck="true"tabindex="3" onkeyup=""  placeholder="Mensaje" required></textarea>
+								</div>
+							</li>
+						</fieldset>
 						<li class="">
 							<div>
-								<input id="saveForm" name="saveForm" class="btn btn-shadow titulo-blm" type="submit" value="Enviar mensaje"/>
+								<input id="saveForm" name="saveForm" class="btn  titulo-blm" type="submit" value="Enviar mensaje"/>
 							</div>
 						</li>
 						<li class="hide">
@@ -162,27 +195,55 @@
 				</form>
 			</div>
 		</section>
-						
+
+		<section class="bg-color_w clearfix">
+			<div id="container" class="container js-animate font-color_two text-center">
+				<h3>¡Confían en nosotros!</h3>
+				<p class="text-center">¡Grandes entidades y sellos certificados también están con nosotros! </p>
+			</div>
+			<div class="in_col--logo-cont">
+				<a class="in_col--logo in_col--logo--left" href="http://ateneusdefabricacio.barcelona.cat/directori/ateneu-de-fabricacio-fabrica-del-sol/">
+					<img src="img/in_col--at.png">
+				</a>
+				<a class="in_col--logo in_col--logo--left" href="http://www.bcnsostenible.cat/es/">
+					<img src="img/in_col--bcnsost.png">
+				</a>
+				<a class="in_col--logo in_col--logo--right" href="http://feniss.org/sello-issop/">
+					<img src="img/in_col--issop.jpeg">
+				</a>
+				<a class="in_col--logo in_col--logo--right" href="http://www.tierra.org/">
+					<img src="img/in_col--adlt.png">
+				</a>
+			</div>
+			
+		</section>
 	</main>
-<!--FOOTER-->	
+
+<!--FOOTER-->
 	<footer class="footer-border footer-share">
 		<div class="container">
-			<div class="font-color_w footer-mensaje text-center">Follow the leader, leader, leader!<br>¡Síguenos!</div>
-			<a href="index.html" class="logo">
+			<a href="index.html" class="logo-footer">
 				<img class="logo-obsocial footer" src="img/logo-obsocial-footer.svg" alt="logo obsocial">
 			</a>
-			
-			<div class="social-icons">				
+			<div class="social-icons">
 				<a target="_blank" class="link-footer" href="https://twitter.com/"><img src="img/social-twitter.svg"></a>
 				<a target="_blank" class="link-footer" href="https://www.facebook.com/"><img src="img/social-facebook.svg"></a>
 				<a target="_blank" class="link-footer" href="https://plus.google.com"><img src="img/social-google.svg"></a>
 			</div>
 		</div>
 	</footer>
+	<!-- jquery-->
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
-    <script src="js/app.js"></script>
-    <!-- Go to www.addthis.com/dashboard to customize your tools -->
+	<!-- viewportchecker-->
+	<script src="https://cdn.rawgit.com/dirkgroenen/jQuery-viewport-checker/master/dist/jquery.viewportchecker.min.js"></script>
+	<!-- scrollto-->
+	<script src="https://cdn.jsdelivr.net/jquery.scrollto/2.1.0/jquery.scrollTo.min.js"></script>
+	<!-- general-->
+  	<script src="js/app.js"></script>
+  	<script src="js/map.js"></script>
+    <!-- addthis-->
 	<script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-56d9d0c9dcecf2ea"></script>
+	<!-- GA-->
 	<script>
 	  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
 	  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),

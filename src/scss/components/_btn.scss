@@ -1,5 +1,13 @@
 // BOTONES
 .btn {
+
+	text-transform: uppercase;
+	letter-spacing: .8px;
+	font-size: 1rem;
+	font-weight: 600;
+	line-height: 1.1875rem;
+	white-space: nowrap;
+
 	color: $color-w;
 	background-color: $color-three;
 	padding: 1rem 2rem;
@@ -7,23 +15,81 @@
 	cursor: pointer;
 	margin: 3.5rem auto 0;
 
-	
-	&:hover {
+	box-shadow: 1px 1px 0px rgba(0, 0, 0, 0.1);
+
+	&_blog {
+		display: block;
+		margin: 0 auto -1.75rem;
+		text-align: center;
+		max-width: 13rem;
+		&--back {
+			position: fixed;
+			bottom: 6rem;
+			left: 0;
+			display: none;
+			padding-left: 1rem;
+			padding-right: 1rem;
+			& span {
+				display: none;
+				@media all and (min-width: $desktop) {
+					display: inline;
+				}
+			}
+		}
+		&_arrow--back {
+			-ms-transform: rotate(90deg); /* IE 9 */
+    		-webkit-transform: rotate(90deg); /* Chrome, Safari, Opera */
+    		transform: rotate(90deg);
+		}
+	}
+
+	&_evento {
+		position: absolute;
+		bottom: 0;
+	}
+
+	&_subir {
+		position: fixed;
+		right: 0;
+		bottom: 6rem;
+		z-index: 1;
+		padding-left: 1rem;
+		padding-right: 1rem;
+		&_arrow--top {
+			-ms-transform: rotate(180deg); /* IE 9 */
+    		-webkit-transform: rotate(180deg); /* Chrome, Safari, Opera */
+    		transform: rotate(180deg);
+		}
+	}
+	&:active {
 		background-color: $color-three-l;
 		color: $color-w;
 		text-decoration: none;
 	}
+	@media all and (min-width: $desktop) {
+		&:hover {
+			background-color: $color-three-l;
+			color: $color-w;
+			text-decoration: none;
+		}
+	}
+	
 
-	&-alt {
+	&--alt {
 		background-color: $color-one;
 		
-		&:hover {
+		&:active {
 			background-color: $color-one-l;
 			text-decoration: none;
+		}
+		
+		@media all and (min-width: $desktop) {
+			&:hover {
+				background-color: $color-one-l;
+				text-decoration: none;
 			}
+		}
+		
 	}
 
-	&-shadow {
-		box-shadow: 1px 1px 0px rgba(0, 0, 0, 0.1);
-	}
 }

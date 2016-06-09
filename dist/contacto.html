@@ -5,89 +5,97 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Obsocial</title>
 	<link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700' rel='stylesheet' type='text/css'>
+	<script src="js/pace.js"></script>
 	<link rel="stylesheet" href="css/main.css">
 </head>
 <body>
 	<?php include_once("analyticstracking.php") ?>
-<!--HEADER-->	
-	<header class="header">
-		<div class="container">			
+<!--HEADER-->
+	<header class="header" id="header">
+		<div class="container">
 			<a href="index.html" class="logo">
 				<img src="img/logo-obsocial.svg"  class="logo-obsocial" alt="Logotipo Obsocial">
-			</a>	
-			<nav class="menu-desktop">
-				<a class="menu-item" href="donacion.html">Donar</a>
-				<a class="menu-item" href="eventos.html">Reparar</a>
-				<a class="menu-item" href="proyecto.html">Nuestro proyecto</a>
-				<a class="menu-item" href="blog.html">Blog</a>
-				<a class="menu-item active" href="contacto.html">Contacto</a>
-			</nav>
+			</a>
+			<div class="menu-mobile closed">
+		        <a class="btn-anim-three">
+		            <span class="one"></span>
+		            <span class="two"></span>
+		            <span class="three"></span>
+		        </a>
+		        <ul class="nav" role="sidebar">
+		        	<li class="menu-item">
+		                <a class="menu-item-style" href="donacion.html">
+		                    Donar
+		                </a>
+		            </li>
+		            <li class="menu-item">
+		                <a class="menu-item-style" href="eventos.html">
+		                    Reparar
+		                </a>
+		            </li>
+		            <li class="menu-item">
+		                <a class="menu-item-style" href="proyecto.html">
+		                    Nuestro proyecto
+		                </a>
+		            </li>
+		            <li class="menu-item">
+		                <a class="menu-item-style" href="blog.html">
+		                    Blog
+		                </a>
+		            </li>
+		            <li class="menu-item">
+		                <a class="menu-item-style active" href="contacto.html">
+		                    Contacto
+		                </a>
+		            </li>
+		        </ul>
+	    	</div>
 		</div>
-
-		<div class="menu-mobile visible-xs closed">
-	        <a class="btn-anim-three">
-	            <span class="one"></span>
-	            <span class="two"></span>
-	            <span class="three"></span>
-	        </a>
-	        <ul class="nav" role="sidebar">
-	        	<li>
-	                <a href="donacion.html">
-	                    Donar
-	                </a>
-	            </li>
-	            <li>
-	                <a href="eventos.html">
-	                    Reparar
-	                </a>
-	            </li>
-	            <li>
-	                <a href="proyecto.html">
-	                    Nuestro proyecto
-	                </a>
-	            </li>
-	            <li>
-	                <a href="blog.html">
-	                    Blog
-	                </a>
-	            </li>
-	            <li>
-	                <a href="contacto.html">
-	                    Contacto
-	                </a>
-	            </li>
-	        </ul>
-    	</div>
 	</header>
-	<article>
+	<a class="btn btn_subir" id="to-header" href="#header">
+		<img src="img/arrow.png" class="btn_subir_arrow--top">
+	</a>
+	<article id="top">
+		<section class="portada portada-contacto">
+			<div class="container js-animate">
+				<h1>¿Dudas o inquietudes?</h1>
+				<div class="divider-line"></div>
+				<p class="container-narrow">Nos interesa saber qué te pasa por la cabeza. ¡Te responderemos tan rápido como nos sea posible!</p>
+			</div>
+		</section>
 		<section class="bg-color_two clearfix">
-			<div class="container-narrow font-color_w text-center">			
-				<h1 class="h1">Contacto</h1>
+			<div class="container-narrow font-color_w text-center">
+				<h3>Contacto</h3>
 				<p>Quien aprende tiene dudas, ¡pregúntanos!</p>
 			</div>
 			<div id="container" class="container-narrow ltr">
 				<form id="form2" name="form2" class="wufoo topLabel page" accept-charset="UTF-8" autocomplete="off" enctype="multipart/form-data" method="post" novalidate action="https://obsocialbau.wufoo.com.mx/forms/m1xeebr1paai01/#public">
 					<ul>
-						<li id="foli23" class="notranslate">
-							<label class="desc titulo-blm" id="title23" for="Field23">¿cómo te llamas?
-							</label>
-							<div>
-								<input id="Field23" name="Field23" type="text" class="bg-color_one"  placeholder="Nombre y apellidos" maxlength="255" tabindex="1" onkeyup="" required />
-							</div>
-						</li>
-						<li id="foli24" class="notranslate">
-							<label class="desc titulo-blm" id="title24" for="Field24">Correo electrónico</label>
-							<div>
-								<input id="Field24" name="Field24" type="text" class="bg-color_one"  placeholder="ejemplo@email.com" maxlength="255" tabindex="2" onkeyup="" required />
-							</div>
-						</li>
-						<li id="foli16" class="notranslate">
-							<label class="desc titulo-blm" id="title16" for="Field16">Mensaje
-							</label>
-							<div>
-								<textarea id="Field16" name="Field16" class="bg-color_one" spellcheck="true"tabindex="3" onkeyup=""  placeholder="Cuéntanos tu duda" required></textarea>
-							</div>
-						</li>
+						<fieldset>
+							<legend>Datos de contacto</legend>
+							<li id="foli23" class="notranslate">
+								<label class="desc titulo-blm" id="title23" for="Field23">¿cómo te llamas?
+								</label>
+								<div>
+									<input id="Field23" name="Field23" type="text" class="bg-color_one"  placeholder="Nombre y apellidos" maxlength="255" tabindex="1" onkeyup="" required />
+								</div>
+							</li>
+							<li id="foli24" class="notranslate">
+								<label class="desc titulo-blm" id="title24" for="Field24">Correo electrónico</label>
+								<div>
+									<input id="Field24" name="Field24" type="text" class="bg-color_one"  placeholder="ejemplo@email.com" maxlength="255" tabindex="2" onkeyup="" required />
+								</div>
+							</li>
+						</fieldset>
+						<fieldset>
+							<legend>Mensaje</legend>
+							<li id="foli16" class="notranslate">
+								<label class="desc titulo-blm" id="title16" for="Field16">¿Qué nos quieres comentar?</label>
+								<div>
+									<textarea id="Field16" name="Field16" class="bg-color_one" spellcheck="true"tabindex="3" onkeyup=""  placeholder="Mensaje" required></textarea>
+								</div>
+							</li>
+						</fieldset>
 						<li class="">
 							<div>
 								<input id="saveForm" name="saveForm" class="btn  titulo-blm" type="submit" value="Enviar mensaje"/>
@@ -103,23 +111,31 @@
 			</div>
 		</section>
 	</article>
-<!--FOOTER-->	
-	<footer class="footer-border ">
+<!--FOOTER-->
+	<footer class="footer-border">
 		<div class="container">
-			<div class="font-color_w footer-mensaje text-center">Follow the leader, leader, leader!<br>¡Síguenos!</div>
-			<a href="index.html" class="logo">
+			<a href="index.html" class="logo-footer">
 				<img class="logo-obsocial footer" src="img/logo-obsocial-footer.svg" alt="logo obsocial">
 			</a>
-			
-			<div class="social-icons">				
+			<div class="social-icons">
 				<a target="_blank" class="link-footer" href="https://twitter.com/"><img src="img/social-twitter.svg"></a>
 				<a target="_blank" class="link-footer" href="https://www.facebook.com/"><img src="img/social-facebook.svg"></a>
 				<a target="_blank" class="link-footer" href="https://plus.google.com"><img src="img/social-google.svg"></a>
 			</div>
+		<!--
+			<div class="colorblind">
+				<input class="colorblind-input" type="checkbox" id="colorblind">
+				<label class="colorblind-label">Modo alto contraste</label>
+			</div>
+		-->
+			
+			
 		</div>
 	</footer>
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
-    <script src="js/app.js"></script>
+	<script src="https://cdn.jsdelivr.net/jquery.scrollto/2.1.0/jquery.scrollTo.min.js"></script>
+	<script src="https://cdn.rawgit.com/dirkgroenen/jQuery-viewport-checker/master/dist/jquery.viewportchecker.min.js"></script>
+	<script src="js/app.js"></script>
     <script src="js/wufoo.js"></script>
 	<script>
 	  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){

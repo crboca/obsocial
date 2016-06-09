@@ -11,9 +11,8 @@
 	.container{
 		max-width: 1180px;
 		width: 100%;
+		transition: .3s ease;
 	}
-}
-@media all and (min-width: 1180px) {
 	.container-narrow{
 		width: 100%;
 	}
@@ -23,24 +22,4 @@
 }
 .right{
 	float: right;
-}
-.info-row {
-	display: flex;
-	flex-direction: row;
-}
-@media all and (min-width: 1024px) {
-	.info-row {
-		padding: 3rem;
-	}
-}
-.columna {
-	width: 50%;
-	display: flex;
-	flex-direction: column;
-}
-.col-uno {
-	order:-1;
-}
-.info-img {
-	margin: auto;
 }

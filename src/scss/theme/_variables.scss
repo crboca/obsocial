@@ -1,14 +1,32 @@
+//PANTALLAS
+
+$mobile: 320px;
+$tablet: 768px;
+$desktop: 1024px;
+$desktop-hd: 1280px;
+
+//breakpoint especial
+$bp_footer: 979px;
+$bp_menu: 1023px;
+$bp_map: 550px;
+
 //COLORES
 $color-w: #fff; //blanco
-$color-w-op: rgba(255, 255, 255, 0.65);
-$color-w-sl: rgba(255, 255, 255, 0.15);
+$color-w-op: rgba(255, 255, 255, .65);
+$color-w-sl: rgba(255, 255, 255, .15);
 $color-one: #2EB197; //verde obsocial
 $color-one-l: #74D5C4; //verde obsocial clarito
+$color-one-op: rgba(0, 189, 156, .4);// verde transparentoso
 $color-two: #2B3E50; //Azul oscuro
+$color-two-op: rgba(43, 62, 80, .4);//azul transparentoso
 $color-three: #F85C45; //naranja
 $color-three-l: #F28D7E; //naranja clarito
 $color-four: #E1E1E1; //color gris backgrounds
 $color-five: #F5F6F7;
+
+//portadas
+$color_portada--top: rgba(43,62,80,0.6); //azul oscuro casi negro
+$color_portada--bottom: rgba(248,92,69,0.6); //naranja obsocial fabuloso
 
 .bg{
 	&-color_w {
@@ -17,8 +35,14 @@ $color-five: #F5F6F7;
 	&-color_one {
 		background-color: $color-one;
 		}
+	&-color_one-op {
+		background-color: $color-one-op;
+		}
 	&-color_two {
 		background-color: $color-two;
+		}
+	&-color_two-op {
+		background-color: $color-two-op;
 		}
 	&-color_three {
 		background-color: $color-three;

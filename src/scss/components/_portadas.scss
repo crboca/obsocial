@@ -1,78 +1,57 @@
 // PORTADAS
 .portada {
-	color: #fff;
-	text-align: center;
-
-	p{
-		text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3);
-		margin: 0 auto;
-		padding: 0 auto;
-	}
-
-	.h1, 
-	.h2 {
-		margin: 0;
-		text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3);
-	}
-	.btn{
-		margin: 1rem;
+	@media all and (min-width: $desktop) {
+		padding-top: 160px;
 	}
 }
 .portada-index {
-	background-position-y: 65%;
-	background: url(../img/index-img.jpg);
+	background: -moz-linear-gradient(top, $color_portada--top 0%, $color_portada--bottom 100%), url(../img/index-img.jpg); /* FF3.6-15 */
+	background: -webkit-linear-gradient(top, $color_portada--top 0%,$color_portada--bottom 100%) ,url(../img/index-img.jpg); /* Chrome10-25,Safari5.1-6 */
+	background: linear-gradient(to bottom, $color_portada--top 0%,$color_portada--bottom 100%), url(../img/index-img.jpg); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#992b3e50', endColorstr='#99f85c45',GradientType=0 ), url(../img/index-img.jpg); /* IE6-9 */
+	background-size: cover, cover;
+
 	display: flex;
-  align-items: center;
-  height: 100vh;
-  padding: 0; 
+  	align-items: center;
+  	padding: 0;
+  	@media all and (min-width: $tablet) {
+		height: 100vh;
+		min-height: 30rem;
+	}
 }
+
 .portada-donar {
-	background: url(../img/donacion-img.jpg);
-	background-position-y: 100%;
+	background: -moz-linear-gradient(top, $color_portada--top 0%, $color_portada--bottom 100%), url(../img/donacion-img.jpg); /* FF3.6-15 */
+	background: -webkit-linear-gradient(top, $color_portada--top 0%,$color_portada--bottom 100%) ,url(../img/donacion-img.jpg); /* Chrome10-25,Safari5.1-6 */
+	background: linear-gradient(to bottom, $color_portada--top 0%,$color_portada--bottom 100%), url(../img/donacion-img.jpg); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#992b3e50', endColorstr='#99f85c45',GradientType=0 ), url(../img/donacion-img.jpg); /* IE6-9 */
+	background-size: cover, cover;
 }
 .portada-eventos {
-	background: url(../img/eventos-img.jpg);
-	background-position-y: 40%;
+	background: -moz-linear-gradient(top, $color_portada--top 0%, $color_portada--bottom 100%), url(../img/eventos-img.jpg); /* FF3.6-15 */
+	background: -webkit-linear-gradient(top, $color_portada--top 0%,$color_portada--bottom 100%) ,url(../img/eventos-img.jpg); /* Chrome10-25,Safari5.1-6 */
+	background: linear-gradient(to bottom, $color_portada--top 0%,$color_portada--bottom 100%), url(../img/eventos-img.jpg); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#992b3e50', endColorstr='#99f85c45',GradientType=0 ), url(../img/eventos-img.jpg); /* IE6-9 */
+	background-size: cover, cover;
 }
 .portada-blog {
-	background: url(../img/blog-img.jpg);
-	background-position-y: 40%;
+	background: -moz-linear-gradient(top, $color_portada--top 0%, $color_portada--bottom 100%), url(../img/blog-img.jpg); /* FF3.6-15 */
+	background: -webkit-linear-gradient(top, $color_portada--top 0%,$color_portada--bottom 100%) ,url(../img/blog-img.jpg); /* Chrome10-25,Safari5.1-6 */
+	background: linear-gradient(to bottom, $color_portada--top 0%,$color_portada--bottom 100%), url(../img/blog-img.jpg); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#992b3e50', endColorstr='#99f85c45',GradientType=0 ), url(../img/blog-img.jpg); /* IE6-9 */
+	background-size: cover, cover;
+}
+.portada-contacto {
+	background: -moz-linear-gradient(top, $color_portada--top 0%, $color_portada--bottom 100%), url(../img/contacto-img.jpg); /* FF3.6-15 */
+	background: -webkit-linear-gradient(top, $color_portada--top 0%,$color_portada--bottom 100%) ,url(../img/contacto-img.jpg); /* Chrome10-25,Safari5.1-6 */
+	background: linear-gradient(to bottom, $color_portada--top 0%,$color_portada--bottom 100%), url(../img/contacto-img.jpg); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#992b3e50', endColorstr='#99f85c45',GradientType=0 ), url(../img/contacto-img.jpg); /* IE6-9 */
+	background-size: cover, cover;
 }
 .portada-proyecto {
-	background: url(../img/nosotros2-img.jpg);
-	background-size: cover;
-	background-position-x: 50%;
-
-	@media all and (min-width: 768px) {
-	background: url(../img/nosotros-img.jpg);
-	background-position-x: 50%;
-	background-position-y: 50%;
-	}
-}
-.portada-index, .portada-contacto, .portada-eventos {
-	background-size: cover;
-	background-position-x: 50%;
-}
-.cover-box {
-	margin: 0;
-	padding: 0;
-	display: block;
-	@media all and (min-width: 768px) {
-	display: flex;
-	}
-}
-.cover {
-	width: 100%;
-	@media all and (min-width: 768px) {
-	width: 50%;
-	display: inline-block;
-	}
-}
-.cover-donacion {
-	background: url(../img/donar-cover.jpg), ;
-	background-size: cover;
-}
-.cover-eventos {
-	background: url(../img/reparar-cover.jpg);
-	background-size: cover;
+	background: -moz-linear-gradient(top, $color_portada--top 0%, $color_portada--bottom 100%), url(../img/nosotros-img.jpg); /* FF3.6-15 */
+	background: -webkit-linear-gradient(top, $color_portada--top 0%,$color_portada--bottom 100%) ,url(../img/nosotros-img.jpg); /* Chrome10-25,Safari5.1-6 */
+	background: linear-gradient(to bottom, $color_portada--top 0%,$color_portada--bottom 100%), url(../img/nosotros-img.jpg); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#992b3e50', endColorstr='#99f85c45',GradientType=0 ), url(../img/nosotros-img.jpg); /* IE6-9 */
+	background-size: cover, cover;
 }

@@ -1,5 +1,9 @@
 // PORTADAS
-
+.portada {
+	@media all and (min-width: $desktop) {
+		padding-top: 160px;
+	}
+}
 .portada-index {
 	background: -moz-linear-gradient(top, $color_portada--top 0%, $color_portada--bottom 100%), url(../img/index-img.jpg); /* FF3.6-15 */
 	background: -webkit-linear-gradient(top, $color_portada--top 0%,$color_portada--bottom 100%) ,url(../img/index-img.jpg); /* Chrome10-25,Safari5.1-6 */

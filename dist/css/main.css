@@ -2941,6 +2941,10 @@ footer {
       margin: 1.75rem 3rem;
       text-align: left; } }
 
+@media all and (min-width: 1024px) {
+  .portada {
+    padding-top: 160px; } }
+
 .portada-index {
   /* FF3.6-15 */
   background: -webkit-linear-gradient(top, rgba(43, 62, 80, 0.6) 0%, rgba(248, 92, 69, 0.6) 100%), url(../img/index-img.jpg);

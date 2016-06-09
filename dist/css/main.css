@@ -2976,8 +2976,7 @@ footer {
   -webkit-box-align: center;
   -webkit-align-items: center;
       -ms-flex-align: center;
-          align-items: center;
-  padding: 0; }
+          align-items: center; }
   @media all and (min-width: 768px) {
     .portada-index {
       height: 100vh;
